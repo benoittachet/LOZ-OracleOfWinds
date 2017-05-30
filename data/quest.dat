@@ -1,0 +1,16 @@
+quest{
+  solarus_version = "1.5",
+  write_dir = "015911b5-cf90-4f24-89bd-4890f394259f",
+  title = "Untitled quest",
+  short_description = "",
+  long_description = [[
+]],
+  author = "",
+  quest_version = "",
+  release_date = "",
+  website = "",
+  normal_quest_size = "320x240",
+  min_quest_size = "320x240",
+  max_quest_size = "320x240",
+}
+
