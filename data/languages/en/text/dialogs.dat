@@ -1,0 +1,9 @@
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+Vous avez trouvé une petite clé !
+
+Utilisez-la pour ouvrir une porte
+]]
+}
+

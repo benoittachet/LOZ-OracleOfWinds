@@ -1,6 +1,11 @@
+map{ id = "donjon_etage", description = "1er etage" }
+map{ id = "donjon_rc", description = "donjon RC" }
 map{ id = "first_map", description = "First map" }
+map{ id = "outdoor", description = "exterieur" }
 
 tileset{ id = "castle", description = "Castle" }
+tileset{ id = "donjon", description = "Donjon" }
+tileset{ id = "overworld", description = "monde" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/cat_green", description = "Green Cat" }
@@ -12,10 +17,12 @@ sprite{ id = "animals/phoenix", description = "Phoenix" }
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }
 sprite{ id = "citizens/witch", description = "witch" }
+sprite{ id = "closed_door", description = "porte fermee" }
 sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
 sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
 sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
+sprite{ id = "door", description = "portes" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -27,6 +34,7 @@ sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
+sprite{ id = "entities/deep_water", description = "eau profonde" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
@@ -40,6 +48,7 @@ sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/stone_small_black", description = "Stone (black)" }
 sprite{ id = "entities/stone_small_white", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "entities/waterfall", description = "cascade" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }
@@ -201,9 +210,12 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "small_key", description = "petite cle" }
 
 enemy{ id = "slime_green", description = "Green Slime" }
 
+entity{ id = "deep_water", description = "eau profonde" }
+entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
 
