@@ -21,6 +21,9 @@ function entity:on_created()
   entity:set_size(16, 16)
   entity:set_origin(8, 13)
   entity:set_traversable_by(true)
-  entity:create_sprite("entities/deep_water")
+  entity:create_sprite("entities/deep_water", "deep_water")
+  entity:create_sprite("entities/ice_floor", "ice_floor")
+  entity:bring_sprite_to_front(entity:get_sprite("deep_water"))
   entity:set_modified_ground("deep_water")
+  entity.is_deep_water = true
 end

@@ -39,6 +39,7 @@ sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
+sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -210,6 +211,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "small_key", description = "petite cle" }
 
 enemy{ id = "slime_green", description = "Green Slime" }
