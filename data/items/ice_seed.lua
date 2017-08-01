@@ -30,6 +30,7 @@ end
 -- Event called when the hero is using this item.
 function item:on_using()
   print("graine de glace")  
+  -- On récupère les coordonnées du héros +16 (une tile) dans la direction où il regarde
   local hero = self:get_map():get_entity("hero")
   local x, y, layer = hero:get_position()
   local direction = hero:get_direction()
@@ -43,11 +44,16 @@ function item:on_using()
     y = y + 16
   end
 
-  for entity in self:get_map():get_entities_in_rectangle(x, y, 1, 1) do
+  -- On regarde toutes les entitées dans un petit rectangle autour de ces coordonnées
+  for entity in self:get_map():get_entities_in_rectangle(x-2, y-2, 5, 5) do
+    -- S'il s'agit d'une entité custom d'eau profonde
     if entity:get_type() == "custom_entity" and entity.is_deep_water then
+      -- On met en premier plan le sprite de glace, on met un terran traversable et on indique que ce n'est plus de l'eau
       entity:bring_sprite_to_front(entity:get_sprite("ice_floor"))
       entity:set_modified_ground("traversable")
       entity.is_deep_water = false
+      -- Après 5 secondes, on annule nos changements pour ravoir la case d'eau
+      -- On pourrait imaginer avoir un 3ème sprite de glace fissurée qu'on affiche au bout de 4 secondes 
       sol.timer.start(entity, 5000, function()
         entity:bring_sprite_to_front(entity:get_sprite("deep_water"))
         entity:set_modified_ground("deep_water")
