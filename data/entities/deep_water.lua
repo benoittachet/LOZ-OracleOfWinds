@@ -29,4 +29,5 @@ function entity:on_created()
   entity:set_modified_ground("deep_water")
   -- On indique que cette entitée est de l'eau profonde qu'on peut geler
   entity.is_deep_water = true
+  entity.is_frozen = false
 end
