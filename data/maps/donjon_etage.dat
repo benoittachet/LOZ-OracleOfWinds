@@ -1043,6 +1043,15 @@ tile{
   pattern = "17",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
 destination{
   name = "default",
   layer = 0,
@@ -1131,6 +1140,22 @@ door{
   opening_condition_consumed = true,
 }
 
+pickable{
+  name = "key",
+  layer = 0,
+  x = 120,
+  y = 53,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "compteur_cles",
+}
+
+pickable{
+  layer = 0,
+  x = 24,
+  y = 77,
+  treasure_name = "ice_seed",
+}
+
 custom_entity{
   layer = 0,
   x = 80,
@@ -1139,15 +1164,6 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "deep_water",
-}
-
-pickable{
-  name = "key",
-  layer = 0,
-  x = 120,
-  y = 53,
-  treasure_name = "small_key",
-  treasure_savegame_variable = "compteur_cles",
 }
 
 custom_entity{

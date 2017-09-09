@@ -5,6 +5,7 @@
 require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local solarus_logo = require("scripts/menus/solarus_logo")
+require("scripts/sinking_override")
 
 -- This function is called when Solarus starts.
 function sol.main:on_started()
