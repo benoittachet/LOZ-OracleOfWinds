@@ -9,6 +9,59 @@ animation{
   },
 }
 animation{
+  name = "brandish",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 32, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 32, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 32, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 32, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "sword",
+  src_image = "main_heroes/Charset_Link.png",
+  frame_delay = 100,
+  directions = {
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 80, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 128, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+  },
+}
+animation{
+  name = "sword_loading_stopped",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 112, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 128, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "sword_loading_walking",
+  src_image = "main_heroes/Charset_Link.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
   name = "walking",
   src_image = "main_heroes/Charset_Link.png",
   frame_delay = 150,
