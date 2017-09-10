@@ -45,6 +45,18 @@ function sol.main:on_key_pressed(key, modifiers)
     -- Escape in title screens: stop the program.
     sol.main.exit()
     handled = true
+  elseif key == "f1" then
+    sol.main.game:get_hero():teleport("Map1")
+  elseif key == "f2" then
+    sol.main.game:get_hero():teleport("donjon_rc")
+  elseif key == "e" and modifiers.control then
+    local hero = sol.main.game:get_hero()
+    hero:set_tunic_sprite_id("main_heroes/eldran")
+    hero:set_sword_sprite_id("hero/sword1")
+  elseif key == "l" and modifiers.control then
+    local hero = sol.main.game:get_hero()
+    hero:set_tunic_sprite_id("main_heroes/Link")
+    hero:set_sword_sprite_id("hero/sword")
   end
 
   return handled
