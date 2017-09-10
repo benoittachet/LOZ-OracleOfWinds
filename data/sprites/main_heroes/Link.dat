@@ -29,9 +29,21 @@ animation{
   },
 }
 animation{
+  name = "pushing",
+  src_image = "main_heroes/pushing.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
   name = "sword",
   src_image = "main_heroes/Charset_Link.png",
-  frame_delay = 100,
+  frame_delay = 50,
   directions = {
     { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
     { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
