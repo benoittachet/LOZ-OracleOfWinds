@@ -5678,38 +5678,6 @@ destination{
   default = true,
 }
 
-separator{
-  layer = 0,
-  x = -56,
-  y = 232,
-  width = 384,
-  height = 16,
-}
-
-separator{
-  layer = 0,
-  x = 0,
-  y = 472,
-  width = 336,
-  height = 16,
-}
-
-separator{
-  layer = 0,
-  x = 320,
-  y = 472,
-  width = 352,
-  height = 16,
-}
-
-separator{
-  layer = 0,
-  x = 344,
-  y = 232,
-  width = 304,
-  height = 16,
-}
-
 jumper{
   layer = 0,
   x = 512,
@@ -5722,10 +5690,26 @@ jumper{
 
 separator{
   layer = 0,
-  x = 304,
+  x = 312,
   y = 0,
   width = 16,
   height = 720,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 472,
+  width = 640,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 232,
+  width = 640,
+  height = 16,
 }
 
 tile{
