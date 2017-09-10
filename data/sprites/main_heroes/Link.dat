@@ -2,10 +2,10 @@ animation{
   name = "stopped",
   src_image = "main_heroes/Charset_Link.png",
   directions = {
-    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16 },
-    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
   },
 }
 animation{
@@ -14,9 +14,9 @@ animation{
   frame_delay = 150,
   frame_to_loop_on = 0,
   directions = {
-    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16, num_frames = 2 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16, num_frames = 2 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 16, num_frames = 2 },
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
   },
 }
