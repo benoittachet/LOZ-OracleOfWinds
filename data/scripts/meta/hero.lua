@@ -8,6 +8,7 @@ local function initialize_hero_features(game)
 
   local hero = game:get_hero()
   hero:set_tunic_sprite_id("main_heroes/Link")
+  hero:set_sword_sprite_id("hero/sword")
 end
 
 -- Set up Eldran hero sprite on any game that starts.
