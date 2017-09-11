@@ -1,3 +1,4 @@
+map{ id = "Map1", description = "Map1" }
 map{ id = "donjon_etage", description = "1er etage" }
 map{ id = "donjon_rc", description = "donjon RC" }
 map{ id = "first_map", description = "First map" }
@@ -25,6 +26,8 @@ sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
 sprite{ id = "door", description = "portes" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/octorok", description = "Octorok" }
+sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/big_chest", description = "Big chest" }
@@ -42,6 +45,7 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
@@ -216,9 +220,12 @@ sound{ id = "wrong3", description = "wrong3" }
 item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "small_key", description = "petite cle" }
 
+enemy{ id = "octorok", description = "Octorok" }
+enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "deep_water", description = "eau profonde" }
+entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }

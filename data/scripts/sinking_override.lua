@@ -14,6 +14,9 @@ function detect_safe_spot(hero, x, y, layer)
       end
     end
   end
+  if hero:get_ground_below() == "deep_water" then
+    touch_deep_water = true
+  end
 
   -- Si on est en contact avec aucune case d'eau profonde, c'est safe
   if not touch_deep_water then

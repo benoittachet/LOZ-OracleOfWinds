@@ -5712,6 +5712,22 @@ separator{
   height = 16,
 }
 
+enemy{
+  layer = 0,
+  x = 112,
+  y = 405,
+  direction = 0,
+  breed = "oursin",
+}
+
+enemy{
+  layer = 0,
+  x = 128,
+  y = 581,
+  direction = 0,
+  breed = "octorok",
+}
+
 tile{
   layer = 1,
   x = 288,
