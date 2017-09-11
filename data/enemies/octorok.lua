@@ -18,7 +18,7 @@ local movement
 -- Quelques paramètres
 local walking_time = 700 --ms
 local idle_time = 300 --ms
-local change_to_throw = 20 --%
+local chance_to_throw = 20 --%
 local speed = 32
 
 
@@ -51,7 +51,7 @@ function idle()
   movement:stop()
   sprite:set_animation("stopped")
   -- Soit on lance un caillou
-  if math.random(100) < 20 then
+  if math.random(100) < chance_to_throw then
     sol.timer.start(enemy, idle_time/2, throw_rock)
   else -- Soit on recommence la séquence
     sol.timer.start(enemy, idle_time, function()
