@@ -22,7 +22,7 @@ function entity:on_created()
 
   -- Création du mouvement
   movement = sol.movement.create("straight")
-  movement:set_speed(64)
+  movement:set_speed(200)
   movement:set_smooth(false)
   -- Angle en radian à partir de la direction (0-3)
   movement:set_angle(math.pi / 2 * entity:get_direction())
