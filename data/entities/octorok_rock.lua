@@ -30,7 +30,7 @@ function entity:on_created()
 end
 
 function init_traversable()
-  -- Comme le caillou vole, il passe au dessus des murets ets sols spéciaux
+  -- Comme le caillou vole, il passe au dessus des murets et sols spéciaux
   entity:set_can_traverse_ground("low_wall", true)
   entity:set_can_traverse_ground("deep_water", true)
   entity:set_can_traverse_ground("shallow_water", true)

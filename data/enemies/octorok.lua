@@ -22,6 +22,9 @@ local chance_to_throw = 20 --%
 local speed = 40
 
 
+local restart_movement = true
+local distance = 0
+
 -- Event called when the enemy is initialized.
 function enemy:on_created()
 
@@ -37,9 +40,11 @@ end
 -- it was hurt or immobilized.
 function enemy:on_restarted()
   -- Création du mouvement ciblé sur le héro
-  movement = sol.movement.create("target")
-  movement:set_target(map:get_hero())
+  restart_movement = true
+  distance = 0
+  movement = sol.movement.create("path")
   movement:set_speed(speed)
+  movement:set_path{2*enemy:get_direction4_to(map:get_hero())}
   movement:start(enemy)
 
   -- On le laisse marcher un certain temps
@@ -48,10 +53,11 @@ end
 
 function idle()
   -- Puis on l'arrête
+  restart_movement = false
   movement:stop()
   sprite:set_animation("stopped")
   -- Soit on lance un caillou
-  if math.random(100) < 20 then
+  if math.random(100) < chance_to_throw then
     sol.timer.start(enemy, idle_time/2, throw_rock)
   else -- Soit on recommence la séquence
     sol.timer.start(enemy, idle_time, function()
@@ -84,3 +90,11 @@ function enemy:on_movement_changed(movement)
   sprite:set_direction(direction4)
 end
 
+
+function enemy:on_position_changed(x, y, layer)
+  distance = distance + 1
+  if restart_movement and distance >= 7 then
+    movement:set_path{2*enemy:get_direction4_to(map:get_hero())}
+    distance = 0
+  end
+end
