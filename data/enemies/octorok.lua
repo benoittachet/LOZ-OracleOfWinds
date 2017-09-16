@@ -94,7 +94,7 @@ end
 function enemy:on_position_changed(x, y, layer)
   distance = distance + 1
   if restart_movement and distance >= 7 then
-    movement:set_path{2*enemy:get_direction4_to(map:get_hero())}
+    movement:set_path{2*enemy:get_direction4_to(hero)}
     distance = 0
   end
 end
