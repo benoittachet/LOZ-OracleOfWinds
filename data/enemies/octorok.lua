@@ -18,7 +18,8 @@ local movement
 -- Quelques paramètres
 local walking_time = 700 --ms
 local idle_time = 500 --ms
-local chance_to_throw = 20 --%
+local firing_time = 50 --ms
+local chance_to_throw = 80 --%
 local speed = 40
 
 
@@ -58,7 +59,10 @@ function idle()
   sprite:set_animation("stopped")
   -- Soit on lance un caillou
   if math.random(100) < chance_to_throw then
-    sol.timer.start(enemy, idle_time/2, throw_rock)
+    sol.timer.start(enemy, idle_time/2, function()
+      sprite:set_animation("firing")
+      sol.timer.start(enemy,firing_time,throw_rock)
+    end)
   else -- Soit on recommence la séquence
     sol.timer.start(enemy, idle_time, function()
       enemy:restart()
@@ -77,9 +81,9 @@ function throw_rock()
   properties.direction = sprite:get_direction()
   -- Puis on la crée
   map:create_custom_entity(properties)
-  
+  sprite:set_animation("stopped")
   -- On recommence la séquence
-  sol.timer.start(enemy, idle_time/2, function()
+  sol.timer.start(enemy, idle_time/2 - firing_time, function()
     enemy:restart()
   end)
 end
