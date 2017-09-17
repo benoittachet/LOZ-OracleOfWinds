@@ -41,6 +41,17 @@ animation{
   },
 }
 animation{
+  name = "spin_attack",
+  src_image = "main_heroes/Link_Spin_Attack.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 8 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 8 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 8 },
+  },
+}
+animation{
   name = "sword",
   src_image = "main_heroes/Charset_Link.png",
   frame_delay = 50,
