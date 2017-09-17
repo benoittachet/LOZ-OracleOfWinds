@@ -18,8 +18,7 @@ local movement
 -- Quelques paramètres
 local walking_time = 700 --ms
 local idle_time = 500 --ms
-local firing_time = 100 --ms 
-local chance_to_throw = 50 --%
+local chance_to_throw = 20 --%
 local speed = 40
 
 
@@ -45,7 +44,7 @@ function enemy:on_restarted()
   distance = 0
   movement = sol.movement.create("path")
   movement:set_speed(speed)
-  movement:set_path{2*enemy:get_direction4_to(map:get_hero())}
+  movement:set_path{2*enemy:choose_direction()}
   movement:start(enemy)
 
   -- On le laisse marcher un certain temps
@@ -59,7 +58,7 @@ function idle()
   sprite:set_animation("stopped")
   -- Soit on lance un caillou
   if math.random(100) < chance_to_throw then
-    sol.timer.start(enemy, idle_time/2, function() sprite:set_animation("firing"); sol.timer.start(enemy,firing_time,throw_rock) end)
+    sol.timer.start(enemy, idle_time/2, throw_rock)
   else -- Soit on recommence la séquence
     sol.timer.start(enemy, idle_time, function()
       enemy:restart()
@@ -78,9 +77,9 @@ function throw_rock()
   properties.direction = sprite:get_direction()
   -- Puis on la crée
   map:create_custom_entity(properties)
+  
   -- On recommence la séquence
-  sprite:set_animation("stopped")
-  sol.timer.start(enemy, idle_time/2 - firing_time, function()
+  sol.timer.start(enemy, idle_time/2, function()
     enemy:restart()
   end)
 end
@@ -92,10 +91,49 @@ function enemy:on_movement_changed(movement)
 end
 
 
+-- Fonction utilitaire
+function directions_from_angle(angle)
+  local directions = {}
+  angle = math.fmod(angle, 2*math.pi)
+  directions[0] = math.mod(math.floor(angle / (math.pi / 2) + 0.5), 4)
+  if directions[0] == 0 then
+    if angle > math.pi then
+      directions[1] = 3
+    else
+      directions[1] = 1
+    end
+  else
+    if angle - math.pi/2 * directions[0] > 0 then
+      directions[1] = math.mod(directions[0] + 1, 4)
+    else
+      directions[1] = math.mod(directions[0] - 1, 4)
+    end
+  end
+  directions[2] = math.mod(directions[1] + 2, 4)
+  directions[3] = math.mod(directions[0] + 2, 4)
+
+  return directions
+end
+
+function enemy:choose_direction()
+  local dirs = directions_from_angle(enemy:get_angle(map:get_hero()))
+  local continue = true
+  local i = 0
+  while continue and i < 4 do
+    if not enemy:test_obstacles((1-dirs[i])*math.mod(dirs[i]+1,2), (dirs[i]-2)*math.mod(dirs[i],2)) then
+      continue = false
+    else
+      i = i+1
+    end
+  end
+
+  return dirs[math.mod(i, 4)]
+end
+
 function enemy:on_position_changed(x, y, layer)
   distance = distance + 1
   if restart_movement and distance >= 7 then
-    movement:set_path{2*enemy:get_direction4_to(hero)}
+    movement:set_path{2*enemy:choose_direction()}
     distance = 0
   end
 end
