@@ -1,4 +1,5 @@
 map{ id = "Map1", description = "Map1" }
+map{ id = "Village/Village", description = "global" }
 map{ id = "donjon_etage", description = "1er etage" }
 map{ id = "donjon_rc", description = "donjon RC" }
 map{ id = "first_map", description = "First map" }
@@ -25,6 +26,7 @@ sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
 sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
 sprite{ id = "door", description = "portes" }
+sprite{ id = "enemies/crab", description = "enemies/crab" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
@@ -82,6 +84,7 @@ sprite{ id = "things/steam", description = "steam" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
 
+music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman" }
 music{ id = "eduardo/boss", description = "Boss" }
 music{ id = "eduardo/cave", description = "Cave" }
 music{ id = "eduardo/dungeon_finished", description = "Dungeon finished" }
@@ -220,6 +223,7 @@ sound{ id = "wrong3", description = "wrong3" }
 item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "small_key", description = "petite cle" }
 
+enemy{ id = "crab", description = "crab" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }

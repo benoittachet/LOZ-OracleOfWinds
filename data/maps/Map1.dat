@@ -353,7 +353,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 256,
+  y = 240,
   width = 128,
   height = 224,
   pattern = "6",
@@ -5726,6 +5726,14 @@ enemy{
   y = 581,
   direction = 0,
   breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 557,
+  direction = 0,
+  breed = "crab",
 }
 
 tile{
