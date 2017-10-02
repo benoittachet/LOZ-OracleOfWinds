@@ -29,6 +29,8 @@ function entity:on_created()
  x = x, y = y, layer = layer --Étrangement, mettre le get_position ici ne marchait pas
 })
 
+  self:remove()
+
 end
 end
 

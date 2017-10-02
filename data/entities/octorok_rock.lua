@@ -53,8 +53,7 @@ function entity:on_position_changed(x, y, layer)
   local hero = map:get_hero()  
   if entity:overlaps(hero) then
     -- TODO : ajouter la gestion du bouclier quand il y en aura un
-    hero:start_hurt(entity, 1)
-    game:set_life(game:get_life() - 2)
+    hero:start_hurt(entity, 2)
     -- TODO : Jouer un son, rajouter une animation de pierre qui se casse
     entity:remove()
   end
