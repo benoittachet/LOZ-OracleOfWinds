@@ -8554,6 +8554,13 @@ separator{
   height = 16,
 }
 
+destructible{
+  layer = 0,
+  x = 896,
+  y = 189,
+  sprite = "",
+}
+
 tile{
   layer = 1,
   x = 64,
