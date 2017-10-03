@@ -1,4 +1,13 @@
 dialog{
+  id = "_treasure.rock_feather.1",
+  text = [[
+Vous avez trouvé la plume de roc.
+
+BAH VAS Y SAUTE
+]]
+}
+
+dialog{
   id = "_treasure.small_key.1",
   text = [[
 Vous avez trouvé une petite clé !
