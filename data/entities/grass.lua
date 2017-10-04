@@ -23,7 +23,7 @@ function entity:on_created()
     
   map:create_destructible({
  
-  sprite = "entities/grass",
+  sprite = "entities/grass_dark",
   can_be_cut = true,
   ground = "grass",
  x = x, y = y, layer = layer --Étrangement, mettre le get_position ici ne marchait pas
