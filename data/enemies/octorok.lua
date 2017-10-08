@@ -26,6 +26,10 @@ local speed = 40
 local restart_movement = true
 local distance = 0
 
+local goal_direction = -1
+local forbidden_direction = -1
+local counter = 0
+
 -- Event called when the enemy is initialized.
 function enemy:on_created()
 
@@ -45,8 +49,16 @@ function enemy:on_restarted()
   distance = 0
   movement = sol.movement.create("path")
   movement:set_speed(speed)
-  movement:set_path{2*enemy:choose_direction()}
+  local dir = enemy:choose_direction()
+  movement:set_path{2*dir, 2*dir}
   movement:start(enemy)
+
+  if counter > 0 then
+    counter = counter - 1
+  else
+    forbidden_direction = -1
+    goal_direction = -1
+  end
 
   -- On le laisse marcher un certain temps
   sol.timer.start(enemy, walking_time, idle)
@@ -96,48 +108,89 @@ end
 
 
 -- Fonction utilitaire
+-- On construit un tableau de 4 éléments qui contient les 4 directions dans l'ordre
+-- de celle qui est la plus proche de l'angle donné à celle qui est la plus éloignée
 function directions_from_angle(angle)
   local directions = {}
+  -- On vérifie que l'angle est dans [0, 2π[
   angle = math.fmod(angle, 2*math.pi)
-  directions[0] = math.mod(math.floor(angle / (math.pi / 2) + 0.5), 4)
+  -- On divise l'angle par π/2, on a quelque chose dans [0, 4[
+  -- Entre 0.5 et 1.5, c'est la direction haut (1), entre 1.5 et 2.5 c'est gauche (2)...
+  -- Cas particulier pour droite (0) qui est > 3.5 ou < 0.5
+  -- Du coup on rajoute 0.5, on a donc : 
+  --  < 1 -> droite : 0
+  --  > 1 et < 2 ->haut : 1 ...
+  -- On prend donc l'arrondi au dessous (floor) modulo 4 pour revenir à 0 quand on est à 4
+  directions[0] = math.floor(angle / (math.pi / 2) + 0.5) % 4
+  -- Selon de quel côté (> ou <) l'angle se trouve par rapport à la direction principale,
+  -- la direcion secondaire n'est pas la même. Cas particulier où la direction principale est la droite
   if directions[0] == 0 then
     if angle > math.pi then
+      -- Angle plus vers le bas
       directions[1] = 3
     else
+      -- Angle plus vers le haut
       directions[1] = 1
     end
   else
     if angle - math.pi/2 * directions[0] > 0 then
-      directions[1] = math.mod(directions[0] + 1, 4)
+      -- L'angle est plus grand que la direction ramenée à un angle
+      directions[1] = (directions[0] + 1) % 4
+      -- On est plus proche de direction suivante
     else
-      directions[1] = math.mod(directions[0] - 1, 4)
+      -- Sinon, on est plus proche de la direction précédente
+      directions[1] = (directions[0] - 1) % 4
     end
   end
-  directions[2] = math.mod(directions[1] + 2, 4)
-  directions[3] = math.mod(directions[0] + 2, 4)
+  -- La troisième direction est l'opposée de la deuxième
+  directions[2] = (directions[1] + 2) % 4
+  -- La quatrième est l'opposée de la première
+  directions[3] = (directions[0] + 2) % 4
 
   return directions
 end
 
 function enemy:choose_direction()
+
+
+  -- On récupère les directions 
   local dirs = directions_from_angle(enemy:get_angle(map:get_hero()))
   local continue = true
   local i = 0
   while continue and i < 4 do
-    if not enemy:test_obstacles((1-dirs[i])*math.mod(dirs[i]+1,2), (dirs[i]-2)*math.mod(dirs[i],2)) then
-      continue = false
+    -- On teste s'il y a un obstacle à côté de l'ennemi dans la direction dims[i]
+    if not enemy:test_obstacles((1-dirs[i])*((dirs[i]+1) % 2), (dirs[i]-2)*(dirs[i] % 2)) then
+      if  i == 2 or i == 3 or dirs[i] ~= forbidden_direction then
+        continue = false
+      else
+        i = i+1
+      end
     else
       i = i+1
     end
   end
 
-  return dirs[math.mod(i, 4)]
+  if i ==0 and dirs[0] == goal_direction then
+    goal_direction = -1
+    forbidden_direction = -1
+  end
+  if i == 1 then
+    goal_direction = dirs[0]
+    forbidden_direction = dirs[2]
+    counter = 2
+  end
+  if i == 2 and dirs[2] == (goal_direction + 2) % 4 then
+    i = 3
+  end
+
+  return dirs[i % 4]
 end
 
 function enemy:on_position_changed(x, y, layer)
   distance = distance + 1
-  if restart_movement and distance >= 7 then
-    movement:set_path{2*enemy:choose_direction()}
+  if restart_movement and distance >= 8 then
+    local dir = enemy:choose_direction()
+    movement:set_path{2*dir, 2*dir}
     distance = 0
   end
 end
