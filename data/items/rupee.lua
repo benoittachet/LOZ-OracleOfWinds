@@ -15,6 +15,7 @@ local game = item:get_game()
 function item:on_started()
 
   item:set_sound_when_picked("heart")
+  item:set_brandish_when_picked(false)
 end
 
 function item:on_obtained()
