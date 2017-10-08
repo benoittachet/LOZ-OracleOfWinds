@@ -52,7 +52,7 @@ function rupees_builder:new(game, config)
 
       if money_displayed == money  -- The final value was just reached.
           or money_displayed % 3 == 0 then  -- Otherwise, play sound "rupee_counter_end" every 3 values.
-        sol.audio.play_sound("rupee_counter_end")
+        sol.audio.play_sound("heart")
       end
     end
 
