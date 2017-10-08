@@ -6,5 +6,6 @@
 -- or uncommenting lines below.
 
 require("scripts/meta/hero")
+require("scripts/hud/hud")
 
 return true
