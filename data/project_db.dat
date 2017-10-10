@@ -225,8 +225,13 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "heart", description = "heart" }
 item{ id = "ice_seed", description = "Graine de glace" }
+item{ id = "random", description = "Loot" }
+item{ id = "rock_feather", description = "Plume de Roc" }
+item{ id = "rupee", description = "rupee" }
 item{ id = "small_key", description = "petite cle" }
+item{ id = "sword", description = "sword" }
 
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "octorok", description = "Octorok" }
@@ -234,6 +239,7 @@ enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "deep_water", description = "eau profonde" }
+entity{ id = "grass", description = "grass" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "waterfall", description = "cascade" }
 
