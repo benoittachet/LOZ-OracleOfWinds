@@ -34,6 +34,13 @@ local hud_config = {
     slot = 1,  -- Item slot (1 or 2).
   },
 
+  -- Item assgned to slot 2
+  {
+    menu_script = "scripts/hud/item",
+    x = 67,
+    y = 15,
+    slot = 2
+  },
 
   -- You can add more HUD elements here.
 }
