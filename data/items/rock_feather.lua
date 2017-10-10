@@ -15,11 +15,16 @@ local hero = game:get_hero()
 
 function item:on_created()
 
- self:set_savegame_variable("possession_rockfeather")
+  self:set_savegame_variable("possession_rockfeather")
+  self:set_assignable(true)
 end 
 -- Event called when the hero is using this item.
 function item:on_using()
   local hero = item:get_map():get_entity("hero")
   hero:start_jumping(hero:get_direction()*2,32)
   item:set_finished()
+end
+
+function item:on_obtained()
+  game:set_item_assigned(1, item)
 end
