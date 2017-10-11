@@ -1,5 +1,6 @@
-map{ id = "Map1", description = "Map1" }
+map{ id = "Outdoors/plageNord", description = "Plage du Nord" }
 map{ id = "Village/Village", description = "global" }
+map{ id = "Villages/Village", description = "Villages/Village" }
 map{ id = "WorldMap_01/Grotte_01", description = "WorldMap_01/Grotte_01" }
 map{ id = "WorldMap_01/Grotte_02", description = "WorldMap_01/Grotte_02" }
 map{ id = "WorldMap_01/Grotte_03", description = "WorldMap_01/Grotte_03" }
@@ -40,11 +41,14 @@ sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/chest", description = "Chest" }
+sprite{ id = "entities/coconut_left", description = "noix de coco" }
+sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
+sprite{ id = "entities/flowers", description = "buissons de fleurs" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
 sprite{ id = "entities/grass_darker", description = "entities/grass_darker" }
@@ -53,6 +57,7 @@ sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
 sprite{ id = "entities/pot", description = "Pot" }
+sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
@@ -69,6 +74,8 @@ sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
+sprite{ id = "hud/gameover_fade", description = "hud/gameover_fade" }
+sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "main_heroes/Link", description = "main_heroes/Link" }
 sprite{ id = "main_heroes/eldran", description = "Eldran" }
 sprite{ id = "main_heroes/robyne", description = "Robyne" }
@@ -225,11 +232,13 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "bomb", description = "bomb" }
 item{ id = "heart", description = "heart" }
 item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "random", description = "Loot" }
 item{ id = "rock_feather", description = "Plume de Roc" }
 item{ id = "rupee", description = "rupee" }
+item{ id = "shield", description = "shield" }
 item{ id = "small_key", description = "petite cle" }
 item{ id = "sword", description = "sword" }
 

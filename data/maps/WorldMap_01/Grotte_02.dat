@@ -307,15 +307,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 288,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 176,
   width = 16,
@@ -366,51 +357,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "33",
 }
 
 tile{
@@ -847,15 +793,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
   x = 136,
   y = 16,
   width = 16,
@@ -863,31 +800,93 @@ tile{
   pattern = "32",
 }
 
-tile{
+destructible{
   layer = 0,
-  x = 136,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "33",
+  x = 128,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/bush",
 }
 
-tile{
+destructible{
+  layer = 0,
+  x = 144,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 160,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 160,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 128,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
   layer = 0,
   x = 120,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "33",
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/bush",
 }
 
-tile{
+destructible{
   layer = 0,
-  x = 152,
-  y = 16,
-  width = 16,
-  height = 32,
-  pattern = "33",
+  x = 88,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 125,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/rock",
+  weight = 1,
 }
 
 tile{

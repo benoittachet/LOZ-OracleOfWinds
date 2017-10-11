@@ -13,10 +13,24 @@ animation{
   },
 }
 animation{
+  name = "heart",
+  src_image = "hud/hearts.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
   name = "ice_seed",
   src_image = "entities/items.png",
   directions = {
     { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "random",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 8, origin_y = 8 },
   },
 }
 animation{

@@ -1,4 +1,4 @@
--- Lua script of map first_map.
+-- Lua script of map Village/Village.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
