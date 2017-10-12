@@ -6779,6 +6779,7 @@ destructible{
   y = 509,
   treasure_name = "random",
   sprite = "entities/bush",
+  can_be_cut = true,
 }
 
 destructible{
