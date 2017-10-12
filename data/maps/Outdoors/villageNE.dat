@@ -8152,14 +8152,6 @@ separator{
   height = 720,
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 176,
-  y = 365,
-  direction = 1,
-}
-
 separator{
   layer = 0,
   x = 632,

@@ -1,6 +1,6 @@
 map{ id = "Outdoors/plageNord", description = "Plage du Nord" }
+map{ id = "Outdoors/villageNE", description = "village nord" }
 map{ id = "Village/Village", description = "global" }
-map{ id = "Villages/Village", description = "Villages/Village" }
 map{ id = "WorldMap_01/Grotte_01", description = "WorldMap_01/Grotte_01" }
 map{ id = "WorldMap_01/Grotte_02", description = "WorldMap_01/Grotte_02" }
 map{ id = "WorldMap_01/Grotte_03", description = "WorldMap_01/Grotte_03" }

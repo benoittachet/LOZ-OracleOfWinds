@@ -5733,7 +5733,7 @@ teletransporter{
   y = 256,
   width = 16,
   height = 32,
-  destination_map = "Village/Village",
+  destination_map = "Outdoors/villageNE",
   destination = "village_entrance",
 }
 
