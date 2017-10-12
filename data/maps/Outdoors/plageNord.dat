@@ -7718,7 +7718,8 @@ teletransporter{
   y = 576,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/plageNord",
+  destination_map = "WorldMap_01/Grotte_03",
+  destination = "Entree_Grotte_02_Bas",
 }
 
 teletransporter{
@@ -7727,7 +7728,8 @@ teletransporter{
   y = 480,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/plageNord",
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Milieu",
 }
 
 teletransporter{
@@ -7736,7 +7738,8 @@ teletransporter{
   y = 368,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/plageNord",
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Haut",
 }
 
 teletransporter{
