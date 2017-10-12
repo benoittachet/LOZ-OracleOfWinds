@@ -4240,78 +4240,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 0,
   width = 144,
@@ -5663,8 +5591,8 @@ tile{
 destination{
   name = "destination",
   layer = 0,
-  x = 568,
-  y = 349,
+  x = 440,
+  y = 525,
   direction = 1,
   default = true,
 }
@@ -5677,14 +5605,6 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 40,
-}
-
-separator{
-  layer = 0,
-  x = 8,
-  y = 472,
-  width = 640,
-  height = 16,
 }
 
 enemy{
@@ -6779,6 +6699,7 @@ destructible{
   y = 509,
   treasure_name = "random",
   sprite = "entities/bush",
+  can_be_cut = true,
 }
 
 destructible{
@@ -7727,6 +7648,107 @@ destructible{
   weight = -1,
   can_be_cut = true,
   ground = "grass",
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 472,
+  width = 640,
+  height = 16,
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destination{
+  name = "Sortie_Grotte_01",
+  layer = 0,
+  x = 504,
+  y = 253,
+  direction = 1,
+}
+
+destination{
+  name = "Sortie_Grotte_02_Milieu",
+  layer = 0,
+  x = 424,
+  y = 493,
+  direction = 1,
+}
+
+destination{
+  name = "Sortie_Grotte_02_haut",
+  layer = 0,
+  x = 360,
+  y = 381,
+  direction = 1,
+}
+
+destination{
+  name = "Sortie_Grotte_02_Bas",
+  layer = 0,
+  x = 424,
+  y = 589,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 416,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_03",
+  destination = "Entree_Grotte_02_Bas",
+}
+
+teletransporter{
+  layer = 0,
+  x = 416,
+  y = 480,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Milieu",
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Haut",
+}
+
+teletransporter{
+  layer = 0,
+  x = 496,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_01",
 }
 
 tile{
