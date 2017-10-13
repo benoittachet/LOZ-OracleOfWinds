@@ -1,4 +1,4 @@
--- Lua script of map outdoor.
+-- Lua script of map Map1.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
