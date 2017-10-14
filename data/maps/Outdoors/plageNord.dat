@@ -5588,11 +5588,31 @@ tile{
   pattern = "190",
 }
 
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Haut",
+}
+
+teletransporter{
+  layer = 0,
+  x = 416,
+  y = 480,
+  width = 16,
+  height = 16,
+  destination_map = "WorldMap_01/Grotte_02",
+  destination = "Entree_Grotte_02_Milieu",
+}
+
 destination{
   name = "destination",
   layer = 0,
-  x = 440,
-  y = 525,
+  x = 576,
+  y = 381,
   direction = 1,
   default = true,
 }
@@ -7692,14 +7712,14 @@ destination{
   name = "Sortie_Grotte_02_Milieu",
   layer = 0,
   x = 424,
-  y = 493,
+  y = 501,
   direction = 1,
 }
 
 destination{
   name = "Sortie_Grotte_02_haut",
   layer = 0,
-  x = 360,
+  x = 368,
   y = 381,
   direction = 1,
 }
@@ -7708,7 +7728,7 @@ destination{
   name = "Sortie_Grotte_02_Bas",
   layer = 0,
   x = 424,
-  y = 589,
+  y = 597,
   direction = 1,
 }
 
@@ -7720,26 +7740,6 @@ teletransporter{
   height = 16,
   destination_map = "WorldMap_01/Grotte_03",
   destination = "Entree_Grotte_02_Bas",
-}
-
-teletransporter{
-  layer = 0,
-  x = 416,
-  y = 480,
-  width = 16,
-  height = 16,
-  destination_map = "WorldMap_01/Grotte_02",
-  destination = "Entree_Grotte_02_Milieu",
-}
-
-teletransporter{
-  layer = 0,
-  x = 352,
-  y = 368,
-  width = 16,
-  height = 16,
-  destination_map = "WorldMap_01/Grotte_02",
-  destination = "Entree_Grotte_02_Haut",
 }
 
 teletransporter{
