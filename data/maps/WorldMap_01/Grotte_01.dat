@@ -457,7 +457,15 @@ destination{
   name = "Grotte_01",
   layer = 0,
   x = 160,
-  y = 237,
+  y = 229,
   direction = 1,
+}
+
+chest{
+  layer = 0,
+  x = 160,
+  y = 125,
+  treasure_name = "rock_feather",
+  sprite = "entities/chest",
 }
 
