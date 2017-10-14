@@ -21,7 +21,7 @@ local movement
 local walking_time = 700 --ms
 local idle_time = 700 --ms
 local firing_time = 50 --ms
-local chance_to_throw = 80 --%
+local chance_to_throw = 30 --%
 local speed = 40
 
 
