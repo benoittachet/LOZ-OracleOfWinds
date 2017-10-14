@@ -875,7 +875,7 @@ tile{
 tile{
   layer = 0,
   x = 304,
-  y = 208,
+  y = 192,
   width = 16,
   height = 16,
   pattern = "5",
@@ -976,6 +976,19 @@ stairs{
   y = 64,
   direction = 1,
   subtype = 4,
+}
+
+wall{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 80,
+  height = 64,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
