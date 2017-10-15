@@ -1,4 +1,4 @@
--- Lua script of map Village/Village.
+-- Lua script of map Outdoors/Foret.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.

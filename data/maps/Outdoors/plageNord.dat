@@ -5660,6 +5660,96 @@ tile{
   pattern = "6",
 }
 
+tile{
+  layer = 0,
+  x = 632,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "225",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "224",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "225",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "224",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "235",
+}
+
 teletransporter{
   layer = 0,
   x = 352,
@@ -6832,17 +6922,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 408,
-  y = 557,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
   x = 392,
   y = 557,
   treasure_name = "random",
@@ -7728,6 +7807,22 @@ separator{
   y = 472,
   width = 640,
   height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 720,
+}
+
+separator{
+  layer = 0,
+  x = 632,
+  y = 624,
+  width = 16,
+  height = 96,
 }
 
 tile{
