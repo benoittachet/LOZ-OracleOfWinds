@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "Tileset Overworld Z1",
+  music = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_",
 }
 
 tile{
@@ -5750,6 +5751,15 @@ tile{
   pattern = "235",
 }
 
+tile{
+  layer = 0,
+  x = 560,
+  y = 288,
+  width = 32,
+  height = 32,
+  pattern = "191",
+}
+
 teletransporter{
   layer = 0,
   x = 352,
@@ -7494,8 +7504,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 616,
-  y = 461,
+  x = 600,
+  y = 445,
   treasure_name = "random",
   sprite = "entities/rock",
   weight = 1,
@@ -7754,7 +7764,7 @@ destination{
   name = "Sortie_Grotte_01",
   layer = 0,
   x = 504,
-  y = 253,
+  y = 261,
   direction = 1,
 }
 
@@ -7823,6 +7833,33 @@ separator{
   y = 624,
   width = 16,
   height = 96,
+}
+
+destructible{
+  layer = 0,
+  x = 600,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/rock",
+  weight = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 528,
+  y = 704,
+  width = 64,
+  height = 16,
+  destination_map = "Outdoors/Foret",
+  destination = "Entreeforet",
+}
+
+destination{
+  name = "sortieforet",
+  layer = 0,
+  x = 560,
+  y = 709,
+  direction = 1,
 }
 
 tile{
