@@ -1400,3 +1400,11 @@ separator{
   height = 256,
 }
 
+separator{
+  layer = 0,
+  x = 0,
+  y = 232,
+  width = 560,
+  height = 16,
+}
+
