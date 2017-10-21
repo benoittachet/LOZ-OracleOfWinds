@@ -52,8 +52,9 @@ function directions_from_angle(angle)
 end
 
 -- Fonction utilitaire qui teste la présence d'un obstacle à côté d'une entitée dans la direction donnée
-function test_obstacles_dir(entity, dir)
-  return entity:test_obstacles((1-dir)*((dir+1) % 2), (dir-2)*(dir % 2))
+function test_obstacles_dir(entity, dir, distance)
+  local distance = distance or 1
+  return entity:test_obstacles((1-dir)*((dir+1) % 2)*distance, (dir-2)*(dir % 2)*distance)
 end
 
 
@@ -64,9 +65,9 @@ function choose_direction(enemy)
   local dirs = directions_from_angle(enemy:get_angle(map:get_hero()))
   local continue = true
   local i = 0
-  
+
   while continue and i < 4 do
-    print(i)
+  --  print(i)
     -- On teste s'il y a un obstacle à côté de l'ennemi dans la direction dirs[i]
     -- Ou s'il s'agit de la direction "interdite" pour éviter l'effet "yoyo"
     -- Ou si c'est d'où vient (on accepte le demi-tour si c'est la seule solution)
@@ -103,6 +104,18 @@ function choose_direction(enemy)
   return dirs[i % 4]
 end
 
+function choose_random_direction(entity,callback)
+  local dirs = {}
+  local i = 0
+  callback = callback or (function(entity,dir) return dir end)
+  for dir = 0,4 do
+    if callback(entity,dir) then
+      i = i + 1
+      dirs[i] = dir
+    end
+  end
+  return dirs[math.random(1,i)]
+end
 
 -- Fonction qui lance le mouvement vers le héros
 function target_hero(enemy, speed)

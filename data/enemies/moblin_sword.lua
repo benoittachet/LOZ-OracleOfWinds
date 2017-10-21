@@ -8,12 +8,18 @@
 -- of types, events and methods:
 -- http://www.solarus-games.org/doc/latest
 
+
 local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
+
+local movement_distance = 48
+
+enemy.choose_random_direction = choose_random_direction
+enemy.test_obstacles_dir = test_obstacles_dir
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()
@@ -29,9 +35,24 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
+sol.timer.start(2000,function()
+      enemy:move(movement_distance)
+end)
 
-  movement = sol.movement.create("target")
-  movement:set_target(hero)
-  movement:set_speed(48)
-  movement:start(enemy)
 end
+
+function enemy:move(distance)
+  movement = sol.movement.create("straight")
+  movement:set_speed(48)
+  movement:set_angle(enemy.choose_random_direction(enemy,enemy.test_obstacles_dir))
+  
+  movement:set_max_distance(distance)
+  movement:start(enemy)
+
+  function movement:on_finished()
+    sol.timer.start(2000,function()
+      enemy:move(movement_distance)
+end)
+end
+end
+
