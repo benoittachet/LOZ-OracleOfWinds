@@ -108,7 +108,7 @@ function choose_random_direction(entity,callback)
   local dirs = {}
   local i = 0
   callback = callback or (function(entity,dir) return dir end)
-  for dir = 0,4 do
+  for dir = 0,3 do
     if callback(entity,dir) then
       i = i + 1
       dirs[i] = dir

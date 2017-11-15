@@ -17,6 +17,17 @@ local sprite
 local movement
 
 local movement_distance = 48
+movement = sol.movement.create("straight")
+movement:set_speed(48)
+function movement:on_finished()
+  print("idle")
+  sol.timer.start(2000,function()
+    enemy:move(movement_distance)
+    print("move")
+    return false
+  end)
+end
+
 
 enemy.choose_random_direction = choose_random_direction
 enemy.test_obstacles_dir = test_obstacles_dir
@@ -27,32 +38,30 @@ function enemy:on_created()
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(1)
+  enemy:set_life(10)
   enemy:set_damage(1)
 end
 
 -- Event called when the enemy should start or restart its movements.
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
-function enemy:on_restarted()
-sol.timer.start(2000,function()
-      enemy:move(movement_distance)
-end)
+function enemy:on_started()
+  print("idle (restarted)")
+  sol.timer.start(5000,function()
+    enemy:move(movement_distance)
+    print("move")
+    return false
+  end)
 
 end
 
 function enemy:move(distance)
-  movement = sol.movement.create("straight")
-  movement:set_speed(48)
-  movement:set_angle(enemy.choose_random_direction(enemy,enemy.test_obstacles_dir))
   
-  movement:set_max_distance(distance)
+  movement:set_angle(enemy.choose_random_direction(enemy,function(enemy,dir) return not enemy:test_obstacles_dir(dir,movement_distance) end)*math.pi/2)
+  
+  movement:set_max_distance(distance)   
   movement:start(enemy)
 
-  function movement:on_finished()
-    sol.timer.start(2000,function()
-      enemy:move(movement_distance)
-end)
-end
+ 
 end
 
