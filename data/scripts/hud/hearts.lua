@@ -99,7 +99,7 @@ function hearts_builder:new(game, config)
       y = height + y
     end
 
-    hearts.surface:draw(dst_surface, x, y + 18)
+    hearts.surface:draw(dst_surface, x, y)
   end
 
   -- Checks whether the view displays correct information
