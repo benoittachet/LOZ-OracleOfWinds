@@ -62,17 +62,17 @@ function sol.main:on_key_pressed(key, modifiers)
   return handled
 end
 
-function sol.main.game:on_map_changed(map)
-  local camera = map:get_camera()
-  camera:set_size(320,240)
-  camera:set_position_on_screen(0, 32)
-end  
-
 -- Starts a game.
 function sol.main:start_savegame(game)
 
   -- Skip initial menus if any.
   sol.menu.stop(solarus_logo)
+
+ function game:on_map_changed(map)
+    local camera = map:get_camera()
+    camera:set_size(320,240)
+   camera:set_position_on_screen(0, 24)
+  end  
 
   sol.main.game = game
   game:start()
