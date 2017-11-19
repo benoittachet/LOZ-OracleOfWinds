@@ -11,6 +11,11 @@
 -- of the screen, respectively.
 
 local hud_config = {
+    {
+    menu_script = "scripts/hud/background",
+    x = 0,
+    y = 0,
+   }, 
 
   -- Hearts meter.
   {
@@ -42,11 +47,7 @@ local hud_config = {
     slot = 2
   },
     
-  {
-    menu_script = "scripts/hud/background",
-    x = 0,
-    y = 0,
-   } 
+
   -- You can add more HUD elements here.
 }
 
