@@ -11,3 +11,5 @@ function background_builder:new(game,config)
   
   return background
 end
+
+return background_builder
