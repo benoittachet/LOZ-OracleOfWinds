@@ -9,7 +9,7 @@ function rupees_builder:new(game, config)
   local rupees = {}
 
   local digits_text = sol.text_surface.create({
-    font = "8_bit",
+    font = "8_bit OOS",
     horizontal_alignment = "left",
     vertical_alignment = "top",
   })
@@ -29,7 +29,7 @@ function rupees_builder:new(game, config)
     end
 
     rupee_icon_img:draw(dst_surface, x + 8, y)
-    digits_text:draw(dst_surface, x, y + 10)
+    digits_text:draw(dst_surface, x, y + 12)
   end
 
   -- Checks whether the view displays correct information
@@ -66,9 +66,9 @@ function rupees_builder:new(game, config)
 
       -- Show in green if the maximum is reached.
       if money_displayed == max_money then
-        digits_text:set_font("8_bit")
+        digits_text:set_font("8_bit OOS")
       else
-        digits_text:set_font("8_bit")
+        digits_text:set_font("8_bit OOS")
       end
     end
 

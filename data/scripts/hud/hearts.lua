@@ -8,7 +8,7 @@ function hearts_builder:new(game, config)
 
   local hearts = {}
 
-  hearts.surface = sol.surface.create(80, 16)
+  hearts.surface = sol.surface.create(60, 12)
   hearts.dst_x = config.x
   hearts.dst_y = config.y
   hearts.max_life_displayed = game:get_max_life()
@@ -38,53 +38,53 @@ function hearts_builder:new(game, config)
       if j % 4 == 0 then
         local x, y
         if j <= 20 then
-          x = 2 * (j - 4)
+          x = 3 * (j - 4)
           y = 0
         else
-          x = 2 * (j - 24)
+          x = 3 * (j - 24)
           y = 8
         end
         if life >= j then
-          hearts_img:draw_region(0, 0, 8, 8, hearts.surface, x, y)
+          hearts_img:draw_region(0, 0, 12, 12, hearts.surface, x, y)
         else
-          hearts_img:draw_region(32, 0, 8, 8, hearts.surface, x, y)
+          hearts_img:draw_region(48, 0, 12, 12, hearts.surface, x, y)
         end
       end
     end
     if life % 4 == 3 then
       local x, y
       if life <= 20 then
-        x = 2 * (life - 3)
+        x = 3 * (life - 3)
         y = 0
       else
-        x = 2 * (life - 23)
+        x = 3 * (life - 23)
         y = 8
       end
-      hearts_img:draw_region(8, 0, 8, 8, hearts.surface, x, y)
+      hearts_img:draw_region(12, 0, 12, 12, hearts.surface, x, y)
     end
 
     if life % 4 == 2 then
       local x, y
       if life <= 20 then
-        x = 2 * (life - 2)
+        x = 3 * (life - 2)
         y = 0
       else
-        x = 2 * (life - 22)
+        x = 3 * (life - 22)
         y = 8
       end
-      hearts_img:draw_region(16, 0, 8, 8, hearts.surface, x, y)
+      hearts_img:draw_region(24, 0, 12, 21, hearts.surface, x, y)
     end
 
     if life % 4 == 1 then
       local x, y
       if life <= 20 then
-        x = 2 * (life - 1)
+        x = 3 * (life - 1)
         y = 0
       else
-        x = 2 * (life - 21)
+        x = 3 * (life - 21)
         y = 8
       end
-      hearts_img:draw_region(24, 0, 8, 8, hearts.surface, x, y)
+      hearts_img:draw_region(36, 0, 12, 12, hearts.surface, x, y)
     end
   end
 
