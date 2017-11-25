@@ -3341,24 +3341,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 704,
-  y = -16,
-  width = 224,
-  height = 32,
-  pattern = "276",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 0,
-  width = 256,
-  height = 32,
-  pattern = "276",
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 0,
   width = 32,
@@ -3553,6 +3535,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = -16,
+  width = 224,
+  height = 32,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 0,
+  width = 256,
+  height = 32,
+  pattern = "82",
 }
 
 separator{
