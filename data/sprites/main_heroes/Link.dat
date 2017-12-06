@@ -19,6 +19,28 @@ animation{
   },
 }
 animation{
+  name = "carrying_stopped",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 101, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 67, y = 356, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 33, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 83, y = 356, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "carrying_walking",
+  src_image = "main_heroes/Charset_Link.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 101, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 67, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 33, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+    { x = 0, y = 373, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
   name = "falling",
   src_image = "main_heroes/falling.png",
   frame_delay = 400,
