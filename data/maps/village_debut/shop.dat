@@ -236,7 +236,7 @@ tile{
 separator{
   layer = 0,
   x = 72,
-  y = 96,
+  y = 104,
   width = 224,
   height = 16,
 }
@@ -244,14 +244,14 @@ separator{
 separator{
   layer = 0,
   x = 64,
-  y = 240,
+  y = 232,
   width = 240,
   height = 16,
 }
 
 separator{
   layer = 0,
-  x = 288,
+  x = 280,
   y = 112,
   width = 16,
   height = 128,
@@ -259,9 +259,27 @@ separator{
 
 separator{
   layer = 0,
-  x = 64,
+  x = 72,
   y = 104,
   width = 16,
   height = 144,
+}
+
+destination{
+  name = "shop_entrance",
+  layer = 0,
+  x = 152,
+  y = 229,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 144,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "Outdoors/villageNE",
+  destination = "shop",
 }
 

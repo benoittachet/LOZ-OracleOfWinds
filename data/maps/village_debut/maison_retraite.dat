@@ -1462,3 +1462,22 @@ separator{
   height = 16,
 }
 
+destination{
+  name = "maison_retraite",
+  layer = 0,
+  x = 512,
+  y = 229,
+  direction = 1,
+}
+
+teletransporter{
+  name = "maison_retraite_sortie",
+  layer = 0,
+  x = 504,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "Outdoors/villageNE",
+  destination = "maison_retraite",
+}
+

@@ -425,14 +425,14 @@ tile{
 separator{
   layer = 0,
   x = -8,
-  y = 48,
+  y = 56,
   width = 272,
   height = 16,
 }
 
 separator{
   layer = 0,
-  x = 256,
+  x = 248,
   y = 64,
   width = 16,
   height = 96,
@@ -440,15 +440,15 @@ separator{
 
 separator{
   layer = 0,
-  x = 160,
-  y = 160,
+  x = 152,
+  y = 152,
   width = 112,
   height = 16,
 }
 
 separator{
   layer = 0,
-  x = 160,
+  x = 152,
   y = 168,
   width = 16,
   height = 80,
@@ -457,16 +457,35 @@ separator{
 separator{
   layer = 0,
   x = -16,
-  y = 240,
+  y = 232,
   width = 176,
   height = 16,
 }
 
 separator{
   layer = 0,
-  x = -16,
+  x = -8,
   y = 64,
   width = 16,
   height = 176,
+}
+
+destination{
+  name = "house_02_entrance",
+  layer = 0,
+  x = 48,
+  y = 229,
+  direction = 1,
+}
+
+teletransporter{
+  name = "house_02",
+  layer = 0,
+  x = 40,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "Outdoors/villageNE",
+  destination = "house_02",
 }
 
