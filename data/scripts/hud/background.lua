@@ -1,6 +1,6 @@
 local background_builder = {}
 
-local background_img = sol.surface.create(320,24)
+local background_img = sol.surface.create(200,24)
 background_img:fill_color{252,230,198}
 
 function background_builder:new(game,config)

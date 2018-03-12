@@ -255,5 +255,6 @@ entity{ id = "waterfall", description = "cascade" }
 language{ id = "en", description = "English" }
 
 font{ id = "8_bit", description = "8 bit" }
+font{ id = "8_bit OOS", description = "8_bit OOS" }
 font{ id = "minecraftia", description = "Minecraftia" }
 
