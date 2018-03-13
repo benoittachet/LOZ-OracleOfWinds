@@ -20,21 +20,21 @@ local hud_config = {
   -- Hearts meter.
   {
     menu_script = "scripts/hud/hearts",
-    x = -88,
+    x = -40,
     y = 4,
   },
 
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    x = 121,
+    x = 70,
     y = 1,
   },
 
   -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
-    x = 27,
+    x = 6,
     y = 1,
     slot = 1,  -- Item slot (1 or 2).
   },
@@ -42,7 +42,7 @@ local hud_config = {
   -- Item assgned to slot 2
   {
     menu_script = "scripts/hud/item",
-    x = 67,
+    x = 32,
     y = 1,
     slot = 2
   },
