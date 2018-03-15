@@ -9,8 +9,8 @@ quest{
   quest_version = "",
   release_date = "",
   website = "",
-  normal_quest_size = "160x152",
-  min_quest_size = "160x152",
-  max_quest_size = "160x152",
+  normal_quest_size = "160x144",
+  min_quest_size = "160x144",
+  max_quest_size = "160x144",
 }
 

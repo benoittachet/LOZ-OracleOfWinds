@@ -71,7 +71,7 @@ function sol.main:start_savegame(game)
  function game:on_map_changed(map)
     local camera = map:get_camera()
     camera:set_size(160,128)
-   camera:set_position_on_screen(0, 24)
+   camera:set_position_on_screen(0, 16)
   end  
 
   sol.main.game = game
