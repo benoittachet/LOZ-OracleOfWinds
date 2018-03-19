@@ -21,7 +21,7 @@ local hud_config = {
   {
     menu_script = "scripts/hud/hearts",
     x = -40,
-    y = 4,
+    y = 1,
   },
 
   -- Rupee counter.
