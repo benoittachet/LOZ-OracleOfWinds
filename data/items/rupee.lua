@@ -18,6 +18,11 @@ function item:on_started()
   item:set_brandish_when_picked(false)
 end
 
-function item:on_obtained()
-  game:add_money(1)
+function item:on_obtained(variant, savegame_variable)
+  local amounts = {1, 5, 20, 50, 100, 200}
+  local amount = amounts[variant]
+  if amount == nil then
+    error("invalid variant'" .. variant .. "' for item 'rupee'")
+  end
+  self:get_game():add_money(amount)
 end

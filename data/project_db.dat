@@ -1,3 +1,4 @@
+map{ id = "Donjon1/RDC", description = "Donjon1/RDC" }
 map{ id = "Outdoors/plageNord", description = "Plage du Nord" }
 map{ id = "Outdoors/villageNE", description = "village nord" }
 map{ id = "Village/Village", description = "global" }
@@ -8,7 +9,9 @@ map{ id = "donjon_etage", description = "1er etage" }
 map{ id = "donjon_rc", description = "donjon RC" }
 
 tileset{ id = "Grotte", description = "Grotte" }
+tileset{ id = "House", description = "House" }
 tileset{ id = "Tileset Overworld Z1", description = "Tileset Overworld Z1" }
+tileset{ id = "Tileset_Donjon_1", description = "Tileset_Donjon_1" }
 tileset{ id = "castle", description = "Castle" }
 tileset{ id = "donjon", description = "Donjon" }
 tileset{ id = "overworld", description = "monde" }
@@ -235,6 +238,7 @@ sound{ id = "wrong3", description = "wrong3" }
 item{ id = "bomb", description = "bomb" }
 item{ id = "heart", description = "heart" }
 item{ id = "ice_seed", description = "Graine de glace" }
+item{ id = "map", description = "carte du donjon" }
 item{ id = "random", description = "Loot" }
 item{ id = "rock_feather", description = "Plume de Roc" }
 item{ id = "rupee", description = "rupee" }

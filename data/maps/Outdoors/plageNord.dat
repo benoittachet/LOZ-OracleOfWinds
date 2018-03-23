@@ -6,7 +6,6 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "Tileset Overworld Z1",
-  music = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_",
 }
 
 tile{
@@ -7860,6 +7859,24 @@ destination{
   x = 560,
   y = 709,
   direction = 1,
+}
+
+destination{
+  name = "sortie_donjon_1",
+  layer = 0,
+  x = 184,
+  y = 109,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 176,
+  y = 88,
+  width = 16,
+  height = 16,
+  destination_map = "Donjon1/RDC",
+  destination = "entree",
 }
 
 tile{
