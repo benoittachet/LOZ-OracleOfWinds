@@ -54,7 +54,9 @@ end
 -- Fonction utilitaire qui teste la présence d'un obstacle à côté d'une entitée dans la direction donnée
 function test_obstacles_dir(entity, dir, distance)
   local distance = distance or 1
-  return entity:test_obstacles((1-dir)*((dir+1) % 2)*distance, (dir-2)*(dir % 2)*distance)
+  local result = entity:test_obstacles((1-dir)*((dir+1) % 2)*distance, (dir-2)*(dir % 2)*distance)
+ -- if ( not result) then print ("dir "..dir.." : ok") else print ("dir "..dir.." : nope") end
+  return result
 end
 
 
@@ -114,7 +116,12 @@ function choose_random_direction(entity,callback)
       dirs[i] = dir
     end
   end
-  return dirs[math.random(1,i)]
+  print("i = "..i)
+  
+  local dir = math.random(1,i)
+  print("dir = "..dir)
+  print("chosen dir = "..dirs[dir])
+  return dirs[dir]
 end
 
 -- Fonction qui lance le mouvement vers le héros

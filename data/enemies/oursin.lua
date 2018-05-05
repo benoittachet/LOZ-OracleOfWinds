@@ -29,9 +29,5 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
-
---  movement = sol.movement.create("target")
---  movement:set_target(hero)
---  movement:set_speed(48)
---  movement:start(enemy)
+  print("oursin restarted")
 end

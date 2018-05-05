@@ -35,6 +35,7 @@ sprite{ id = "door", description = "portes" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/crab", description = "enemies/crab" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
@@ -248,9 +249,11 @@ item{ id = "small_key", description = "petite cle" }
 item{ id = "sword", description = "sword" }
 
 enemy{ id = "crab", description = "crab" }
+enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }
+enemy{ id = "test", description = "Test" }
 
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "grass", description = "grass" }

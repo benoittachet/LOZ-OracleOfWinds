@@ -5808,22 +5808,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 128,
-  y = 581,
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 200,
-  y = 557,
-  direction = 0,
-  breed = "crab",
-}
-
-enemy{
-  layer = 0,
   x = 520,
   y = 381,
   direction = 0,
@@ -7864,8 +7848,8 @@ destination{
 destination{
   name = "sortie_donjon_1",
   layer = 0,
-  x = 184,
-  y = 109,
+  x = 192,
+  y = 517,
   direction = 1,
 }
 

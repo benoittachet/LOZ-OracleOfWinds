@@ -2716,3 +2716,11 @@ chest{
   sprite = "entities/chest",
 }
 
+enemy{
+  layer = 0,
+  x = 400,
+  y = 837,
+  direction = 0,
+  breed = "test",
+}
+
