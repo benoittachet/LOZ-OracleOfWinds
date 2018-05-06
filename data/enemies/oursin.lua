@@ -29,5 +29,4 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
-  print("oursin restarted")
 end

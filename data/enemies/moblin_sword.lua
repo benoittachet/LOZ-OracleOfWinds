@@ -16,10 +16,7 @@ local hero = map:get_hero()
 local sprite
 
 local movement
-local movement_distance = 48
-movement = sol.movement.create("straight")
-movement:set_speed(48)
-
+local movement_distance = 32
 
 enemy.choose_random_direction = choose_random_direction
 enemy.test_obstacles_dir = test_obstacles_dir
@@ -27,9 +24,9 @@ enemy.test_obstacles_dir = test_obstacles_dir
 -- Event called when the enemy is initialized.
 
 function enemy:movement_cycle()
-  print("idle")
+  print("Starting movement cycle")
   enemy.timer = sol.timer.start(3000,function()
-    print("request movement")
+    print("Calling the movement process")
     enemy:move(movement_distance)
     return false
   end)
@@ -40,7 +37,8 @@ function enemy:on_created()
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(10)
+  enemy:get_sprite():set_direction(math.random(0,3))
+  enemy:set_life(5)
   enemy:set_damage(1)
   
   enemy:movement_cycle()
@@ -54,16 +52,18 @@ end
 
 function enemy:move(distance)
   
-  print("movement starting")
-  
+  movement = sol.movement.create("straight")
+  movement:set_speed(48)
+  print("Movement process starting")
+  print("Choosing random direction")
   local mdir = enemy.choose_random_direction(enemy,
    function(enemy,dir) return not enemy:test_obstacles_dir(dir,movement_distance) end)
+  print("Chosen dir : "..mdir)  
+  enemy:get_sprite():set_direction(mdir)
   movement:set_angle(mdir*math.pi/2)
   movement:set_max_distance(distance) 
-  print(movement:get_angle().."|"..movement:get_max_distance())  
+  print("Final movement parameters :"..movement:get_angle().."|"..movement:get_max_distance())  
   movement:start(enemy,function()enemy:movement_cycle()end)
-
-  print("movement started : " .. mdir)
-
+  print("Started the movement")
 end
 

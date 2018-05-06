@@ -116,11 +116,9 @@ function choose_random_direction(entity,callback)
       dirs[i] = dir
     end
   end
-  print("i = "..i)
-  
+
+  math.randomseed(os.time())  
   local dir = math.random(1,i)
-  print("dir = "..dir)
-  print("chosen dir = "..dirs[dir])
   return dirs[dir]
 end
 

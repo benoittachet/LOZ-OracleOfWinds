@@ -248,12 +248,12 @@ item{ id = "shield", description = "shield" }
 item{ id = "small_key", description = "petite cle" }
 item{ id = "sword", description = "sword" }
 
+enemy{ id = "bat", description = "bat" }
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }
-enemy{ id = "test", description = "Test" }
 
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "grass", description = "grass" }
