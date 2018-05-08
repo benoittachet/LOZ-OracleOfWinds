@@ -18,18 +18,29 @@ local sprite
 local movement
 local movement_distance = 32
 
+local detect_angle = math.pi/2
+local detect_distance = 48
+local detect_state
+
 enemy.choose_random_direction = choose_random_direction
 enemy.test_obstacles_dir = test_obstacles_dir
+enemy.cone_detect = cone_detect
 
 -- Event called when the enemy is initialized.
 
 function enemy:movement_cycle()
   print("Starting movement cycle")
-  enemy.timer = sol.timer.start(3000,function()
+
+  local m = sol.movement.create("target")
+  m:set_target(hero)
+  m:start(enemy)  
+
+  sol.timer.start(enemy,3000,function()
     print("Calling the movement process")
     enemy:move(movement_distance)
     return false
   end)
+ enemy:set_enabled(true)
 end
 
 function enemy:on_created()
@@ -40,7 +51,11 @@ function enemy:on_created()
   enemy:get_sprite():set_direction(math.random(0,3))
   enemy:set_life(5)
   enemy:set_damage(1)
-  
+  sol.timer.start(enemy,100,function()
+    enemy:check_hero()
+  end)
+  enemy.detect_state = false
+
   enemy:movement_cycle()
 end
 
@@ -65,5 +80,13 @@ function enemy:move(distance)
   print("Final movement parameters :"..movement:get_angle().."|"..movement:get_max_distance())  
   movement:start(enemy,function()enemy:movement_cycle()end)
   print("Started the movement")
+end
+
+function enemy:check_hero()
+  if detect_state == false then
+    if enemy:cone_detect(hero,detect_distance,enemy:get_sprite():get_direction(),detect_angle) then
+      print("ALED LA LICRA M'A REPÉRÉ")
+    end
+  end
 end
 

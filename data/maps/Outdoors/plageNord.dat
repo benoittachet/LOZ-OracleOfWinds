@@ -7850,7 +7850,7 @@ destination{
   layer = 0,
   x = 184,
   y = 109,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -7861,14 +7861,6 @@ teletransporter{
   height = 16,
   destination_map = "Donjon1/RDC",
   destination = "entree",
-}
-
-enemy{
-  layer = 0,
-  x = 192,
-  y = 581,
-  direction = 0,
-  breed = "moblin_sword",
 }
 
 tile{

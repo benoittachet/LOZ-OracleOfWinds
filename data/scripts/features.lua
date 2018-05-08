@@ -8,5 +8,6 @@
 require("scripts/meta/hero")
 require("scripts/hud/hud")
 require("enemies/movement_generic")
+require("enemies/enemy_generic")
 
 return true

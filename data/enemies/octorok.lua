@@ -43,7 +43,7 @@ end
 function enemy:on_restarted()
   -- Création du mouvement ciblé sur le héro
   target_hero(enemy)
-
+  print(hero:get_angle(enemy))
   -- On le laisse marcher un certain temps
   sol.timer.start(enemy, walking_time, idle)
 end

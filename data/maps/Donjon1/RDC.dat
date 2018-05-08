@@ -2716,3 +2716,11 @@ chest{
   sprite = "entities/chest",
 }
 
+enemy{
+  layer = 0,
+  x = 400,
+  y = 829,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
