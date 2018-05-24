@@ -40,6 +40,7 @@ sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/arrow1", description = "Arrow" }
 sprite{ id = "entities/big_chest", description = "Big chest" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
@@ -250,11 +251,13 @@ item{ id = "sword", description = "sword" }
 
 enemy{ id = "bat", description = "bat" }
 enemy{ id = "crab", description = "crab" }
+enemy{ id = "moblin_bow", description = "Moblin Archer" }
 enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
+entity{ id = "arrow", description = "Arrow" }
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "grass", description = "grass" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }

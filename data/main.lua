@@ -5,6 +5,7 @@
 require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local solarus_logo = require("scripts/menus/solarus_logo")
+local title_screen = require("scripts/menus/zunashy")
 require("scripts/sinking_override")
 
 -- This function is called when Solarus starts.
@@ -18,8 +19,14 @@ function sol.main:on_started()
 
   -- Start the game when the Solarus logo menu is finished.
   function solarus_logo:on_finished()
-    local game = game_manager:create("save1.dat")
-    sol.main:start_savegame(game)
+      sol.menu.start(sol.main,title_screen)
+   
+  end
+
+  function title_screen:on_finished()
+     local game = game_manager:create("save1.dat")
+
+     sol.main:start_savegame(game)
   end
 
 end

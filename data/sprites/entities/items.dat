@@ -13,13 +13,6 @@ animation{
   },
 }
 animation{
-  name = "heart",
-  src_image = "hud/hearts.png",
-  directions = {
-    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
-  },
-}
-animation{
   name = "heart_falling",
   src_image = "items/heart_falling.png",
   frame_delay = 100,

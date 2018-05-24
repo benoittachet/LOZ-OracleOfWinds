@@ -25,8 +25,7 @@ function item_icon_builder:new(game, config)
 
     if item_icon.item_displayed ~= nil then
       -- Item.
-      item_icon.surface:fill_color({0, 0, 0}, 3, 3, 16, 16)
-      item_icon.item_sprite:draw(item_icon.surface, 3 + 8, 3 + 13)
+      item_icon.item_sprite:draw(item_icon.surface, 8, 13)
     end
   end
 

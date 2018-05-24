@@ -12,7 +12,7 @@ function cone_detect(detector,detected,distance,direction,angle)
     end
     if angleR > angle/2 or angleR < -angle/2 then
       return false
-    else
+    else 
       return true    
     end
   end

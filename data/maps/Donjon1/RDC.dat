@@ -2719,8 +2719,40 @@ chest{
 enemy{
   layer = 0,
   x = 400,
-  y = 829,
-  direction = 0,
+  y = 805,
+  direction = 3,
   breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 829,
+  direction = 3,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 861,
+  direction = 3,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 845,
+  direction = 3,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 400,
+  y = 949,
+  direction = 0,
+  breed = "moblin_bow",
 }
 

@@ -17,6 +17,8 @@ local sprite
 
 local movement
 local movement_distance = 32
+local movement_speed = 48
+local movement_speed_target = 48
 
 local detect_angle = math.pi/2
 local detect_distance = 48
@@ -29,14 +31,10 @@ enemy.cone_detect = cone_detect
 -- Event called when the enemy is initialized.
 
 function enemy:movement_cycle()
-  print("Starting movement cycle")
+  --print("Starting movement cycle")
 
-  local m = sol.movement.create("target")
-  m:set_target(hero)
-  m:start(enemy)  
-
-  sol.timer.start(enemy,3000,function()
-    print("Calling the movement process")
+  sol.timer.start(enemy,1500,function()
+   -- print("Calling the movement process")
     enemy:move(movement_distance)
     return false
   end)
@@ -49,44 +47,80 @@ function enemy:on_created()
   -- like the sprite, the life and the damage.
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:get_sprite():set_direction(math.random(0,3))
-  enemy:set_life(5)
-  enemy:set_damage(1)
-  sol.timer.start(enemy,100,function()
-    enemy:check_hero()
-  end)
+  enemy:set_life(4)
+  enemy:set_damage(2)
   enemy.detect_state = false
-
-  enemy:movement_cycle()
 end
 
 -- Event called when the enemy should start or restart its movements.
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
+  enemy:get_sprite():set_paused()  
+  if self.detect_state == false then
+    sol.timer.start(enemy,100,function()
+      enemy:check_hero()
+      return true
+    end)
+
+    enemy:movement_cycle()
+  else
+    enemy:target_hero()
+  end
 end
 
 function enemy:move(distance)
   
   movement = sol.movement.create("straight")
   movement:set_speed(48)
-  print("Movement process starting")
-  print("Choosing random direction")
+ -- print("Movement process starting")
+ -- print("Choosing random direction")
   local mdir = enemy.choose_random_direction(enemy,
    function(enemy,dir) return not enemy:test_obstacles_dir(dir,movement_distance) end)
-  print("Chosen dir : "..mdir)  
+ -- print("Chosen dir : "..mdir)  
   enemy:get_sprite():set_direction(mdir)
   movement:set_angle(mdir*math.pi/2)
   movement:set_max_distance(distance) 
-  print("Final movement parameters :"..movement:get_angle().."|"..movement:get_max_distance())  
+  --print("Final movement parameters :"..movement:get_angle().."|"..movement:get_max_distance())  
   movement:start(enemy,function()enemy:movement_cycle()end)
-  print("Started the movement")
+ -- print("Started the movement")
 end
 
 function enemy:check_hero()
-  if detect_state == false then
-    if enemy:cone_detect(hero,detect_distance,enemy:get_sprite():get_direction(),detect_angle) then
-      print("ALED LA LICRA M'A REPÉRÉ")
+  if self.detect_state == false then
+    if enemy:cone_detect(hero,detect_distance,sprite:get_direction(),detect_angle) then
+       enemy:target_hero()
     end
   end
 end
 
+function enemy:target_hero()
+  enemy:stop_movement()
+  self.detect_state = true   
+  local m = sol.movement.create("target")
+  sol.timer.stop_all(enemy)
+  m:set_target(hero)
+  m:set_speed(movement_speed_target)
+
+  m.on_position_changed = function()
+   sprite:set_direction(dir_from_angle(enemy:get_angle(hero)))
+  end
+
+  m:start(enemy)
+end
+
+function enemy:on_hurt(atk)
+  if atk == "sword" then
+    sol.timer.start(enemy,200,function()  
+      enemy:target_hero()
+    end)
+  end
+end
+
+function enemy:on_movement_started()
+ sprite:set_paused(false)  
+end
+
+function enemy:on_movement_finished()
+ sprite:set_paused()
+end
