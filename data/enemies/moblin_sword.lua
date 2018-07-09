@@ -21,7 +21,7 @@ local movement_speed = 48
 local movement_speed_target = 48
 
 local detect_angle = math.pi/2
-local detect_distance = 48
+local detect_distance = 16
 local detect_state
 
 enemy.choose_random_direction = choose_random_direction
@@ -45,6 +45,7 @@ function enemy:on_created()
 
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
+  --sprite = enemy:create_sprite("enemies/moblin")
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:get_sprite():set_direction(math.random(0,3))
   enemy:set_life(4)
@@ -95,6 +96,7 @@ function enemy:check_hero()
 end
 
 function enemy:target_hero()
+  print("detected")
   enemy:stop_movement()
   self.detect_state = true   
   local m = sol.movement.create("target")

@@ -40,7 +40,7 @@ function enemy:on_created()
 
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
-  sprite = enemy:create_sprite("enemies/moblin_sword")
+  sprite = enemy:create_sprite("enemies/moblin")
   enemy:get_sprite():set_direction(math.random(0,3))
   enemy:set_life(4)
   enemy:set_damage(1)
@@ -98,7 +98,6 @@ function enemy:fire_arrow(direction)
     properties.direction = direction
     local arrow = map:create_custom_entity(properties)
     arrow:set_hurts_hero()
-    print(arrow)
     enemy.arrow_cooldown = true
     sol.timer.start(enemy,3000, function() enemy.arrow_cooldown = false end)
 end
