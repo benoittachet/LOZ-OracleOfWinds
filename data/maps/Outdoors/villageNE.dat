@@ -9684,6 +9684,16 @@ teletransporter{
   destination = "house_02_entrance",
 }
 
+npc{
+  layer = 0,
+  x = 176,
+  y = 509,
+  direction = 3,
+  subtype = 1,
+  sprite = "citizens/witch",
+  behavior = "dialog#pnj.village.witch",
+}
+
 tile{
   layer = 1,
   x = 64,

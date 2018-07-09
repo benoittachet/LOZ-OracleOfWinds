@@ -49,3 +49,11 @@ Utilisez-la pour ouvrir une porte
 ]]
 }
 
+dialog{
+  id = "pnj.village.witch",
+  text = [[
+Bonjour, je suis
+une sorcière inutile !
+]]
+}
+
