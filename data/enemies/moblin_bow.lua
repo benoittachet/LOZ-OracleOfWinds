@@ -64,11 +64,19 @@ function enemy:move(distance)
   movement = sol.movement.create("straight")
   movement:set_speed(48)
   local mdir = enemy.choose_random_direction(enemy,
-   function(enemy,dir) return not enemy:test_obstacles_dir(dir,movement_distance) end)
+   function(enemy,dir) return not enemy:test_obstacles_dir(dir,8) end)
   enemy:get_sprite():set_direction(mdir)
   movement:set_angle(mdir*math.pi/2)
   movement:set_max_distance(distance)  
   movement:start(enemy,function()enemy:movement_cycle()end)
+
+  movement.on_position_changed = function()
+    local dir = movement:get_direction4()
+    if enemy:test_obstacles(dirCoef[dir + 1].x * 8, dirCoef[dir + 1].y * 8) then
+      movement:set_max_distance(-1)
+    end
+  end
+
 end
 
 function enemy:check_hero()

@@ -12,7 +12,7 @@ local initial_game = {}
 -- Sets initial values to a new savegame file.
 function initial_game:initialize_new_savegame(game)
 
-  game:set_starting_location("Map1", "entree")  -- Starting location.
+  game:set_starting_location("Donjon1/RDC", "entree")  -- Starting location.
 
   game:set_max_life(12)
   game:set_life(game:get_max_life())

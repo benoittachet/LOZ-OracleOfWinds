@@ -3,6 +3,12 @@ require("scripts/multi_events.lua")
 
 local direction_name = {"droite", "haut", "gauche", "bas"}
 
+dirCoef = {
+  {x = 1, y = 0},
+  {x = 0, y = -1},
+  {x = -1, y = 0},
+  {x = 0, y = 1}
+}
 
 function dir_from_angle(angle)
   return math.floor(math.fmod(angle, 2*math.pi) / (math.pi / 2) + 0.5) % 4
@@ -54,9 +60,7 @@ end
 -- Fonction utilitaire qui teste la présence d'un obstacle à côté d'une entitée dans la direction donnée
 function test_obstacles_dir(entity, dir, distance)
   local distance = distance or 1
-  local result = entity:test_obstacles((1-dir)*((dir+1) % 2)*distance, (dir-2)*(dir % 2)*distance)
- -- if ( not result) then print ("dir "..dir.." : ok") else print ("dir "..dir.." : nope") end
-  return result
+  return entity:test_obstacles(dirCoef[dir + 1].x * distance, dirCoef[dir + 1].y * distance)
 end
 
 
