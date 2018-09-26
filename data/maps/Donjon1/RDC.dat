@@ -2754,8 +2754,8 @@ enemy{
 enemy{
   layer = 0,
   x = 400,
-  y = 957,
+  y = 949,
   direction = 0,
-  breed = "moblin_bow",
+  breed = "slime_blue",
 }
 

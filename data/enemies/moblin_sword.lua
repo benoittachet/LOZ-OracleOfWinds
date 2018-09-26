@@ -72,7 +72,7 @@ end
 
 function enemy:move(distance)
   
-  movement = sol.movement.create("straight")
+ movement = sol.movement.create("straight")
   movement:set_speed(48)
   local mdir = enemy.choose_random_direction(enemy,
    function(enemy,dir) return not enemy:test_obstacles_dir(dir,8) end)

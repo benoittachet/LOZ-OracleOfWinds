@@ -39,6 +39,8 @@ sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
+sprite{ id = "enemies/pool", description = "Flaque" }
+sprite{ id = "enemies/slime_blue", description = "aka Wavedasher" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow1", description = "Arrow" }
@@ -256,6 +258,7 @@ enemy{ id = "moblin_bow", description = "Moblin Archer" }
 enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
+enemy{ id = "slime_blue", description = "aka Wavedasher" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }
