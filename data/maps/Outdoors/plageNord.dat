@@ -7863,6 +7863,22 @@ teletransporter{
   destination = "entree",
 }
 
+destination{
+  name = "spawn",
+  layer = 0,
+  x = 224,
+  y = 469,
+  direction = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 445,
+  direction = 0,
+  breed = "blue_slime",
+}
+
 tile{
   layer = 1,
   x = 288,

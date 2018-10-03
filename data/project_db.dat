@@ -1,6 +1,7 @@
 map{ id = "Donjon1/RDC", description = "Donjon1/RDC" }
 map{ id = "Outdoors/plageNord", description = "Plage du Nord" }
 map{ id = "Outdoors/villageNE", description = "village nord" }
+map{ id = "TestWorld", description = "Faites pas gaffe" }
 map{ id = "Village/Village", description = "global" }
 map{ id = "WorldMap_01/Grotte_01", description = "WorldMap_01/Grotte_01" }
 map{ id = "WorldMap_01/Grotte_02", description = "WorldMap_01/Grotte_02" }
@@ -33,6 +34,7 @@ sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
 sprite{ id = "door", description = "portes" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
+sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/crab", description = "enemies/crab" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
@@ -40,7 +42,7 @@ sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/pool", description = "Flaque" }
-sprite{ id = "enemies/slime_blue", description = "aka Wavedasher" }
+sprite{ id = "enemies/pool_dasher", description = "aka Wavedasher" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow1", description = "Arrow" }
@@ -253,12 +255,13 @@ item{ id = "small_key", description = "petite cle" }
 item{ id = "sword", description = "sword" }
 
 enemy{ id = "bat", description = "bat" }
+enemy{ id = "blue_slime", description = "Blue Slime" }
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "moblin_bow", description = "Moblin Archer" }
 enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
-enemy{ id = "slime_blue", description = "aka Wavedasher" }
+enemy{ id = "pool_dasher", description = "aka Wavedasher" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }
