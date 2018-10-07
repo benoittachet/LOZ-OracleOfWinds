@@ -66,7 +66,7 @@ function enemy:on_created()
   -- like the sprite, the life and the damage.
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(5)
-  enemy:set_damage(1)
+  enemy:set_damage(2)
   enemy:set_obstacle_behavior("swimming")
 end
 
@@ -117,10 +117,12 @@ local hit_callback = function()
   m:set_max_distance(400)
   function m:on_obstacle_reached()
     m:stop()
+    hero:unfreeze()
     hero:start_hurt(enemy:get_damage())
   end
   hero:set_invincible(true)
   hero:set_blinking(true)
+  hero:freeze()
   m:start(hero)
   dash:dEnd()
 end
@@ -132,7 +134,7 @@ function enemy:dash(d)
   enemy.dash_state = 0
   sol.timer.start(self, 400, 
     function()    
-      enemy:set_attacks_state("protected")
+     -- enemy:set_attacks_state("protected")
       dash.xs, dash.ys = enemy:get_position()
       dash.enemy = enemy      
       dash:set_speed(64)
@@ -144,3 +146,7 @@ function enemy:dash(d)
     end
   )
 end
+
+function enemy:on_attack()
+  print("oui")
+end 
