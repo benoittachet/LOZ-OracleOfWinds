@@ -9,6 +9,26 @@ animation{
   },
 }
 animation{
+  name = "boomerang1",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 128, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "bow",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 128, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
   name = "brandish",
   src_image = "main_heroes/Charset_Link.png",
   directions = {
@@ -78,6 +98,16 @@ animation{
     { x = 0, y = 22, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
     { x = 0, y = 44, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
     { x = 0, y = 66, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
+  name = "hookshot",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 80, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 128, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
   },
 }
 animation{
@@ -222,6 +252,16 @@ animation{
     { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
     { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
+  name = "sword_tapping",
+  src_image = "main_heroes/Charset_Link.png",
+  directions = {
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 6, origin_y = 14 },
+    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 12 },
+    { x = 80, y = 80, frame_width = 16, frame_height = 16, origin_x = 10, origin_y = 14 },
+    { x = 128, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
   },
 }
 animation{
