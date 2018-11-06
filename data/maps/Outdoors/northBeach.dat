@@ -3608,6 +3608,24 @@ tile{
   pattern = "219",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 32,
+  height = 48,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 608,
+  width = 48,
+  height = 16,
+  pattern = "68",
+}
+
 destination{
   name = "destination",
   layer = 0,
