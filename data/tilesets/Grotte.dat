@@ -100,31 +100,11 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "19",
-  ground = "wall",
-  default_layer = 0,
-  x = 64,
-  y = 0,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
   id = "2",
   ground = "traversable",
   default_layer = 0,
   x = 16,
   y = 48,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "20",
-  ground = "wall",
-  default_layer = 0,
-  x = 48,
-  y = 0,
   width = 16,
   height = 16,
 }
@@ -240,41 +220,11 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "31",
-  ground = "wall",
-  default_layer = 0,
-  x = 64,
-  y = 96,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "32",
-  ground = "wall",
-  default_layer = 0,
-  x = 64,
-  y = 80,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
   id = "33",
   ground = "wall",
   default_layer = 0,
   x = 64,
   y = 64,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "34",
-  ground = "wall",
-  default_layer = 0,
-  x = 48,
-  y = 80,
   width = 16,
   height = 16,
 }
