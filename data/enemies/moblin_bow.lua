@@ -94,9 +94,6 @@ function enemy:check_hero()
     end
 end
 
--- flèche fantôme vers le haut
--- taille / origine
-
 function enemy:fire_arrow(direction)
     local properties = {}
     properties.model = "arrow"

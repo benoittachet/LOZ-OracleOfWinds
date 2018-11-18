@@ -5,6 +5,8 @@
 -- Features can be enabled to disabled independently by commenting
 -- or uncommenting lines below.
 
+sol.features = {}
+
 require("scripts/meta/hero")
 require("scripts/hud/hud")
 require("enemies/movement_generic")

@@ -1,13 +1,18 @@
 map{ id = "Donjon1/RDC", description = "Donjon1/RDC" }
-map{ id = "Outdoors/plageNord", description = "Plage du Nord" }
-map{ id = "Outdoors/villageNE", description = "village nord" }
+map{ id = "Outdoors/Foret", description = "Outdoors/Foret" }
+map{ id = "Outdoors/northBeach", description = "Outdoors/northBeach" }
 map{ id = "TestWorld", description = "Faites pas gaffe" }
 map{ id = "Village/Village", description = "global" }
 map{ id = "WorldMap_01/Grotte_01", description = "WorldMap_01/Grotte_01" }
-map{ id = "WorldMap_01/Grotte_02", description = "WorldMap_01/Grotte_02" }
-map{ id = "WorldMap_01/Grotte_03", description = "WorldMap_01/Grotte_03" }
-map{ id = "donjon_etage", description = "1er etage" }
-map{ id = "donjon_rc", description = "donjon RC" }
+map{ id = "WorldMap_01/Grotte_02_rdc", description = "WorldMap_01/Grotte_02_rdc" }
+map{ id = "WorldMap_01/Grotte_02_ss1", description = "WorldMap_01/Grotte_02_ss1" }
+map{ id = "startingVillage", description = "startingVillage" }
+map{ id = "village_debut/house-1", description = "village_debut/house-1" }
+map{ id = "village_debut/house-2", description = "village_debut/house-2" }
+map{ id = "village_debut/house-3", description = "village_debut/house-3" }
+map{ id = "village_debut/mairie_etage", description = "village_debut/mairie_etage" }
+map{ id = "village_debut/mairie_rdc", description = "village_debut/mairie_rdc" }
+map{ id = "village_debut/shop", description = "village_debut/shop" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
@@ -67,6 +72,7 @@ sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
+sprite{ id = "entities/platform", description = "Moving PLatform" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -267,6 +273,7 @@ entity{ id = "arrow", description = "Arrow" }
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "grass", description = "grass" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
+entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
