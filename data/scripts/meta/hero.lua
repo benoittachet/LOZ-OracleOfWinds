@@ -32,7 +32,7 @@ local function initialize_hero_features(game)
       if m.timer_end then
         hero:unfreeze()
       end
-    end    
+    end
 
     hero:freeze()
     sol.timer.start(hero, 200, function()
