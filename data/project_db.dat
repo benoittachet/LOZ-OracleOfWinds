@@ -16,11 +16,9 @@ map{ id = "village_debut/shop", description = "village_debut/shop" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
-tileset{ id = "Tileset Overworld Z1", description = "Tileset Overworld Z1" }
+tileset{ id = "Tileset1", description = "Tileset1" }
 tileset{ id = "Tileset_Donjon_1", description = "Tileset_Donjon_1" }
-tileset{ id = "castle", description = "Castle" }
 tileset{ id = "donjon", description = "Donjon" }
-tileset{ id = "overworld", description = "monde" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/cat_green", description = "Green Cat" }

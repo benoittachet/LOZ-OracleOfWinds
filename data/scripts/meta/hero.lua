@@ -42,7 +42,12 @@ local function initialize_hero_features(game)
 
   m:start(hero)
 
+  hero.is_on_nonsolid_ground = false
   
+  function hero:on_position_changed()
+    
+  end
+
 end
 
 end
