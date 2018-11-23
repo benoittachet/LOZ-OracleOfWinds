@@ -29,15 +29,16 @@ function entity:on_created()
   m:set_angle(math.pi / 2)
   m:start(entity)
   
-  --entity:add_collision_callback("overlapping", entity.collision_callback)
+  entity:add_collision_test("overlapping", entity.collision_callback)
   entity.on_position_changed = entity.movement_callback
   px, py = entity:get_position()
 end
 
 function entity:collision_callback(other)
   
-  --non utilisé pour l'insant
-
+  if other:get_type() == "hero" then
+    hero.is_on_nonsolid_ground = true
+  end
 end
 
 local function hero_can_be_moved()
@@ -51,6 +52,10 @@ function entity:movement_callback()
     dx, dy = x - px, y - py
     hx, hy = hero:get_position()
     if not hero:test_obstacles(dx, dy) then hero:set_position(hx + dx, hy + dy) end
+
+    if entity:overlaps(hero, "overlapping") then
+      hero.is_on_nonsolid_ground = true
+    end
   end
   px, py = x, y
 end
