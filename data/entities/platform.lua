@@ -16,8 +16,9 @@ local px, py, x, y, dx, dy, hx, hy = 0, 0, 0, 0, 0, 0
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
-  entity:set_size(32,32)
-  entity:set_origin(16,16)
+  local w, h = entity:get_sprite():get_size()
+  entity:set_size(w,h)
+  entity:set_origin(w/2,h/2)
   entity:set_modified_ground("traversable")
   self:set_can_traverse_ground("hole", true)
   self:set_can_traverse_ground("deep_water", true)
