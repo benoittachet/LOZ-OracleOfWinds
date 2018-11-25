@@ -98,12 +98,13 @@ tile{
   pattern = "28",
 }
 
-enemy{
+tile{
   layer = 1,
-  x = 200,
-  y = 189,
-  direction = 0,
-  breed = "blue_slime",
+  x = 64,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "28",
 }
 
 destination{
@@ -132,5 +133,13 @@ custom_entity{
   direction = 0,
   sprite = "entities/platform",
   model = "platform",
+}
+
+enemy{
+  layer = 1,
+  x = 48,
+  y = 237,
+  direction = 0,
+  breed = "octorok",
 }
 
