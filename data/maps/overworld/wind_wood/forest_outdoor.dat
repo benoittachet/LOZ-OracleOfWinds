@@ -4153,3 +4153,57 @@ destructible{
   sprite = "entities/grass",
 }
 
+teletransporter{
+  layer = 0,
+  x = 224,
+  y = -8,
+  width = 32,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "forest_to_beach",
+}
+
+teletransporter{
+  layer = 0,
+  x = 256,
+  y = 136,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/wind_wood/forest_cave",
+  destination = "forest_to_forest_cave_01",
+}
+
+teletransporter{
+  layer = 0,
+  x = 384,
+  y = 168,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/wind_wood/house_forest",
+  destination = "forest_to_forest_house",
+}
+
+destination{
+  name = "beach_to_forest",
+  layer = 0,
+  x = 240,
+  y = 13,
+  direction = 1,
+}
+
+destination{
+  name = "forest_house_to_forest",
+  layer = 0,
+  x = 392,
+  y = 189,
+  direction = 1,
+}
+
+destination{
+  name = "forest_cave_01_to_forest",
+  layer = 0,
+  x = 264,
+  y = 157,
+  direction = 1,
+}
+

@@ -448,3 +448,21 @@ separator{
   height = 16,
 }
 
+destination{
+  name = "forest_to_forest_house",
+  layer = 0,
+  x = 80,
+  y = 141,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 136,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/wind_wood/forest_outdoor",
+  destination = "forest_house_to_forest",
+}
+
