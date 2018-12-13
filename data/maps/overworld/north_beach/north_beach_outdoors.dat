@@ -3025,8 +3025,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 592,
+  x = 72,
+  y = 584,
   width = 16,
   height = 16,
   pattern = "71",
@@ -3662,14 +3662,6 @@ tile{
   pattern = "46",
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 560,
-  y = 293,
-  direction = 1,
-}
-
 destructible{
   name = "Herbe_30",
   layer = 0,
@@ -3754,7 +3746,8 @@ teletransporter{
   y = 72,
   width = 16,
   height = 16,
-  destination_map = "Donjon1/RDC",
+  destination_map = "donjons/level_01/RDC",
+  destination = "entree",
 }
 
 destructible{
@@ -3863,17 +3856,18 @@ destructible{
 }
 
 teletransporter{
-  name = "beachtovillage",
+  name = "beach_to_village",
   layer = 0,
   x = 632,
   y = 336,
   width = 16,
   height = 32,
-  destination_map = "Outdoors/northBeach",
+  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination = "north_beach_to_village",
 }
 
 destination{
-  name = "villagetobeach",
+  name = "village_to_beach",
   layer = 0,
   x = 632,
   y = 357,
@@ -3881,17 +3875,18 @@ destination{
 }
 
 teletransporter{
-  name = "beachtoforest",
+  name = "beach_to_forest",
   layer = 0,
   x = 544,
   y = 632,
   width = 32,
   height = 16,
-  destination_map = "Outdoors/northBeach",
+  destination_map = "overworld/wind_wood/forest_outdoor",
+  destination = "beach_to_forest",
 }
 
 destination{
-  name = "foresttobeach",
+  name = "forest_to_beach",
   layer = 0,
   x = 560,
   y = 637,
@@ -3899,7 +3894,7 @@ destination{
 }
 
 destination{
-  name = "cave1tobeach",
+  name = "cave_02_to_beach",
   layer = 0,
   x = 520,
   y = 485,
@@ -3907,7 +3902,7 @@ destination{
 }
 
 destination{
-  name = "cave1tobeach_2",
+  name = "cave_01_to_beach",
   layer = 0,
   x = 520,
   y = 341,
@@ -3915,13 +3910,14 @@ destination{
 }
 
 teletransporter{
-  name = "beachtocave1",
+  name = "beach_to_cave_01",
   layer = 0,
   x = 512,
   y = 320,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/northBeach",
+  destination_map = "overworld/north_beach/north_beach_cave_01",
+  destination = "destination",
 }
 
 teletransporter{
@@ -3931,6 +3927,40 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/northBeach",
+  destination_map = "overworld/north_beach/north_beach_cave_02_rdc",
+}
+
+destination{
+  name = "house_02_to_beach",
+  layer = 0,
+  x = 64,
+  y = 581,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 560,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+}
+
+destination{
+  name = "house_01_to_beach",
+  layer = 0,
+  x = 392,
+  y = 77,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 384,
+  y = 56,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
 }
 

@@ -308,7 +308,7 @@ tile{
 teletransporter{
   layer = 0,
   x = 72,
-  y = 128,
+  y = 136,
   width = 16,
   height = 16,
   destination_map = "Outdoors/plageNord",
@@ -316,7 +316,7 @@ teletransporter{
 }
 
 destination{
-  name = "Grotte_01",
+  name = "destination",
   layer = 0,
   x = 80,
   y = 141,
