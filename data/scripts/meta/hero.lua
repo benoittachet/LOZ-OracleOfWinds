@@ -41,15 +41,11 @@ local function initialize_hero_features(game)
     end)
 
   m:start(hero)
-
-  
-
   end
 
   hero.is_on_nonsolid_ground = false
   
   function hero:on_position_changed()   
-    --print(hero.is_on_nonsolid_ground)
     local ground = hero:get_ground_below();
     if (ground ~= "deep_water"
       and ground ~= "hole"

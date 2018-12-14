@@ -24,8 +24,8 @@ local detect_angle = math.pi/2
 local detect_distance = 16
 local detect_state
 
-enemy.choose_random_direction = choose_random_direction
-enemy.test_obstacles_dir = test_obstacles_dir
+enemy.choose_random_direction = mg.choose_random_direction
+enemy.test_obstacles_dir = mg.test_obstacles_dir
 enemy.cone_detect = cone_detect
 
 -- Event called when the enemy is initialized.
@@ -75,7 +75,7 @@ function enemy:move(distance)
  movement = sol.movement.create("straight")
   movement:set_speed(48)
   local mdir = enemy.choose_random_direction(enemy,
-   function(enemy,dir) return not enemy:test_obstacles_dir(dir,8) end)
+   function(dir, enemy) return not enemy:test_obstacles_dir(dir,8) end)
   enemy:get_sprite():set_direction(mdir)
   movement:set_angle(mdir*math.pi/2)
   movement:set_max_distance(distance)  

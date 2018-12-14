@@ -113,6 +113,7 @@ destination{
   x = 80,
   y = 229,
   direction = 1,
+  default = true,
 }
 
 chest{
@@ -141,5 +142,13 @@ enemy{
   y = 237,
   direction = 0,
   breed = "octorok",
+}
+
+enemy{
+  layer = 1,
+  x = 224,
+  y = 205,
+  direction = 0,
+  breed = "skeleton_1",
 }
 
