@@ -1,4 +1,3 @@
-map{ id = "TestWorld", description = "Faites pas gaffe" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
@@ -7,6 +6,10 @@ map{ id = "overworld/north_beach/north_beach_outdoors", description = "North Bea
 map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
 map{ id = "overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "overworld/wind_wood/house_forest", description = "Wind Wood House" }
+map{ id = "testHub", description = "Lobby des maps test" }
+map{ id = "tests/blue_slime", description = "tests/testHub" }
+map{ id = "tests/bridges", description = "Bridges" }
+map{ id = "tests/platform", description = "Plateforme mouvante" }
 map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Village House 01" }
 map{ id = "villages/nielint_village/nielint_house_2", description = "Nielint Village House 02" }
 map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Village House 03" }
@@ -39,8 +42,8 @@ sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
 sprite{ id = "door", description = "portes" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
-sprite{ id = "enemies/crab", description = "enemies/crab" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/goomba", description = "enemies/crab" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
@@ -267,6 +270,7 @@ enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "pool_dasher", description = "aka Wavedasher" }
+enemy{ id = "skeleton_1", description = "Squelette 1" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }

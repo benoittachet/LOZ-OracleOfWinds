@@ -18,7 +18,7 @@ local px, py, x, y, dx, dy, hx, hy = 0, 0, 0, 0, 0, 0
 function entity:on_created()
   local w, h = entity:get_sprite():get_size()
   entity:set_size(w,h)
-  entity:set_origin(w/2,h/2)
+  entity:set_origin(w/2,h-3)
   entity:set_modified_ground("traversable")
   self:set_can_traverse_ground("hole", true)
   self:set_can_traverse_ground("deep_water", true)
@@ -30,7 +30,7 @@ function entity:on_created()
   m:set_angle(math.pi / 2)
   m:start(entity)
   
-  entity:add_collision_test("origin", entity.collision_callback)
+  entity:add_collision_test("overlapping", entity.collision_callback)
   entity.on_position_changed = entity.movement_callback
   px, py = entity:get_position()
 end
@@ -62,9 +62,7 @@ function entity:movement_callback()
   end
   px, py = x, y
   
-  print("Entities on the map")
   for e in map:get_entities() do
-    print(e:get_type(), e == entity)
     if entity:overlaps(e, "overlapping") and 
       not e.static and 
       not e.airborne and

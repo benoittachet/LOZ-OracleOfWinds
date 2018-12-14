@@ -1,5 +1,5 @@
 require("scripts/multi_events.lua")
-
+mg = {}
 
 local direction_name = {"droite", "haut", "gauche", "bas"}
 
@@ -10,14 +10,14 @@ dirCoef = {
   {x = 0, y = 1}
 }
 
-function dir_from_angle(angle)
+function mg.dir_from_angle(angle)
   return math.floor(math.fmod(angle, 2*math.pi) / (math.pi / 2) + 0.5) % 4
 end
 
 -- Fonction utilitaire
 -- On construit un tableau de 4 éléments qui contient les 4 directions dans l'ordre
 -- de celle qui est la plus proche de l'angle donné à celle qui est la plus éloignée
-function directions_from_angle(angle)
+function mg.directions_from_angle(angle)
   local directions = {}
   -- On vérifie que l'angle est dans [0, 2π[
   angle = math.fmod(angle, 2*math.pi)
@@ -58,14 +58,14 @@ function directions_from_angle(angle)
 end
 
 -- Fonction utilitaire qui teste la présence d'un obstacle à côté d'une entitée dans la direction donnée
-function test_obstacles_dir(entity, dir, distance)
+function mg.test_obstacles_dir(entity, dir, distance)
   local distance = distance or 1
   return entity:test_obstacles(dirCoef[dir + 1].x * distance, dirCoef[dir + 1].y * distance)
 end
 
 
 -- Fonction qui dit dans quelle direction doit aller un enemi
-function choose_direction(enemy)
+function mg.choose_direction(enemy)
   local map = enemy:get_map()
   -- On récupère les directions 
   local dirs = directions_from_angle(enemy:get_angle(map:get_hero()))
@@ -110,12 +110,12 @@ function choose_direction(enemy)
   return dirs[i % 4]
 end
 
-function choose_random_direction(entity,callback)
+function mg.choose_random_direction(entity,callback)
   local dirs = {}
   local i = 0
-  callback = callback or (function(entity,dir) return dir end)
+  callback = callback or (function(dir, entity) return dir end)
   for dir = 0,3 do
-    if callback(entity,dir) then
+    if callback(dir, entity) then
       i = i + 1
       dirs[i] = dir
     end
@@ -127,7 +127,7 @@ function choose_random_direction(entity,callback)
 end
 
 -- Fonction qui lance le mouvement vers le héros
-function target_hero(enemy, speed)
+function mg.target_hero(enemy, speed)
   if sol.main.get_type(enemy) ~= "enemy" then
     print("Erreur, le paramètre n'est pas de type enemy")
     return
@@ -169,7 +169,7 @@ end
 
 
 -- Fonction qui permet d'arrêter le mouvement (celui utilisé par les fonctions de ce script)
-function stop_movement(enemy)
+function mg.stop_movement(enemy)
   if enemy.is_moving then
     if sol.main.get_type(enemy.t_movement) == "path_movement" then
       enemy.t_movement:stop()
@@ -181,11 +181,11 @@ end
 
 
 -- Fonction liée à l'évènement on_position_changed pour recalculer la nouvelle trajectoire si nécéssaire
-function update_targetting(enemy, x, y, layer)
+function mg.update_targetting(enemy, x, y, layer)
   enemy.distance = enemy.distance + 1
-  if (enemy.t_movement:get_direction4() % 2 == 0 and x % 8 == 0)
+  if enemy.t_movement and ((enemy.t_movement:get_direction4() % 2 == 0 and x % 8 == 0)
       or (enemy.t_movement:get_direction4() % 2 == 1 and y % 8 == 0)
-      or enemy.distance >= 7 then
+      or enemy.distance >= 7) then
     if enemy.is_moving then      
       target_hero(enemy)
     end
@@ -193,12 +193,12 @@ function update_targetting(enemy, x, y, layer)
 end
 
 
-function restart_movement(enemy, movement)
+function mg.restart_movement(enemy, movement)
   target_hero(enemy)
 end
 
 
-function reset_movement(enemy, attack)
+function mg.reset_movement(enemy, attack)
   enemy.back_direction = -1
   enemy.goal_direction = -1
   enemy.forbidden_direction = -1
@@ -207,13 +207,15 @@ function reset_movement(enemy, attack)
 end
 
 
-function initialize_state(enemy, speed)
+function mg.initialize_state(enemy, speed)
   if speed ~= nil then
     enemy.t_speed = speed
   end
   enemy.distance = 0
 
-  enemy:register_event("on_position_changed", update_targetting)
-  enemy:register_event("on_obstacle_reached", restart_movement)
+  enemy:register_event("on_position_changed", mg.update_targetting)
+  enemy:register_event("on_obstacle_reached", mg.restart_movement)
   enemy:register_event("on_hurt", reset_movement)
 end
+
+return mg

@@ -34,7 +34,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(2)
   enemy:set_damage(2)
-  initialize_state(enemy, speed)
+  mg.initialize_state(enemy, speed)
 end
 
 -- Event called when the enemy should start or restart its movements.
@@ -42,14 +42,14 @@ end
 -- it was hurt or immobilized.
 function enemy:on_restarted()
   -- Création du mouvement ciblé sur le héro
-  target_hero(enemy)
+  mg.target_hero(enemy)
   -- On le laisse marcher un certain temps
   sol.timer.start(enemy, walking_time, idle)
 end
 
 function idle()
   -- Puis on l'arrête
-  stop_movement(enemy)
+  mg.stop_movement(enemy)
   sprite:set_animation("stopped")
   -- Soit on lance un caillou
   if math.random(100) < chance_to_throw then
