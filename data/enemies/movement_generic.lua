@@ -68,7 +68,7 @@ end
 function mg.choose_direction(enemy)
   local map = enemy:get_map()
   -- On récupère les directions 
-  local dirs = directions_from_angle(enemy:get_angle(map:get_hero()))
+  local dirs = mg.directions_from_angle(enemy:get_angle(map:get_hero()))
   local continue = true
   local i = 0
 
@@ -77,7 +77,7 @@ function mg.choose_direction(enemy)
     -- On teste s'il y a un obstacle à côté de l'ennemi dans la direction dirs[i]
     -- Ou s'il s'agit de la direction "interdite" pour éviter l'effet "yoyo"
     -- Ou si c'est d'où vient (on accepte le demi-tour si c'est la seule solution)
-    if (not test_obstacles_dir(enemy, dirs[i]))
+    if (not mg.test_obstacles_dir(enemy, dirs[i]))
       and (i == 2 or i == 3 or dirs[i] ~= enemy.forbidden_direction) 
       and (dirs[i] ~= enemy.back_direction or (test_obstacles_dir(enemy, dirs[(i+1)%4])
       and test_obstacles_dir(enemy, dirs[(i+2)%4]) and test_obstacles_dir(enemy, dirs[(i+3)%4]))) then
@@ -160,10 +160,10 @@ function mg.target_hero(enemy, speed)
   if enemy.t_movement == nil or sol.main.get_type(enemy.t_movement) ~= "path_movement" then
     enemy.t_movement = sol.movement.create("path")
     enemy.t_movement:set_speed(enemy.t_speed)
-    enemy.t_movement:set_path{2 * choose_direction(enemy)}
+    enemy.t_movement:set_path{2 * mg.choose_direction(enemy)}
     enemy.t_movement:start(enemy)
   else
-    enemy.t_movement:set_path{2 * choose_direction(enemy)}
+    enemy.t_movement:set_path{2 * mg.choose_direction(enemy)}
   end
 end
 
@@ -176,7 +176,7 @@ function mg.stop_movement(enemy)
     end
     enemy.is_moving = false
   end
-  reset_movement(enemy)
+  mg.reset_movement(enemy)
 end
 
 
@@ -187,14 +187,14 @@ function mg.update_targetting(enemy, x, y, layer)
       or (enemy.t_movement:get_direction4() % 2 == 1 and y % 8 == 0)
       or enemy.distance >= 7) then
     if enemy.is_moving then      
-      target_hero(enemy)
+      mg.target_hero(enemy)
     end
   end
 end
 
 
 function mg.restart_movement(enemy, movement)
-  target_hero(enemy)
+  mg.target_hero(enemy)
 end
 
 
@@ -215,7 +215,16 @@ function mg.initialize_state(enemy, speed)
 
   enemy:register_event("on_position_changed", mg.update_targetting)
   enemy:register_event("on_obstacle_reached", mg.restart_movement)
-  enemy:register_event("on_hurt", reset_movement)
+  enemy:register_event("on_hurt", mg.reset_movement)
+end
+
+function mg.start_jumping(entity, direction, distance, speed, callback)
+  local m = sol.movement.create("jump")
+  m:set_speed(speed or 16)
+  m:set_direction8(direction or 0)
+  m:set_distance(distance or 16)
+  m:start(entity, callback)
+  return m
 end
 
 return mg

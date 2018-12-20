@@ -154,9 +154,17 @@ destination{
 
 enemy{
   layer = 0,
-  x = 152,
-  y = 157,
+  x = 80,
+  y = 141,
   direction = 0,
   breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 173,
+  direction = 0,
+  breed = "skeleton_2",
 }
 

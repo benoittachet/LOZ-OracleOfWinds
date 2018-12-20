@@ -271,6 +271,7 @@ enemy{ id = "octorok", description = "Octorok" }
 enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "pool_dasher", description = "aka Wavedasher" }
 enemy{ id = "skeleton_1", description = "Squelette 1" }
+enemy{ id = "skeleton_2", description = "Squelette 2" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }

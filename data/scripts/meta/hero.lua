@@ -40,7 +40,7 @@ local function initialize_hero_features(game)
       
     end)
 
-  m:start(hero)
+    m:start(hero)
   end
 
   hero.is_on_nonsolid_ground = false
@@ -56,6 +56,18 @@ local function initialize_hero_features(game)
       then hero:save_solid_ground()
     end
     hero.is_on_nonsolid_ground = false
+  end
+
+  function hero:on_state_changed(s)
+    local map = game:get_map()
+    if not map then return false end
+    
+    s = s:gsub(" ", "_")
+    for e in map:get_entities() do
+      if e["on_hero_state_" .. s] then
+        e["on_hero_state_" .. s](hero)
+      end
+    end  
   end
 
 end
