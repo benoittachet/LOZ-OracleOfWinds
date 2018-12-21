@@ -9,8 +9,12 @@ local function initialize_hero_features(game)
   local hero = game:get_hero()
   hero:set_tunic_sprite_id("main_heroes/Link")
   hero:set_sword_sprite_id("hero/sword")
-
+  
   local hero_sprite = hero:get_sprite("tunic")
+
+  hero.get_corner_position = eg.get_corner_position
+  
+  --Méthodes / Callbacks
   function hero:start_hurt_oow(damage, knockback_angle, knockback_distance)
     
     if hero.on_taking_damage then
@@ -65,7 +69,7 @@ local function initialize_hero_features(game)
     s = s:gsub(" ", "_")
     for e in map:get_entities() do
       if e["on_hero_state_" .. s] then
-        e["on_hero_state_" .. s](hero)
+        e["on_hero_state_" .. s](e, hero)
       end
     end  
   end

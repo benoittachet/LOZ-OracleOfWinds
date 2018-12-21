@@ -7,9 +7,11 @@
 
 sol.features = {}
 
-require("scripts/meta/hero")
 require("scripts/hud/hud")
-require("enemies/movement_generic")
-require("enemies/enemy_generic")
+require("scripts/multi_events")
+require("scripts/feature/generic")
+require("scripts/feature/movement_generic")
+require("scripts/feature/entity_generic")
+require("scripts/meta/hero")
 
 return true

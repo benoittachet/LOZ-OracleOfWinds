@@ -24,7 +24,7 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
-enemy.cone_detect = cone_detect
+enemy.cone_detect = eg.cone_detect
 
 local detect_angle = math.pi/2
 local detect_distance = 64

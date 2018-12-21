@@ -8,8 +8,6 @@
 -- of types, events and methods:
 -- http://www.solarus-games.org/doc/latest
 
-require("enemies/movement_generic")
-
 local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
