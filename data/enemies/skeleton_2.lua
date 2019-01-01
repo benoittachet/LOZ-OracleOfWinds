@@ -35,11 +35,11 @@ function enemy:on_created()
 end
 
 function enemy:on_started() --Après le spawn
- -- m:refresh()
+  m:refresh()
 end
 
 function enemy:on_restarted() --L'ennemi restart après avoir été immobilisé (quand il prend un coup par exemple)
- -- m:refresh()
+  m:refresh()
   enemy:reset_jump_state()
 end
 
