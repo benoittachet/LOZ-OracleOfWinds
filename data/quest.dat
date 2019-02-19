@@ -1,5 +1,5 @@
 quest{
-  solarus_version = "1.5",
+  solarus_version = "1.6",
   write_dir = "Oracle of Winds",
   title = "Untitled quest",
   short_description = "",
