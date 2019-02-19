@@ -19,6 +19,13 @@ local tested_dirs
 enemy.jump = mg.start_jumping
 enemy.get_corner_position = eg.get_corner_position
 
+local sword_hitbox = {
+  {x = 8, y = -16, w = 24, h = 32},
+  {x = 0, y = -16, w = 32, h = 24},
+  {x = -16, y = -16, w = 24, h = 32},
+  {x = -16, y = 8, w = 32, h = 24},
+}
+
 local function reset_tested_dirs()
   tested_dirs = {false, false, false, false}
 end
@@ -35,11 +42,11 @@ function enemy:on_created()
 end
 
 function enemy:on_started() --Après le spawn
- -- m:refresh()
+  --m:refresh()
 end
 
 function enemy:on_restarted() --L'ennemi restart après avoir été immobilisé (quand il prend un coup par exemple)
- -- m:refresh()
+  --m:refresh()
   enemy:reset_jump_state()
 end
 
@@ -67,7 +74,6 @@ end
 local function jump_callback() --Fonction qui servira de callback de fin au jump
   enemy:restart()
   enemy:reset_jump_state()
-  print(enemy:get_obstacle_behavior())
 end
 
 function enemy:start_jump() --Déclenche le saut, et change les propriétés de l'enemi en conséquence
@@ -88,10 +94,9 @@ function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le h�
   if enemy.is_jumping then return end
   local x, y = hero:get_corner_position()
   dir = hero:get_sprite():get_direction()
-  local dc = gen.dirCoef
-  x, y = gen.shift_direction4(x, y, dir, 16)
+  local coefs = sword_hitbox[dir + 1]
 
-  if enemy:overlaps(x, y, 16, 16) then
+  if enemy:overlaps(x + coefs.x, y + coefs.y, coefs.w, coefs.h) then
     enemy:start_jump()
   end
 end
