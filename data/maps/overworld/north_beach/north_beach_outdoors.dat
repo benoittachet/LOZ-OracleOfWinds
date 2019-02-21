@@ -4007,7 +4007,7 @@ teletransporter{
   y = 72,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_01/RDC",
+  destination_map = "donjons/level_01/RDC_old",
   destination = "entree",
 }
 

@@ -23,6 +23,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_damage(1)
+  enemy:set_obstacle_behavior("flying")
 end
 
 -- Event called when the enemy should start or restart its movements.
