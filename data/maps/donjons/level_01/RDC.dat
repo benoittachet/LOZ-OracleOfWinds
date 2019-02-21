@@ -480,6 +480,7 @@ tile{
   layer = 0,
   x = 0,
   y = 496,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "12",
