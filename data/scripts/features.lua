@@ -13,5 +13,6 @@ require("scripts/feature/generic")
 require("scripts/feature/movement_generic")
 require("scripts/feature/entity_generic")
 require("scripts/meta/hero")
+require("scripts/feature/video")
 
 return true

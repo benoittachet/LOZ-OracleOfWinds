@@ -10,7 +10,7 @@ require("scripts/sinking_override")
 
 -- This function is called when Solarus starts.
 function sol.main:on_started()
-
+  sol.video.set_scale(2)
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("en")
 
@@ -20,7 +20,7 @@ function sol.main:on_started()
   -- Start the game when the Solarus logo menu is finished.
   function solarus_logo:on_finished()
       sol.menu.start(sol.main,title_screen)
-   
+    
   end
 
   function title_screen:on_finished()
@@ -39,6 +39,8 @@ function sol.main:on_key_pressed(key, modifiers)
     -- F5: change the video mode.
     sol.video.switch_mode()
     handled = true
+  elseif key == "f6" then
+    sol.video.switch_scale()
   elseif key == "f11" or
     (key == "return" and (modifiers.alt or modifiers.control)) then
     -- F11 or Ctrl + return or Alt + Return: switch fullscreen.
@@ -78,7 +80,7 @@ function sol.main:start_savegame(game)
  function game:on_map_changed(map)
     local camera = map:get_camera()
     camera:set_size(160,128)
-   camera:set_position_on_screen(0, 16)
+    camera:set_position_on_screen(0, 16)
   end  
 
   sol.main.game = game

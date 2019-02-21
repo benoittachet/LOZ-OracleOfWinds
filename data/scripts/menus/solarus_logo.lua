@@ -13,7 +13,6 @@ local solarus_logo_menu = {}
 
 -- Main surface of the menu.
 local surface = sol.surface.create(201, 48)
-
 -- Solarus title sprite.
 local title = sol.sprite.create("menus/solarus_logo")
 title:set_animation("title")

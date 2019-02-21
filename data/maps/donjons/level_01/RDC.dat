@@ -2159,33 +2159,6 @@ tile{
   pattern = "20",
 }
 
-tile{
-  layer = 0,
-  x = 368,
-  y = 808,
-  width = 16,
-  height = 48,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 800,
-  width = 48,
-  height = 16,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 848,
-  width = 64,
-  height = 16,
-  pattern = "9",
-}
-
 destination{
   name = "entree",
   layer = 0,
@@ -2741,21 +2714,5 @@ chest{
   y = 189,
   treasure_name = "rock_feather",
   sprite = "entities/chest",
-}
-
-enemy{
-  layer = 0,
-  x = 400,
-  y = 837,
-  direction = 3,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 400,
-  y = 949,
-  direction = 0,
-  breed = "slime_blue",
 }
 

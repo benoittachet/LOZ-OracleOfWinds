@@ -22,7 +22,6 @@ tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
 tileset{ id = "Tileset1", description = "First Tileset" }
 tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
-tileset{ id = "donjon", description = "Tileset Donjon" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
@@ -287,4 +286,5 @@ language{ id = "en", description = "English" }
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "8_bit OOS", description = "8_bit OOS" }
 font{ id = "minecraftia", description = "Minecraftia" }
+
 
