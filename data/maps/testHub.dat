@@ -116,6 +116,15 @@ tile{
   pattern = "60",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "60",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -152,5 +161,15 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "tests/bridges",
+}
+
+teletransporter{
+  name = "donjon1",
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
 }
 
