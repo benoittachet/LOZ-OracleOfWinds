@@ -2078,6 +2078,36 @@ tile{
   tileset = "Tileset_Donjon_1",
 }
 
+tile{
+  layer = 0,
+  x = 840,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 2176,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "Tileset_Donjon_1",
+}
+
 enemy{
   layer = 0,
   x = 720,
