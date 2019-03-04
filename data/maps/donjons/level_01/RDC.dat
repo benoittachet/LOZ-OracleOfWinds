@@ -2108,13 +2108,103 @@ tile{
   tileset = "Tileset_Donjon_1",
 }
 
+tile{
+  layer = 0,
+  x = 440,
+  y = 1984,
+  width = 32,
+  height = 32,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1936,
+  width = 32,
+  height = 32,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1888,
+  width = 32,
+  height = 32,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 1880,
+  width = 32,
+  height = 48,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 1968,
+  width = 32,
+  height = 48,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 1920,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 1952,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1824,
+  width = 32,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 1824,
+  width = 32,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
 enemy{
   layer = 0,
   x = 720,
   y = 1997,
   direction = 0,
   breed = "bat",
-  treasure_name = "random",
+  treasure_name = "rupee",
 }
 
 enemy{
