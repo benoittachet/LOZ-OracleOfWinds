@@ -34,6 +34,13 @@ sprite{ id = "animals/mouse", description = "Mouse" }
 sprite{ id = "animals/phoenix", description = "Phoenix" }
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }
+sprite{ id = "citizens/vieux01", description = "citizens/vieux01" }
+sprite{ id = "citizens/vieux02", description = "citizens/vieux02" }
+sprite{ id = "citizens/vieux03", description = "citizens/vieux03" }
+sprite{ id = "citizens/vieux04", description = "citizens/vieux04" }
+sprite{ id = "citizens/vieux05", description = "citizens/vieux05" }
+sprite{ id = "citizens/vieux06", description = "citizens/vieux06" }
+sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "witch" }
 sprite{ id = "closed_door", description = "porte fermee" }
 sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
