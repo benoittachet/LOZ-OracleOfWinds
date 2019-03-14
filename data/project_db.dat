@@ -58,6 +58,7 @@ sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/pool", description = "Flaque" }
 sprite{ id = "enemies/pool_dasher", description = "aka Wavedasher" }
+sprite{ id = "enemies/skeleton_yellow", description = "Squelette Jaune" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -73,6 +74,7 @@ sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
+sprite{ id = "entities/dungeon_statue_eye", description = "Oeil statues donjons" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/flowers", description = "buissons de fleurs" }
@@ -284,6 +286,7 @@ enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }
 entity{ id = "deep_water", description = "eau profonde" }
+entity{ id = "dungeon_statue_eye" }
 entity{ id = "grass", description = "grass" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }

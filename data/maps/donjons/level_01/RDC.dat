@@ -3001,3 +3001,75 @@ destination{
   direction = 1,
 }
 
+custom_entity{
+  layer = 0,
+  x = 767,
+  y = 2151,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 0,
+  x = 751,
+  y = 2183,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 0,
+  x = 767,
+  y = 2215,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 0,
+  x = 831,
+  y = 2151,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 0,
+  x = 847,
+  y = 2183,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 0,
+  x = 831,
+  y = 2215,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+

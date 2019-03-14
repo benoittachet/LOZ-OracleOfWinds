@@ -66,6 +66,8 @@ function sol.main:on_key_pressed(key, modifiers)
     local hero = sol.main.game:get_hero()
     hero:set_tunic_sprite_id("main_heroes/Link")
     hero:set_sword_sprite_id("hero/sword")
+  elseif key == "f3" then
+    sol.main.game:set_life(12)  
   end
 
   return handled

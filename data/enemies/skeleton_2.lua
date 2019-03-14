@@ -34,7 +34,7 @@ function enemy:on_created()
 
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
-  sprite = enemy:create_sprite("enemies/goomba")
+  sprite = enemy:create_sprite("enemies/skeleton_yellow")
   enemy:set_life(5)
   enemy:set_damage(2)
 
@@ -42,11 +42,11 @@ function enemy:on_created()
 end
 
 function enemy:on_started() --Après le spawn
-  --m:refresh()
+  m:refresh()
 end
 
 function enemy:on_restarted() --L'ennemi restart après avoir été immobilisé (quand il prend un coup par exemple)
-  --m:refresh()
+  m:refresh()
   enemy:reset_jump_state()
 end
 
@@ -73,7 +73,6 @@ end
 
 local function jump_callback() --Fonction qui servira de callback de fin au jump
   enemy:restart()
-  enemy:reset_jump_state()
 end
 
 function enemy:start_jump() --Déclenche le saut, et change les propriétés de l'enemi en conséquence
@@ -82,12 +81,15 @@ function enemy:start_jump() --Déclenche le saut, et change les propriétés de 
   enemy:set_obstacle_behavior("flying")
   enemy:set_attack_consequence("sword", "ignored")
   enemy.is_jumping = true
+  sprite:set_animation("jumping")
 end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut
   enemy:set_obstacle_behavior("normal")
   enemy:set_attack_consequence("sword", 1)
   enemy.is_jumping = false
+  sprite:set_animation("walking")
+  print(enemy:get_obstacle_behavior())
 end
 
 function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le héros utilise l'épée.
