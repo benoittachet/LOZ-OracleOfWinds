@@ -2040,8 +2040,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 1984,
+  x = 704,
+  y = 1744,
   width = 16,
   height = 16,
   pattern = "33",
@@ -2050,8 +2050,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 1888,
+  x = 864,
+  y = 1648,
   width = 16,
   height = 16,
   pattern = "33",
@@ -2060,8 +2060,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 1952,
+  x = 864,
+  y = 1712,
   width = 16,
   height = 16,
   pattern = "33",
@@ -2070,8 +2070,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 1920,
+  x = 704,
+  y = 1680,
   width = 16,
   height = 16,
   pattern = "33",
@@ -2899,18 +2899,32 @@ tile{
 }
 
 enemy{
+  name = "oui",
   layer = 0,
-  x = 720,
-  y = 1997,
+  x = 712,
+  y = 1757,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "bat",
   treasure_name = "random",
 }
 
 enemy{
+  name = "jaja",
   layer = 0,
-  x = 880,
-  y = 1901,
+  x = 872,
+  y = 1661,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "bat",
   treasure_name = "random",
@@ -3071,5 +3085,23 @@ custom_entity{
   origin_y = 7,
   direction = 0,
   model = "dungeon_statue_eye",
+}
+
+door{
+  name = "door_1_a",
+  layer = 0,
+  x = 792,
+  y = 1584,
+  direction = 3,
+  sprite = "door",
+}
+
+door{
+  name = "door_1_b",
+  layer = 0,
+  x = 792,
+  y = 1568,
+  direction = 1,
+  sprite = "door",
 }
 

@@ -24,7 +24,6 @@ tileset{ id = "House", description = "House" }
 tileset{ id = "Tileset1", description = "First Tileset" }
 tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
 tileset{ id = "forest_cave", description = "forest_cave" }
-tileset{ id = "overworld/forest_plain", description = "forest" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/cat_green", description = "Green Cat" }
@@ -43,12 +42,11 @@ sprite{ id = "citizens/vieux05", description = "citizens/vieux05" }
 sprite{ id = "citizens/vieux06", description = "citizens/vieux06" }
 sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "witch" }
-sprite{ id = "closed_door", description = "porte fermee" }
 sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
 sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
 sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
-sprite{ id = "door", description = "portes" }
+sprite{ id = "door", description = "Porte" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
@@ -72,17 +70,13 @@ sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
-sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
-sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
 sprite{ id = "entities/dungeon_statue_eye", description = "Oeil statues donjons" }
 sprite{ id = "entities/explosion", description = "Explosion" }
-sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/flowers", description = "buissons de fleurs" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
 sprite{ id = "entities/grass_darker", description = "entities/grass_darker" }
-sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
@@ -91,8 +85,6 @@ sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
-sprite{ id = "entities/solid_switch", description = "Solid switch" }
-sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/stone_small_black", description = "Stone (black)" }
 sprite{ id = "entities/stone_small_white", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Switch" }
