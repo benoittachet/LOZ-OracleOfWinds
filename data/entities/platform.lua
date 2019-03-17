@@ -13,6 +13,7 @@ local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
 local px, py, x, y, dx, dy, hx, hy = 0, 0, 0, 0, 0, 0
+local speed, dir
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
@@ -25,9 +26,13 @@ function entity:on_created()
   self:set_can_traverse_ground("traversable", false)
   self:set_can_traverse_ground("shallow_water", false)
   self:set_can_traverse_ground("wall", false)
+
+  speed = self:get_property("speed") or 16
+  dir = self:get_property("direction") or entity:get_sprite():get_direction() or 16
+
   local m = sol.movement.create("straight")
-  m:set_speed(16)
-  m:set_angle(math.pi / 2)
+  m:set_speed(speed)
+  m:set_angle(dir)
   m:start(entity)
   
   entity:add_collision_test("overlapping", entity.collision_callback)

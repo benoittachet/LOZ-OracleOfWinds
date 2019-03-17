@@ -2899,6 +2899,26 @@ tile{
   tileset = "Tileset_Donjon_1",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 1208,
+  width = 288,
+  height = 16,
+  pattern = "28",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1224,
+  width = 288,
+  height = 16,
+  pattern = "29",
+  tileset = "Tileset_Donjon_1",
+}
+
 enemy{
   layer = 0,
   x = 712,
@@ -3004,14 +3024,6 @@ block{
   pushable = true,
   pullable = false,
   max_moves = 1,
-}
-
-destination{
-  name = "destination",
-  layer = 0,
-  x = 800,
-  y = 2301,
-  direction = 1,
 }
 
 custom_entity{
@@ -3173,5 +3185,61 @@ custom_entity{
   origin_x = 7,
   origin_y = 7,
   direction = 0,
+}
+
+switch{
+  layer = 0,
+  x = 80,
+  y = 1272,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_platform_1",
+    },
+  },
+  subtype = "walkable",
+  sprite = "door",
+  needs_block = true,
+  inactivate_when_leaving = false,
+}
+
+block{
+  layer = 0,
+  x = 104,
+  y = 1285,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+}
+
+custom_entity{
+  name = "platform_1",
+  layer = 0,
+  x = 168,
+  y = 1237,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "speed",
+      value = "0",
+    },
+    {
+      key = "direction",
+      value = "0",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/platform",
+  model = "platform",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 800,
+  y = 2293,
+  direction = 1,
 }
 

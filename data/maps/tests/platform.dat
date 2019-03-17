@@ -110,16 +110,26 @@ tile{
 destination{
   name = "spawn",
   layer = 0,
-  x = 152,
-  y = 245,
+  x = 80,
+  y = 253,
   direction = 1,
   default = true,
 }
 
 custom_entity{
   layer = 0,
-  x = 152,
+  x = 80,
   y = 253,
+  properties = {
+    {
+      key = "speed",
+      value = "64",
+    },
+    {
+      key = "direction",
+      value = "0",
+    },
+  },
   width = 16,
   height = 16,
   direction = 0,

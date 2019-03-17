@@ -19,14 +19,24 @@ end
 --Launches an event described by the event strin (ex : 'door_<name> to open all doors with this name)
 local function trigger_event(map, event)
   if not type(event) == "string" then return end
+  local name
 
   if event:starts("door_") then  --event type : opening a door
-    local doorID = event:sub(6)
-    mpg.open_door(map, doorID)   --opening all doors having the name specified after "door_"
+    local name = event:sub(6)
+    mpg.open_door(map, name)   --opening all doors having the name specified after "door_"
   elseif event:starts("treasure_") then  --Event type: item spawn
-    mpg.enable_entity(map, event)   --Enabling the item with this name
+    name = event:sub(10)
+    if map:has_entity(name) then
+      mpg.enable_entity(map, name)   --Enabling the item with this name
+    else 
+      mpg.enable_entity(map, event)
+    end
+  elseif event:starts("spawn_") then
+    name = event:sub(7)
+    mpg.enable_entity(map, name)
   end
 end
+
 
 --Callback for the trigger 'death' : added tothe on_dead event callback of enemies linked to a death_trigger. (checks if other enemies linked with this trigger are still alive, if not launches the linked event)
 local function death_trigger_callback(enemy)

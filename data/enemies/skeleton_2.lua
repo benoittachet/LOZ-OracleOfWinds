@@ -98,6 +98,7 @@ end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut
   enemy:set_obstacle_behavior("normal")
+  ene
   enemy:set_attack_consequence("sword", 1)
   enemy.is_jumping = false
   sprite:set_animation("walking")
