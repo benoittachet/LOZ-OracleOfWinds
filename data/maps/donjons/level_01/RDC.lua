@@ -12,8 +12,14 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  gen.import(map, mpg, "init_enemies_event_triggers")
+  gen.import(map, mpg, 
+    "init_enemies_event_triggers", 
+    "init_activate_triggers",
+    "init_activatables"
+  )
   map:init_enemies_event_triggers()
+  map:init_activatables()
+  map:init_activate_triggers()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end

@@ -34,7 +34,7 @@ function enemy:on_created()
 
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
-  sprite = enemy:create_sprite("enemies/skeleton_2")
+  sprite = enemy:create_sprite("enemies/skeleton_3")
   enemy:set_life(5)
   enemy:set_damage(2)
  
@@ -53,6 +53,8 @@ end
 function m:refresh() --Démarre le mouvement de base de l'ennemi : 16 pixels tout droit dans une direction random.
   math.randomseed(os.time())  
   local dir = mg.choose_random_direction(enemy, dir_callback)
+  enemy.direction = dir
+
   m:set_angle(dir * math.pi / 2)
   m:set_speed(48)
   m:set_max_distance(16)
@@ -80,6 +82,8 @@ function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le h�
 end
 
 local function jump_callback() --Fonction qui servira de callback de fin au jump
+  enemy:throw_bone(enemy.direction)
+  print(enemy.direction)
   enemy:restart()  
 end
 
@@ -88,12 +92,16 @@ local function dir_callback(dir) --Fonction qui sera fournie comme callback de c
 end
 
 function enemy:start_jump() --Déclenche le saut, et change les propriétés de l'enemi en conséquence
-  local dir = mg.dir_from_angle(enemy:get_angle(hero) + math.pi) * 2
-  enemy:jump(dir, 16, 36, jump_callback)
+  local dir = mg.dir_from_angle(enemy:get_angle(hero) + math.pi)
+  enemy:jump(dir * 2, 16, 36, jump_callback)
   enemy:set_obstacle_behavior("flying")
   enemy:set_attack_consequence("sword", "ignored")
   enemy.is_jumping = true
   sprite:set_animation("jumping")
+
+  enemy.direction = (dir + 2) % 4 
+  print(dir)
+  print(enemy.direction)
 end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut
@@ -103,3 +111,13 @@ function enemy:reset_jump_state() --Annule les changements de propriétés caus�
   sprite:set_animation("walking")
 end
 
+function enemy:throw_bone(direction)
+  local properties = {}
+    properties.model = "bone"
+    properties.x, properties.y, properties.layer = enemy:get_position()
+    properties.width = 16
+    properties.height = 16
+    properties.direction = direction
+  local arrow = map:create_custom_entity(properties)
+    arrow:set_hurts_hero()
+end

@@ -2082,6 +2082,7 @@ tile{
   layer = 0,
   x = 840,
   y = 1112,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "34",
@@ -2899,7 +2900,6 @@ tile{
 }
 
 enemy{
-  name = "oui",
   layer = 0,
   x = 712,
   y = 1757,
@@ -2915,7 +2915,6 @@ enemy{
 }
 
 enemy{
-  name = "jaja",
   layer = 0,
   x = 872,
   y = 1661,
@@ -2943,7 +2942,7 @@ chest{
   layer = 0,
   x = 360,
   y = 1853,
-  treasure_name = "map",
+  treasure_name = "rock_feather",
   sprite = "entities/chest",
 }
 
@@ -3103,5 +3102,76 @@ door{
   y = 1568,
   direction = 1,
   sprite = "door",
+}
+
+pickable{
+  name = "treasure_1",
+  layer = 0,
+  x = 1072,
+  y = 1933,
+  enabled_at_start = false,
+  treasure_name = "small_key",
+}
+
+block{
+  name = "boneless",
+  layer = 0,
+  x = 1032,
+  y = 1973,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "1",
+    },
+    {
+      key = "activate_trigger",
+      value = "treasure_1",
+    },
+  },
+  direction = 0,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 1032,
+  y = 1893,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+}
+
+block{
+  layer = 0,
+  x = 1112,
+  y = 1973,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 751,
+  y = 1119,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 847,
+  y = 1119,
+  width = 16,
+  height = 16,
+  origin_x = 7,
+  origin_y = 7,
+  direction = 0,
 }
 

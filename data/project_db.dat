@@ -57,7 +57,8 @@ sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/pool", description = "Flaque" }
 sprite{ id = "enemies/pool_dasher", description = "aka Wavedasher" }
-sprite{ id = "enemies/skeleton_yellow", description = "Squelette Jaune" }
+sprite{ id = "enemies/skeleton_2", description = "Squelette Jaune" }
+sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -66,6 +67,7 @@ sprite{ id = "entities/big_chest", description = "Big chest" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
+sprite{ id = "entities/bone", description = "entities/bone" }
 sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
@@ -275,9 +277,11 @@ enemy{ id = "oursin", description = "oursin" }
 enemy{ id = "pool_dasher", description = "aka Wavedasher" }
 enemy{ id = "skeleton_1", description = "Squelette 1" }
 enemy{ id = "skeleton_2", description = "Squelette 2" }
+enemy{ id = "skeleton_3", description = "Squelette 3" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
 entity{ id = "arrow", description = "Arrow" }
+entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "dungeon_statue_eye" }
 entity{ id = "grass", description = "grass" }

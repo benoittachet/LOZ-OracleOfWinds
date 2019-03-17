@@ -7,14 +7,15 @@
 
 sol.features = {}
 
-require("scripts/hud/hud")
 require("scripts/multi_events")
+require("scripts/hud/hud")
 require("scripts/feature/generic")
 require("scripts/feature/movement_generic")
 require("scripts/feature/entity_generic")
 require("scripts/feature/map_generic")
-require("scripts/feature/primary_meta")
+require("scripts/meta/primary")
 require("scripts/meta/hero")
+require("scripts/meta/entities")
 require("scripts/feature/video")
 
 return true

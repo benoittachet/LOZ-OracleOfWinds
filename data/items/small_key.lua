@@ -9,3 +9,7 @@ function item:on_created()
   self:set_amount_savegame_variable("small_keys")
   
 end
+
+function item:on_obtained()
+  self:add_amount(1)
+end
