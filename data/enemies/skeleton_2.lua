@@ -46,8 +46,8 @@ function enemy:on_started() --Après le spawn
 end
 
 function enemy:on_restarted() --L'ennemi restart après avoir été immobilisé (quand il prend un coup par exemple)
-  m:refresh()
   enemy:reset_jump_state()
+  m:refresh()
 end
 
 function m:refresh() --Démarre le mouvement de base de l'ennemi : 16 pixels tout droit dans une direction random.
@@ -80,7 +80,8 @@ function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le h�
 end
 
 local function jump_callback() --Fonction qui servira de callback de fin au jump
-  enemy:restart()  
+  enemy:restart()
+  print("enemy:get_obstacle_behavior() :", enemy:get_obstacle_behavior())
 end
 
 local function dir_callback(dir) --Fonction qui sera fournie comme callback de choose_random_direction
@@ -98,7 +99,6 @@ end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut
   enemy:set_obstacle_behavior("normal")
-  ene
   enemy:set_attack_consequence("sword", 1)
   enemy.is_jumping = false
   sprite:set_animation("walking")

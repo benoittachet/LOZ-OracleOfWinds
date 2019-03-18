@@ -20,7 +20,6 @@ function sol.main:on_started()
   -- Start the game when the Solarus logo menu is finished.
   function solarus_logo:on_finished()
       sol.menu.start(sol.main,title_screen)
-    
   end
 
   function title_screen:on_finished()
@@ -68,6 +67,8 @@ function sol.main:on_key_pressed(key, modifiers)
     hero:set_sword_sprite_id("hero/sword")
   elseif key == "f3" then
     sol.main.game:set_life(12)  
+  elseif key == "f7" then
+    print(sol.main.game:get_value("small_keys"))
   end
 
   return handled

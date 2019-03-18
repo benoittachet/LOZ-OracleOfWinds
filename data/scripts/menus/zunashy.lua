@@ -4,7 +4,6 @@ local surface = sol.surface.create("menus/title.png")
 
 function title_screen_menu:on_draw(screen)
   surface:draw(screen)
-
 end
 
 function title_screen_menu:on_started()

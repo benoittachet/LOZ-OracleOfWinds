@@ -146,9 +146,9 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 184,
-  y = 237,
+  x = 88,
+  y = 285,
   direction = 0,
-  breed = "skeleton_3",
+  breed = "skeleton_2",
 }
 

@@ -23,7 +23,7 @@ local function trigger_event(map, event)
   local name
 
   if event:starts("door_") then  --event type : opening a door
-    map:open_door(event:sub(6))   --opening all doors having the name specified after "door_"
+    mpg.open_door(map, event:sub(6))   --opening all doors having the name specified after "door_"
   elseif event:starts("treasure_") then  --Event type: item spawn
     name = event:sub(10)
     if map:has_entity(name) then
