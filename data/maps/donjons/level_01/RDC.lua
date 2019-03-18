@@ -15,11 +15,13 @@ function map:on_started()
   gen.import(map, mpg, 
     "init_enemies_event_triggers", 
     "init_activate_triggers",
-    "init_activatables"
+    "init_activatables",
+    "init_detect_open"
   )
   map:init_enemies_event_triggers()
   map:init_activatables()
   map:init_activate_triggers()
+  map:init_detect_open()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end

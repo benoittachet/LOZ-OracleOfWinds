@@ -5,6 +5,7 @@ mpg = {}
 function mpg.open_door(map, name)
   if type(name) == "number" then name = tostring(name) end
   if not map then return end
+  map:open_doors(name)
   map:open_doors("door_"..name)
 end
 
@@ -22,8 +23,7 @@ local function trigger_event(map, event)
   local name
 
   if event:starts("door_") then  --event type : opening a door
-    local name = event:sub(6)
-    mpg.open_door(map, name)   --opening all doors having the name specified after "door_"
+    map:open_door(event:sub(6))   --opening all doors having the name specified after "door_"
   elseif event:starts("treasure_") then  --Event type: item spawn
     name = event:sub(10)
     if map:has_entity(name) then
@@ -114,9 +114,31 @@ function mpg.init_activatables(map)
   end
 end
 
-function mpg.init_triggers(map)
+local function detect_open_callback(door)
+  local map = door:get_map()
+  local name = door:get_name()
+  if not name then return end
+  name = name:field("_", 2)
+  mpg.open_door(map, name)
+end
+
+function mpg.init_detect_open(map)
+  if not map then return end
+    
+  for e in map:get_entities_by_type("door") do
+    if e:get_property("detect_open") then
+      e:register_event("on_opened", detect_open_callback)
+    end
+  end
+end
+
+function mpg.init_map_features(map, ...)
+  
   map:init_enemies_event_triggers()
-  mpg:init_activate_triggers()
+  map:init_activate_triggers()
+  map:init_activatables()
+  map:init_detect_open()  
+
 end
 
 return mpg

@@ -47,7 +47,6 @@ sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
 sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
 sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
-sprite{ id = "door", description = "Porte" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
@@ -74,6 +73,8 @@ sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
+sprite{ id = "entities/door", description = "Portes" }
+sprite{ id = "entities/door_key", description = "Porte fermée à clé." }
 sprite{ id = "entities/dungeon_statue_eye", description = "Oeil statues donjons" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/flowers", description = "buissons de fleurs" }
@@ -90,7 +91,7 @@ sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/stone_small_black", description = "Stone (black)" }
 sprite{ id = "entities/stone_small_white", description = "Stone (white)" }
-sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "entities/switch", description = "Interrupteur donjon" }
 sprite{ id = "entities/waterfall", description = "cascade" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }

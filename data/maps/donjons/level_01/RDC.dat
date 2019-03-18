@@ -3104,7 +3104,9 @@ door{
   x = 792,
   y = 1584,
   direction = 3,
-  sprite = "door",
+  sprite = "entities/door",
+  opening_method = "interaction_if_item",
+  opening_condition = "bomb",
 }
 
 door{
@@ -3113,7 +3115,7 @@ door{
   x = 792,
   y = 1568,
   direction = 1,
-  sprite = "door",
+  sprite = "entities/door",
 }
 
 pickable{
@@ -3198,7 +3200,7 @@ switch{
     },
   },
   subtype = "walkable",
-  sprite = "door",
+  sprite = "entities/switch",
   needs_block = true,
   inactivate_when_leaving = false,
 }
@@ -3241,5 +3243,33 @@ destination{
   x = 800,
   y = 2293,
   direction = 1,
+}
+
+door{
+  name = "door_2_a",
+  layer = 0,
+  x = 792,
+  y = 1824,
+  properties = {
+    {
+      key = "detect_open",
+      value = "1",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door_key",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+}
+
+door{
+  name = "door_2_b",
+  layer = 0,
+  x = 792,
+  y = 1808,
+  direction = 1,
+  sprite = "entities/door_key",
+  opening_condition = "bomb",
 }
 
