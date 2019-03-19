@@ -4,17 +4,16 @@
 
 require("scripts/features")
 local game_manager = require("scripts/game_manager")
-local solarus_logo = require("scripts/menus/solarus_logo")
-local title_screen = require("scripts/menus/zunashy")
+local start_initial_menus = require("scripts/menus/initial_menus_manager")
 --require("scripts/sinking_override")
 local input_manager = require("scripts/input_manager")
 
+local default_save_file = "save1.dat"
+
 -- Starts a game.
-function sol.main:start_savegame(game)
-
-  -- Skip initial menus if any.
-  sol.menu.stop(solarus_logo)
-
+function sol.main:start_game(file)
+  local game = game_manager:create(file)
+  
   sol.main.game = game
   game:start()
 end
@@ -25,19 +24,7 @@ function sol.main:on_started()
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("en")
 
-  -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
-
-  -- Start the game when the Solarus logo menu is finished.
-  function solarus_logo:on_finished()
-      sol.menu.start(sol.main,title_screen)
-  end
-
-  function title_screen:on_finished()
-     local game = game_manager:create("save1.dat")
-
-     sol.main:start_savegame(game)
-  end
+  start_initial_menus(function() sol.main:start_game(default_save_file) end)
 end
 
 -- Event called when the program stops.
