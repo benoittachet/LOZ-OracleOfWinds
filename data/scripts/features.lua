@@ -16,6 +16,7 @@ require("scripts/feature/map_generic")
 require("scripts/meta/primary")
 require("scripts/meta/hero")
 require("scripts/meta/entities")
+require("scripts/meta/game")
 require("scripts/feature/video")
 
 return true
