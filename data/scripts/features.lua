@@ -18,5 +18,6 @@ require("scripts/meta/hero")
 require("scripts/meta/entities")
 require("scripts/meta/game")
 require("scripts/feature/video")
+require("scripts/menus/dialog_box")
 
 return true

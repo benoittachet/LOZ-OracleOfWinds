@@ -173,3 +173,10 @@ teletransporter{
   destination_map = "donjons/level_01/RDC",
 }
 
+pickable{
+  layer = 0,
+  x = 80,
+  y = 69,
+  treasure_name = "small_key",
+}
+
