@@ -16,9 +16,9 @@ local dialog_box = {
   next = nil,
 
   -- Displaying text gradually.
-  next_line = nil,             -- Next line to display or nil.
+  current_line = nil,             -- Next line to display or nil.
+  next_line = nil,
   line_it = nil,               -- Iterator over of all lines of the dialog.
-  lines = {},                  -- Array of the text of the 3 visible lines.
   line_surfaces = {},          -- Array of the 3 text surfaces.
   line_index = nil,            -- Line currently being shown.
   char_index = nil,            -- Next character to show in the current line.
@@ -37,13 +37,15 @@ local dialog_box = {
   box_position = {x = 0, y = 0},      -- Destination coordinates of the dialog box.
   question_dst_position = nil, -- Destination coordinates of the question icon.
   icon_dst_position = nil,     -- Destination coordinates of the icon.
+  font = "oracle",
+  font_size = 15,
   text_color = { 115, 59, 22 } -- Text color.
 
 }
 
 
 -- Constants.
-local nb_visible_lines = 3     -- Maximum number of lines in the dialog box.
+local nb_visible_lines = 2     -- Maximum number of lines in the dialog box.
 local char_delays = {          -- Delay before displaying the next character.
   slow = 60,
   medium = 40,
@@ -56,7 +58,6 @@ local arrow_pos = {x = 136, y = 33}
 -- Initialize dialog box data.
 --dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
 for i = 1, nb_visible_lines do
-  dialog_box.lines[i] = ""
   dialog_box.line_surfaces[i] = sol.text_surface.create{
     horizontal_alignment = "left",
     vertical_alignment = "top",
@@ -78,14 +79,12 @@ dialog_box.end_arrow = sol.surface.create("menus/dialog.png")
 function dialog_box:on_started()
   --debug
   print(dialog_box.dialog.text)
-  self.box_position:set(8, 96) --à remplacer par un vrai calcul de la position de la box en fonction de celle du joeur
-  sol.timer.start(game, 2000, function() dialog_box:show_next_dialog() end)
-  self:start_arrow_blinking()
 
-  game:set_custom_command_effect("action", function(game) 
-    game:get_dialog_box():show_next_dialog()
-    return true 
-  end)
+  
+  self.char_delay = char_delays["fast"] -- à remplacer par une vraie sélection de la vitesse (settings ?)
+  self.box_position:set(8, 96) --à remplacer par un vrai calcul de la position de la box en fonction de celle du joeur
+  sol.timer.start(game, 2000, function() dialog_box:advance_dialog() end)
+  self:start_arrow_blinking()
 end
 
 function dialog_box:on_finished()
@@ -101,8 +100,13 @@ function dialog_box:on_draw(dst_surface)
     self.end_arrow:draw(self.surface, x + arrow_pos.x, y + arrow_pos.y)
   end
 
-
   self.surface:draw(dst_surface)
+end
+
+function dialog_box:on_command_pressed(command)
+  if command == "action" and dialog_box:is_full() then
+    dialog_box:advance_dialog()
+  end
 end
 
 --====== DIALOG MENU FUNCTIONS ======
@@ -122,8 +126,12 @@ function dialog_box.box_position:set(x, y)
   self.y = y
 end
 
+function dialog_box:is_line_full()
+  return self.char_index > #self.current_line
+end
+
 function dialog_box:is_full()
-  return true
+  return false
 end
 
 function dialog_box:start_arrow_blinking()
@@ -139,11 +147,60 @@ function dialog_box:stop_arrow_blinking()
   self.arrow_timer:stop()
 end
 
-function dialog_box:show_next_dialog()
+function dialog_box:show_dialog()
+-- Initialize this dialog.
+  local dialog = self.dialog
+
+  local text = dialog.text
+  if dialog_box.info ~= nil then
+    -- There is a "$v" sequence to substitute.
+    text = text:gsub("%$v", dialog_box.info)
+  end
+  -- Split the text in lines.
+  text = text:gsub("\r\n", "\n"):gsub("\r", "\n")
+  self.line_it = text:gmatch("([^\n]*)\n")  -- Each line including empty ones.
+  self.next_line = self.line_it()
+  self.line_index = 1
+  
+  for i = 1, nb_visible_lines do
+    self.line_surfaces[i]:set_text("")
+  end
+
+  self:start_next_line()
+
+end
+
+function dialog_box:start_next_line()
+  if not self:has_more_lines() then
+    self:show_next_dialog()
+    return
+  end
+
+  self.current_line = self.next_line
+  self.next_line = line_it()  
+
+end
+
+function dialog_box:start_line()
+  self.char_index = 1
+  self:show_next_char()
+  sol.timer.start(self, self.char_delay, self.show_next_char)
+end
+
+function dialog_box:show_next_char()
+  
+end
+
+function dialog_box:has_more_lines()
+  return self.next_line ~= nil
+end
+
+function dialog_box:advance_dialog()
   if not self.next_dialog and sol.menu.is_started(self) then
     self:quit()
   end
 end
+
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
