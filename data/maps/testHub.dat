@@ -149,7 +149,7 @@ destination{
   name = "spawn",
   layer = 0,
   x = 80,
-  y = 85,
+  y = 125,
   direction = 1,
   default = true,
 }
@@ -176,7 +176,7 @@ teletransporter{
 pickable{
   layer = 0,
   x = 80,
-  y = 69,
+  y = 109,
   treasure_name = "small_key",
 }
 
