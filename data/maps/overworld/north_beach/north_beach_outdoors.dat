@@ -1171,15 +1171,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 512,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "125",
-}
-
-tile{
-  layer = 0,
   x = 384,
   y = 448,
   width = 32,
@@ -3723,15 +3714,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 576,
-  width = 16,
-  height = 16,
-  pattern = "65",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 608,
   width = 16,
@@ -3757,16 +3739,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "5",
-  tileset = "Zunatest/tiletest",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 576,
-  width = 16,
-  height = 16,
-  pattern = "7",
   tileset = "Zunatest/tiletest",
 }
 
@@ -5163,6 +5135,46 @@ tile{
   width = 8,
   height = 8,
   pattern = "238",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "Zunatest/tiletest",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "6",
+  tileset = "Zunatest/tiletest",
 }
 
 destructible{
