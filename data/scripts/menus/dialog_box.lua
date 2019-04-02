@@ -62,7 +62,7 @@ local text_pos = {} -- Text position relative to the box
 local line_transition_speed = 64
 
 function text_pos:reset()
-  self.x = 9
+  self.x = 8
   self.y = 6
 end
 
