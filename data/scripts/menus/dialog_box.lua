@@ -11,7 +11,7 @@ local dialog_box = {
   skip_mode = nil,             -- "none", "current", "all" or "unchanged".
   icon_index = nil,            -- Index of the 16x16 icon in hud/dialog_icons.png or nil.
   info = nil,                  -- Parameter passed to start_dialog().
-  skipped = false,             -- Whether the player skipped the dialog.
+  skipping = false,            -- Whether the player skipped the dialog.
   selected_answer = nil,       -- Selected answer (1 or 2) or nil if there is no question.
   next = nil,
 
@@ -19,6 +19,8 @@ local dialog_box = {
   current_line = nil,             -- Next line to display or nil.
   next_line = nil,
   new_lines = 0,
+  line_movement = nil,
+  char_timer = nil,
   line_it = nil,               -- Iterator over of all lines of the dialog.
   line_surfaces = {},          -- Array of the 3 text surfaces.
   line_index = nil,            -- Line currently being shown.
@@ -133,6 +135,8 @@ end
 function dialog_box:on_command_pressed(command)
   if command == "action" and dialog_box:is_full() then
     dialog_box:advance()
+  elseif command == "attack" then 
+    dialog_box:skip()    
   end
 end
 
@@ -172,6 +176,9 @@ function dialog_box:is_full()
 end
 
 function dialog_box:start_arrow_blinking()
+  if self.arrow_timer then
+    return
+  end
   self.draw_arrow = true
   self.arrow_timer = sol.timer.start(self, 500, function()
     dialog_box.draw_arrow = not dialog_box.draw_arrow
@@ -182,6 +189,7 @@ end
 function dialog_box:stop_arrow_blinking()
   self.draw_arrow = false
   self.arrow_timer:stop()
+  self.arrow_timer = nil
 end
 
 function dialog_box:show_dialog()
@@ -208,6 +216,7 @@ end
 
 function dialog_box:advance()
   self.new_lines = 0
+  self.skipping = false
   if self:has_more_lines() then
     self:pre_next_line()
   else
@@ -229,6 +238,7 @@ function dialog_box:pre_next_line()
 
   self.line_index = self.line_index + 1   
   self:start_next_line()
+
 end
 
 function dialog_box:start_next_line()
@@ -239,8 +249,17 @@ function dialog_box:start_next_line()
 
   self.new_lines = self.new_lines + 1
 
-  self.char_index = 1
+  if self.skipping then
+    self:instant_line()
+  end
+
+  self.char_index = 0
   self:show_next_char()
+end
+
+function dialog_box:shift_text_surfaces()
+  self.line_surfaces[1]:set_text( self.line_surfaces[2]:get_text() )
+  self.line_surfaces[2]:set_text("")
 end
 
 function dialog_box:start_next_line_animation()
@@ -249,26 +268,36 @@ function dialog_box:start_next_line_animation()
   line_movement:set_angle(math.pi / 2)
   line_movement.dbox = dialog_box
   line_movement:set_max_distance(16)
+  self.line_movement = line_movement
   function line_movement:on_finished()
-    self.dbox.line_surfaces[1]:set_text( self.dbox.line_surfaces[2]:get_text() )
-    self.dbox.line_surfaces[2]:set_text("")
+    self.dbox.moving = false
+    self.dbox:shift_text_surfaces()
     self.dbox:start_next_line()
   end
 
+  if self.skipping then
+    line_movement:on_finished()
+    return
+  end
+
+  self.moving = true
   line_movement:start(text_pos)
 end
 
 function dialog_box:show_next_char()
+
+  self.char_index = self.char_index + 1
+  if self:is_line_full() or self.skipping then
+    self:pre_next_line()
+    return
+  end 
+
   local current_char = self.current_line:sub(self.char_index, self.char_index)
   local tsurface = self.line_surfaces[self.line_index]
 
   tsurface:set_text(tsurface:get_text()..current_char)
-  self.char_index = self.char_index + 1
-  if self:is_line_full() then
-    self:pre_next_line()
-  else
-    sol.timer.start(self, self.char_delay, function() self:show_next_char() end)
-  end
+  
+  self.char_timer = sol.timer.start(self, self.char_delay, function() self:show_next_char() end)
 end
 
 function dialog_box:show_next_dialog()
@@ -285,7 +314,21 @@ function dialog_box:has_more_lines()
   return self.next_line ~= nil
 end
 
+function dialog_box:instant_line()
+  self.line_surfaces[self.line_index]:set_text(self.current_line)
+end
 
+function dialog_box:skip()
+
+  if self.moving then
+    self.line_movement:stop()
+  end
+
+  self.skipping = true
+  self.char_timer:stop()
+  self:instant_line()
+  self:pre_next_line()
+end
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
