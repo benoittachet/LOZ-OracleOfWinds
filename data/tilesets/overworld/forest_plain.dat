@@ -1,5 +1,16 @@
 background_color{ 255, 255, 255 }
 tile_pattern{
+  id = "1",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 32, 64 },
+  y = { 32, 32, 32 },
+  width = 32,
+  height = 32,
+  frame_delay = 250,
+}
+
+tile_pattern{
   id = "10",
   ground = "traversable",
   default_layer = 0,
@@ -467,15 +478,5 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
-}
-
-tile_pattern{
-  id = "9",
-  ground = "wall",
-  default_layer = 0,
-  x = 0,
-  y = 32,
-  width = 96,
-  height = 32,
 }
 
