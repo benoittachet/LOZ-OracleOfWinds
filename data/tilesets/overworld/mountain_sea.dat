@@ -61,6 +61,56 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "15",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "16",
+  ground = "traversable",
+  default_layer = 0,
+  x = 176,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "17",
+  ground = "traversable",
+  default_layer = 0,
+  x = 192,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "18",
+  ground = "traversable",
+  default_layer = 0,
+  x = 192,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "19",
+  ground = "traversable",
+  default_layer = 0,
+  x = 192,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2",
   ground = "deep_water",
   default_layer = 0,
@@ -69,6 +119,38 @@ tile_pattern{
   width = 16,
   height = 8,
   frame_delay = 250,
+}
+
+tile_pattern{
+  id = "20",
+  ground = "wall",
+  default_layer = 0,
+  x = { 128, 144, 160, 176 },
+  y = { 40, 40, 40, 40 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "21",
+  ground = "wall",
+  default_layer = 0,
+  x = { 128, 144, 160, 176 },
+  y = { 56, 56, 56, 56 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "22",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
