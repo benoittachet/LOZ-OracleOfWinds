@@ -26,6 +26,8 @@ tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
+tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
+tileset{ id = "overworld/structure", description = "structures" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/cat_green", description = "Green Cat" }
@@ -415,7 +417,7 @@ file{ path = "tilesets/forest_cave.dat", author = "Zunashy", }
 file{ path = "tilesets/forest_cave.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/Forest_plain.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/Jungle.tiles.png", author = "Zunashy", }
+file{ path = "tilesets/overworld/Mountain_sea.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/Structure.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/forest_plain.dat", author = "Zunashy", }
-file{ path = "tilesets/overworld/moutain_sea.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/tileset_donjon_1.entities.png", author = "Zunashy", }

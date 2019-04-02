@@ -125,6 +125,15 @@ tile{
   pattern = "60",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "60",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -178,5 +187,15 @@ pickable{
   x = 80,
   y = 109,
   treasure_name = "small_key",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "test_eau",
 }
 
