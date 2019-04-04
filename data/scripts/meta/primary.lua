@@ -12,3 +12,11 @@ function string.field(s, sep, index)
   local end_index = s:find(sep, start_index) - 1
   return s:sub(start_index, end_index)
 end
+
+function string.insert(s, ins, pos)
+  return s:sub(1, pos - 1)..ins..s:sub(pos)
+end
+
+function string.chars(s)
+  return s:gmatch"."
+end
