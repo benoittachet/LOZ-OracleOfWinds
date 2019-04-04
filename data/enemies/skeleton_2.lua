@@ -60,6 +60,7 @@ function m:refresh() --Démarre le mouvement de base de l'ennemi : 16 pixels tou
 end 
 
 function m:on_obstacle_reached() --Callback d'event appelé quand l'ennemi atteint un obstacle
+  print("obstacle reached")
   m:refresh()
 end
 

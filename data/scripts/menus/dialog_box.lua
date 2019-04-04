@@ -60,6 +60,7 @@ local arrow_pos = {x = 136, y = 33}
 local line_spacing = 16
 local text_pos = {} -- Text position relative to the box
 local line_transition_speed = 64
+local text_max_width = box_size.w - 15
 
 function text_pos:reset()
   self.x = 8
@@ -104,6 +105,8 @@ function dialog_box:on_started()
       self.box_position:set(8, 24)
     end
   end
+
+  
 
   self:show_dialog()
 end
@@ -192,10 +195,42 @@ function dialog_box:stop_arrow_blinking()
   self.arrow_timer = nil
 end
 
+function dialog_box:parse_text()
+  local chars_on_line = 0
+  local max_line = math.floor(text_max_width / 8)
+  local special = false
+  local c
+  local i = 1
+  local text = self.dialog.text
+  local strlen = text:len()
+  
+
+  while i <= strlen do
+    c = text:sub(i, i)
+    if c == "$" then
+      special = true
+    elseif special then
+      special = false
+    elseif c:byte() and c:byte() > 31 then
+      chars_on_line = chars_on_line + 1
+      if chars_on_line > max_line then
+        text = text:insert("\n", i)
+        strlen = strlen + 1
+        i = i + 1
+        chars_on_line = 1
+      end
+    end
+    i = i + 1
+  end
+  self.dialog.text = text
+ 
+end
+
 function dialog_box:show_dialog()
 -- Initialize this dialog.
   local dialog = self.dialog
 
+  self:parse_text()
   local text = dialog.text
   if dialog_box.info ~= nil then
     -- There is a "$v" sequence to substitute.
