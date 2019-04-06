@@ -38,19 +38,22 @@ function gen.class(bClass)
   local newclass = {}
   newclass.mt = {__index = newclass}
 
-  function newclass:new()
+  function newclass:new(...)
     local inst
-    if type(self.create) == "function" then
-      inst = self:create() or {}
+    if type(self.build) == "function" then
+      inst = self:build(...) or {}
     else 
       inst = {}
     end
     setmetatable(inst, self.mt)
+    if type(inst.constructor) == "function" then
+      inst:constructor(...)
+    end 
     return inst
   end
       
   if bClass then
-    if bClass.__index then
+    if type(bClass) == "table" and ClassbClass.__index then
       setmetatable(newclass, bClass)
     else
       setmetatable(newclass, {__index = bClass})
