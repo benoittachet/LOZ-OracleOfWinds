@@ -66,5 +66,4 @@ function gen.new(class)
   end
 end
 
-
 return gen
