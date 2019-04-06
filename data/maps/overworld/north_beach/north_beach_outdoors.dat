@@ -5787,11 +5787,31 @@ tile{
 
 tile{
   layer = 1,
-  x = 424,
+  x = 408,
   y = 440,
   width = 8,
   height = 8,
   pattern = "28",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "26",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "27",
   tileset = "overworld/mountain_sea",
 }
 
@@ -5801,47 +5821,7 @@ tile{
   y = 440,
   width = 8,
   height = 8,
-  pattern = "26",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 408,
-  y = 440,
-  width = 8,
-  height = 8,
   pattern = "27",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 416,
-  y = 440,
-  width = 8,
-  height = 8,
-  pattern = "27",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 472,
-  y = 440,
-  width = 8,
-  height = 8,
-  pattern = "28",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 448,
-  y = 440,
-  width = 8,
-  height = 8,
-  pattern = "26",
   tileset = "overworld/mountain_sea",
 }
 
@@ -5851,13 +5831,23 @@ tile{
   y = 440,
   width = 8,
   height = 8,
-  pattern = "27",
+  pattern = "28",
   tileset = "overworld/mountain_sea",
 }
 
 tile{
   layer = 1,
-  x = 464,
+  x = 432,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "26",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 440,
   y = 440,
   width = 8,
   height = 8,
@@ -5867,7 +5857,17 @@ tile{
 
 tile{
   layer = 1,
-  x = 400,
+  x = 448,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "27",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 384,
   y = 448,
   width = 32,
   height = 16,
@@ -5877,7 +5877,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 448,
+  x = 432,
   y = 448,
   width = 32,
   height = 16,
@@ -5923,6 +5923,24 @@ tile{
   height = 16,
   pattern = "6",
   tileset = "Zunatest/tiletest",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 616,
+  width = 32,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 616,
+  width = 32,
+  height = 32,
+  pattern = "4",
 }
 
 separator{
