@@ -308,18 +308,18 @@ tile{
 teletransporter{
   layer = 0,
   x = 72,
-  y = 120,
+  y = 112,
   width = 16,
   height = 16,
-  destination_map = "Outdoors/plageNord",
-  destination = "Sortie_Grotte_01",
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "cave_01_to_beach",
 }
 
 destination{
-  name = "destination",
+  name = "beach_to_cave_01",
   layer = 0,
   x = 80,
-  y = 125,
+  y = 117,
   direction = 1,
 }
 

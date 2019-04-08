@@ -4669,7 +4669,7 @@ destructible{
 teletransporter{
   layer = 0,
   x = 224,
-  y = -8,
+  y = 0,
   width = 32,
   height = 16,
   destination_map = "overworld/north_beach/north_beach_outdoors",
@@ -4679,7 +4679,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 256,
-  y = 136,
+  y = 144,
   width = 16,
   height = 16,
   destination_map = "overworld/wind_wood/forest_cave",
@@ -4689,7 +4689,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 384,
-  y = 168,
+  y = 176,
   width = 16,
   height = 16,
   destination_map = "overworld/wind_wood/house_forest",
@@ -4700,7 +4700,7 @@ destination{
   name = "beach_to_forest",
   layer = 0,
   x = 240,
-  y = 13,
+  y = 21,
   direction = 1,
 }
 
@@ -4708,7 +4708,7 @@ destination{
   name = "forest_house_to_forest",
   layer = 0,
   x = 392,
-  y = 189,
+  y = 197,
   direction = 1,
 }
 
@@ -4716,7 +4716,26 @@ destination{
   name = "forest_cave_01_to_forest",
   layer = 0,
   x = 264,
-  y = 157,
+  y = 165,
+  direction = 1,
+}
+
+teletransporter{
+  name = "forest_to_sword",
+  layer = 0,
+  x = 592,
+  y = 304,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/wind_wood/sword_cave",
+  destination = "destination",
+}
+
+destination{
+  name = "swordToForest",
+  layer = 0,
+  x = 592,
+  y = 317,
   direction = 1,
 }
 

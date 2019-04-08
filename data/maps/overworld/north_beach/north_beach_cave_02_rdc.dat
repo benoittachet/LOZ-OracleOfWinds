@@ -821,17 +821,36 @@ tile{
 teletransporter{
   layer = 0,
   x = 256,
-  y = 120,
+  y = 112,
   width = 16,
   height = 16,
-  destination_map = "overworld/north_beach/north_beach_cave_02_rdc",
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "cave_01_to_beach",
 }
 
 destination{
   name = "cave_2_entrance",
   layer = 0,
   x = 264,
-  y = 125,
+  y = 117,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_cave_02_ss1",
+  destination = "rdc_to_ss1",
+}
+
+destination{
+  name = "ss1_to_rdc",
+  layer = 0,
+  x = 48,
+  y = 45,
   direction = 1,
 }
 

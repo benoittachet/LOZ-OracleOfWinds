@@ -576,7 +576,7 @@ destructible{
 teletransporter{
   layer = 0,
   x = 80,
-  y = 120,
+  y = 112,
   width = 16,
   height = 16,
   destination_map = "overworld/wind_wood/forest_outdoor",
@@ -587,7 +587,7 @@ destination{
   name = "forest_to_forest_cave_01",
   layer = 0,
   x = 88,
-  y = 125,
+  y = 117,
   direction = 1,
 }
 
