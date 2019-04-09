@@ -2,16 +2,17 @@ properties{
   x = 0,
   y = 0,
   width = 160,
-  height = 144,
+  height = 128,
   min_layer = 0,
   max_layer = 2,
   tileset = "House",
+  music = "Zelda Original/Houses",
 }
 
 tile{
   layer = 0,
   x = 16,
-  y = 16,
+  y = 0,
   width = 128,
   height = 112,
   pattern = "1",
@@ -29,7 +30,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "9",
@@ -38,7 +39,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "7",
@@ -56,7 +57,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 128,
+  y = 112,
   width = 128,
   height = 16,
   pattern = "8",
@@ -65,7 +66,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "27",
@@ -74,7 +75,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "36",
@@ -83,7 +84,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 128,
+  y = 112,
   width = 8,
   height = 16,
   pattern = "34",
@@ -92,7 +93,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 128,
+  y = 112,
   width = 8,
   height = 16,
   pattern = "35",
@@ -137,7 +138,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 96,
+  y = 80,
   width = 32,
   height = 32,
   pattern = "73",
@@ -146,7 +147,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "50",
@@ -166,7 +167,7 @@ tile{
   x = 0,
   y = 16,
   width = 16,
-  height = 112,
+  height = 96,
   pattern = "5",
 }
 
@@ -175,30 +176,22 @@ tile{
   x = 144,
   y = 16,
   width = 16,
-  height = 112,
+  height = 96,
   pattern = "6",
-}
-
-separator{
-  layer = 0,
-  x = -16,
-  y = -8,
-  width = 192,
-  height = 16,
 }
 
 destination{
   name = "destination",
   layer = 0,
   x = 80,
-  y = 141,
+  y = 117,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 72,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   destination_map = "village_debut/shop_version02",

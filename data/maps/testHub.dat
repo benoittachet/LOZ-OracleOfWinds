@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "House",
+  music = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_",
 }
 
 tile{

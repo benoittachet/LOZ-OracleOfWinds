@@ -466,3 +466,21 @@ chest{
   sprite = "entities/chest",
 }
 
+teletransporter{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_cave_02_rdc",
+  destination = "ss1_to_rdc",
+}
+
+destination{
+  name = "rdc_to_ss1",
+  layer = 0,
+  x = 40,
+  y = 53,
+  direction = 1,
+}
+
