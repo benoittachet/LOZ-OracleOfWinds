@@ -1075,15 +1075,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 544,
-  y = 592,
-  width = 16,
-  height = 32,
-  pattern = "54",
-}
-
-tile{
-  layer = 1,
   x = 560,
   y = 544,
   width = 16,
@@ -1114,7 +1105,7 @@ tile{
   x = 560,
   y = 592,
   width = 16,
-  height = 32,
+  height = 16,
   pattern = "46",
 }
 
@@ -1453,38 +1444,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 608,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "37",
-}
-
-tile{
-  layer = 1,
   x = 624,
   y = 352,
   width = 16,
   height = 16,
   pattern = "39",
-}
-
-tile{
-  layer = 1,
-  x = 608,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "43",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "41",
 }
 
 tile{
@@ -6069,6 +6033,87 @@ tile{
   tileset = "overworld/forest_plain",
 }
 
+tile{
+  layer = 1,
+  x = 544,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
 separator{
   layer = 1,
   x = 472,
@@ -6174,13 +6219,6 @@ destructible{
 destructible{
   layer = 1,
   x = 616,
-  y = 365,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 1,
-  x = 616,
   y = 317,
   sprite = "entities/grass",
 }
@@ -6243,13 +6281,6 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 552,
-  y = 621,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 1,
   x = 568,
   y = 557,
   sprite = "entities/grass",
@@ -6285,7 +6316,7 @@ teletransporter{
   name = "beach_to_forest",
   layer = 1,
   x = 544,
-  y = 632,
+  y = 624,
   width = 32,
   height = 16,
   destination_map = "overworld/wind_wood/forest_outdoor",
@@ -6296,7 +6327,7 @@ destination{
   name = "forest_to_beach",
   layer = 1,
   x = 560,
-  y = 637,
+  y = 629,
   direction = 1,
 }
 
@@ -6377,5 +6408,12 @@ destination{
   x = 560,
   y = 229,
   direction = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 600,
+  y = 365,
+  sprite = "entities/grass",
 }
 
