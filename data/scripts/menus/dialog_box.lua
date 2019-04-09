@@ -71,13 +71,7 @@ end
 -- Initialize dialog box data.
 --dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
 for i = 1, nb_visible_lines do
-  dialog_box.line_surfaces[i] = sol.text_surface.create{
-    horizontal_alignment = "left",
-    vertical_alignment = "top",
-    font = dialog_box.font,
-    font_size = dialog_box.font_size,
-    color = dialog_box.text_color
-  }
+  dialog_box.line_surfaces[i] = gen.char_surface.create(text_max_width, 11, "oracle")
 end
 
 dialog_box.surface = sol.surface.create(sol.video.get_quest_size())
@@ -195,6 +189,10 @@ function dialog_box:stop_arrow_blinking()
   self.arrow_timer = nil
 end
 
+local function combine_byte_char(c1, c2)
+  return (c1 - 192) * 64 + (c2 - 128)
+end
+
 function dialog_box:parse_text()
   local chars_on_line = 0
   local max_line = math.floor(text_max_width / 8)
@@ -207,11 +205,13 @@ function dialog_box:parse_text()
 
   while i <= strlen do
     c = text:sub(i, i)
+    code = c:byte()
+
     if c == "$" then
       special = true
     elseif special then
       special = false
-    elseif c:byte() and c:byte() > 31 then
+    elseif code and code > 31 then
       chars_on_line = chars_on_line + 1
       if chars_on_line > max_line then
         text = text:insert("\n", i)
@@ -220,10 +220,12 @@ function dialog_box:parse_text()
         chars_on_line = 1
       end
     end
+    if code >= 192 and code < 224 then
+      i = i + 1
+    end
     i = i + 1
   end
   self.dialog.text = text
- 
 end
 
 function dialog_box:show_dialog()
@@ -232,6 +234,9 @@ function dialog_box:show_dialog()
 
   self:parse_text()
   local text = dialog.text
+  
+  print(text)
+
   if dialog_box.info ~= nil then
     -- There is a "$v" sequence to substitute.
     text = text:gsub("%$v", dialog_box.info)
@@ -242,8 +247,9 @@ function dialog_box:show_dialog()
   self.next_line = self.line_it()
   self.line_index = 0
   
+
   for i = 1, nb_visible_lines do
-    self.line_surfaces[i]:set_text("")
+    self.line_surfaces[i]:clear()
   end
   
   self:advance()
@@ -285,7 +291,7 @@ function dialog_box:start_next_line()
   self.new_lines = self.new_lines + 1
 
   if self.skipping then
-    self:instant_line()
+    self:show_next_char()
   end
 
   self.char_index = 0
@@ -293,8 +299,9 @@ function dialog_box:start_next_line()
 end
 
 function dialog_box:shift_text_surfaces()
-  self.line_surfaces[1]:set_text( self.line_surfaces[2]:get_text() )
-  self.line_surfaces[2]:set_text("")
+  self.line_surfaces[1], self.line_surfaces[2] = self.line_surfaces[2], self.line_surfaces[1]
+  self.line_surfaces[2]:clear()
+
 end
 
 function dialog_box:start_next_line_animation()
@@ -320,19 +327,33 @@ function dialog_box:start_next_line_animation()
 end
 
 function dialog_box:show_next_char()
+  local delay = self.char_delay
+
+  if self.skipping then delay = 0 end
 
   self.char_index = self.char_index + 1
-  if self:is_line_full() or self.skipping then
+
+  if self:is_line_full() then
     self:pre_next_line()
     return
   end 
 
   local current_char = self.current_line:sub(self.char_index, self.char_index)
-  local tsurface = self.line_surfaces[self.line_index]
+  local csurface = self.line_surfaces[self.line_index]
 
-  tsurface:set_text(tsurface:get_text()..current_char)
-  
-  self.char_timer = sol.timer.start(self, self.char_delay, function() self:show_next_char() end)
+  local code = current_char:byte()
+
+  if code >= 192 and code < 224 then
+    self.char_index = self.char_index + 1
+    local current_char2 = self.current_line:sub(self.char_index, self.char_index)
+    local code2 = current_char2:byte()
+
+    code = combine_byte_char(code, code2)
+  end
+
+  csurface:add_char(code)
+
+  self.char_timer = sol.timer.start(self, delay, function() self:show_next_char(skip) end)
 end
 
 function dialog_box:show_next_dialog()
@@ -349,10 +370,6 @@ function dialog_box:has_more_lines()
   return self.next_line ~= nil
 end
 
-function dialog_box:instant_line()
-  self.line_surfaces[self.line_index]:set_text(self.current_line)
-end
-
 function dialog_box:skip()
 
   if self.moving then
@@ -361,8 +378,7 @@ function dialog_box:skip()
 
   self.skipping = true
   self.char_timer:stop()
-  self:instant_line()
-  self:pre_next_line()
+  self:show_next_char()
 end
 --====== BINDING THE DIALOG TO THE GAME ======
 
