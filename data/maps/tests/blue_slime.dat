@@ -6,7 +6,6 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "Grotte",
-  music = "Zelda Original/Caves",
 }
 
 tile{
@@ -111,8 +110,8 @@ tile{
 destination{
   name = "spawn",
   layer = 1,
-  x = 80,
-  y = 229,
+  x = 208,
+  y = 237,
   direction = 1,
   default = true,
 }
@@ -137,19 +136,13 @@ custom_entity{
   model = "platform",
 }
 
-enemy{
+npc{
   layer = 1,
-  x = 48,
-  y = 237,
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 1,
-  x = 88,
-  y = 285,
-  direction = 0,
-  breed = "skeleton_2",
+  x = 208,
+  y = 205,
+  direction = 3,
+  subtype = 1,
+  sprite = "test/snas",
+  behavior = "dialog#pnj.test.snas",
 }
 

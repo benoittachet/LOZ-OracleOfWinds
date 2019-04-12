@@ -42,8 +42,16 @@ Merveilleux !
 
 dialog{
   id = "_treasure.small_key.1",
+  oui = "yeet",
   text = [[
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+haha oui les mots oui ahahahah
+]],
+}
+
+dialog{
+  id = "pnj.test.snas",
+  text = [[
+ur gonna have bad tiem
 ]],
 }
 
