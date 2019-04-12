@@ -40,7 +40,8 @@ local dialog_box = {
   box_position = {x = 0, y = 0},      -- Destination coordinates of the dialog box.
   question_dst_position = nil, -- Destination coordinates of the question icon.
   icon_dst_position = nil,     -- Destination coordinates of the icon.
-  font = "oracle",
+  df_font = "oracle",
+  current_font = "", 
   font_size = 9,
   text_color = { 248, 208, 136 } -- Text color.
 
@@ -54,7 +55,7 @@ local char_delays = {          -- Delay before displaying the next character.
   medium = 40,
   fast = 20  -- Default.
 }
-local letter_sound_delay = 100
+local letter_sound_delay = 50
 local box_size = {w = 144, h = 40}
 local arrow_pos = {x = 136, y = 33}
 local line_spacing = 16
@@ -71,7 +72,7 @@ end
 -- Initialize dialog box data.
 --dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
 for i = 1, nb_visible_lines do
-  dialog_box.line_surfaces[i] = gen.char_surface.create(text_max_width, 11, "oracle")
+  dialog_box.line_surfaces[i] = gen.char_surface.create(text_max_width, 11, "")
 end
 
 dialog_box.surface = sol.surface.create(sol.video.get_quest_size())
@@ -195,6 +196,8 @@ end
 
 function dialog_box:parse_text()
   local chars_on_line = 0
+  local word_start = 0
+  local whitespace = false 
   local max_line = math.floor(text_max_width / 8)
   local special = false
   local c
@@ -213,8 +216,17 @@ function dialog_box:parse_text()
       special = false
     elseif code and code > 31 then
       chars_on_line = chars_on_line + 1
+
+      if c == " " then
+        whitespace = true
+      elseif whitespace then
+        word_start = i    
+        whitespace = false
+      end
+
       if chars_on_line > max_line then
-        text = text:insert("\n", i)
+        text = text:insert("\n", word_start)
+        word_start = i
         strlen = strlen + 1
         i = i + 1
         chars_on_line = 1
@@ -231,11 +243,10 @@ end
 function dialog_box:show_dialog()
 -- Initialize this dialog.
   local dialog = self.dialog
-
   self:parse_text()
   local text = dialog.text
-  
-  print(text)
+
+  print(dialog.oui)
 
   if dialog_box.info ~= nil then
     -- There is a "$v" sequence to substitute.
@@ -247,11 +258,13 @@ function dialog_box:show_dialog()
   self.next_line = self.line_it()
   self.line_index = 0
   
-
+  self.current_font = self.df_font
   for i = 1, nb_visible_lines do
     self.line_surfaces[i]:clear()
   end
   
+  self.need_letter_sound = true
+
   self:advance()
 end
 
@@ -290,6 +303,8 @@ function dialog_box:start_next_line()
 
   self.new_lines = self.new_lines + 1
 
+  self.line_surfaces[self.line_index]:set_font(self.current_font, true)
+  
   if self.skipping then
     self:show_next_char()
   end
@@ -328,6 +343,7 @@ end
 
 function dialog_box:show_next_char()
   local delay = self.char_delay
+  local special
 
   if self.skipping then delay = 0 end
 
@@ -340,18 +356,49 @@ function dialog_box:show_next_char()
 
   local current_char = self.current_line:sub(self.char_index, self.char_index)
   local csurface = self.line_surfaces[self.line_index]
-
   local code = current_char:byte()
 
-  if code >= 192 and code < 224 then
+  if current_char == "$" then
+    special = true
     self.char_index = self.char_index + 1
-    local current_char2 = self.current_line:sub(self.char_index, self.char_index)
-    local code2 = current_char2:byte()
-
-    code = combine_byte_char(code, code2)
+    current_char = self.current_line:sub(self.char_index, self.char_index)
+    if current_char == "r" then
+      self.current_font = "oracle_red" 
+      csurface:set_font(self.current_font, true)
+    elseif current_char == "b" then
+      self.current_font = "oracle_blue" 
+      csurface:set_font(self.current_font, true)
+    elseif current_char == "o" then
+      self.current_font = "oracle" 
+      csurface:set_font(self.current_font, true)
+    else
+      special = false
+    end
   end
 
-  csurface:add_char(code)
+  if special then
+    delay = 0
+  else 
+  
+    if code >= 192 and code < 224 then
+      self.char_index = self.char_index + 1
+      local current_char2 = self.current_line:sub(self.char_index, self.char_index)
+      local code2 = current_char2:byte()
+
+      code = combine_byte_char(code, code2)
+    end
+
+    csurface:add_char(code)
+
+    if self.need_letter_sound then
+      sol.audio.play_sound("voices/snas")
+      self.need_letter_sound = false
+      sol.timer.start(self, letter_sound_delay, function()
+        self.need_letter_sound = true
+      end)
+    end
+
+  end
 
   self.char_timer = sol.timer.start(self, delay, function() self:show_next_char(skip) end)
 end

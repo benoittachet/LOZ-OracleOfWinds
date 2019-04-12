@@ -117,6 +117,7 @@ sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "shadows/shadow_big", description = "shadow big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadow big dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadow small" }
+sprite{ id = "test/snas", description = "snas undertale" }
 sprite{ id = "things/broom", description = "broom witch" }
 sprite{ id = "things/fall_on_hole_effect", description = "fall on hole" }
 sprite{ id = "things/grass_effect", description = "grass effect" }

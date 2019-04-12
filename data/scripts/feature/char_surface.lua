@@ -9,9 +9,9 @@ function meta:set_font(font, load)
   self.font_surf = nil
   self.loaded_font = ""
   
-  if load then
+  if load and not self.loaded_font == font then
     self.font_surf = sol.surface.create("fonts/"..font..".png")
-    assert(font_surf, "set_font : Can't find the specified font")
+    assert(self.font_surf, "set_font : Can't find the specified font")
     self.loaded_font = font
   end
 end
