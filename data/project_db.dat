@@ -18,7 +18,7 @@ map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Vil
 map{ id = "villages/nielint_village/nielint_mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "villages/nielint_village/nielint_mairie_rdc", description = "Nielint Village Mairie RDC" }
 map{ id = "villages/nielint_village/nielint_outdoor", description = "Village Nielint Outdoors" }
-map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Outdoors" }
+map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Shop" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }

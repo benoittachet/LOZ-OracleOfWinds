@@ -5901,6 +5901,96 @@ tile{
   pattern = "149",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "8",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 8,
+  width = 8,
+  height = 24,
+  pattern = "7",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "10",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "11",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "7",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "8",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "8",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "6",
+  tileset = "overworld/mountain_sea",
+}
+
 destructible{
   name = "Herbe_16",
   layer = 0,
@@ -7688,7 +7778,7 @@ destination{
   name = "quest_to_village",
   layer = 0,
   x = 392,
-  y = 325,
+  y = 341,
   direction = 1,
 }
 
@@ -7711,24 +7801,24 @@ destination{
 destination{
   name = "fish_to_village",
   layer = 0,
-  x = 344,
-  y = 69,
+  x = 360,
+  y = 53,
   direction = 1,
 }
 
 destination{
   name = "old_to_village",
   layer = 0,
-  x = 536,
-  y = 229,
+  x = 200,
+  y = 325,
   direction = 1,
 }
 
 destination{
   name = "shop_to_village",
   layer = 0,
-  x = 528,
-  y = 469,
+  x = 40,
+  y = 341,
   direction = 1,
 }
 
@@ -7751,8 +7841,8 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 336,
-  y = 48,
+  x = 352,
+  y = 32,
   width = 16,
   height = 16,
   destination_map = "villages/nielint_village/nielint_outdoor",
@@ -7764,34 +7854,34 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "villages/nielint_village/nielint_mairie_rdc",
 }
 
 teletransporter{
   layer = 0,
-  x = 528,
-  y = 208,
+  x = 192,
+  y = 304,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "villages/nielint_village/nielint_shop",
 }
 
 teletransporter{
   layer = 0,
   x = 384,
-  y = 304,
+  y = 320,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "villages/nielint_village/nielint_house_3",
 }
 
 teletransporter{
   layer = 0,
-  x = 520,
-  y = 448,
+  x = 32,
+  y = 320,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "villages/nielint_village/nielint_house_2",
 }
 
 teletransporter{
@@ -7809,7 +7899,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "villages/nielint_village/nielint_house_1",
 }
 
 teletransporter{
