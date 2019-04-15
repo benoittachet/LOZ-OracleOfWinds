@@ -614,15 +614,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 288,
   width = 16,
@@ -1074,7 +1065,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 448,
+  y = 480,
   width = 16,
   height = 16,
   pattern = "54",
@@ -1195,15 +1186,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "147",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "149",
 }
 
 tile{
@@ -1370,9 +1352,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
+  x = 336,
   y = 464,
-  width = 256,
+  width = 128,
   height = 16,
   pattern = "149",
 }
@@ -1380,9 +1362,9 @@ tile{
 tile{
   layer = 0,
   x = 336,
-  y = 0,
-  width = 16,
-  height = 208,
+  y = 32,
+  width = 32,
+  height = 176,
   pattern = "45",
 }
 
@@ -1451,8 +1433,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 144,
+  x = 368,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "60",
@@ -1591,33 +1573,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "48",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 208,
-  width = 16,
-  height = 32,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 224,
-  width = 48,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 224,
-  width = 16,
-  height = 96,
-  pattern = "49",
 }
 
 tile{
@@ -1928,33 +1883,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 248,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "48",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "48",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "48",
-}
-
-tile{
-  layer = 0,
   x = 408,
   y = 312,
   width = 8,
@@ -2045,15 +1973,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
   x = 512,
   y = 32,
   width = 16,
@@ -2135,19 +2054,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
+  x = 192,
   y = 448,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 448,
-  width = 16,
-  height = 16,
+  width = 112,
+  height = 48,
   pattern = "54",
 }
 
@@ -2945,33 +2855,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
   x = 288,
   y = 400,
   width = 16,
@@ -3251,15 +3134,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "205",
-}
-
-tile{
-  layer = 0,
   x = 568,
   y = 400,
   width = 16,
@@ -3315,7 +3189,7 @@ tile{
 tile{
   layer = 0,
   x = 448,
-  y = 56,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "205",
@@ -4977,65 +4851,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 224,
-  width = 32,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 320,
   width = 16,
   height = 32,
   pattern = "149",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 272,
-  width = 16,
-  height = 80,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 288,
-  width = 16,
-  height = 64,
-  pattern = "49",
 }
 
 tile{
@@ -5747,15 +5567,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
-  y = 272,
-  width = 32,
-  height = 16,
-  pattern = "43",
-}
-
-tile{
-  layer = 0,
   x = 304,
   y = 288,
   width = 16,
@@ -5989,6 +5800,166 @@ tile{
   height = 8,
   pattern = "6",
   tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 96,
+  width = 64,
+  height = 32,
+  pattern = "73",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 112,
+  width = 64,
+  height = 32,
+  pattern = "72",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 128,
+  width = 64,
+  height = 32,
+  pattern = "74",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 224,
+  width = 16,
+  height = 96,
+  pattern = "149",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "149",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 224,
+  width = 64,
+  height = 16,
+  pattern = "149",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 224,
+  width = 32,
+  height = 128,
+  pattern = "149",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "27",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "35",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "31",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "37",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "205",
 }
 
 destructible{
@@ -6539,7 +6510,7 @@ destructible{
   name = "Herbe_68",
   layer = 0,
   x = 200,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -6555,13 +6526,6 @@ separator{
   y = 0,
   width = 16,
   height = 512,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 157,
-  sprite = "entities/arbuste",
 }
 
 destructible{
@@ -7038,7 +7002,7 @@ destructible{
   name = "Herbe_69",
   layer = 0,
   x = 248,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7052,7 +7016,7 @@ destructible{
   name = "Herbe_72",
   layer = 0,
   x = 280,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7066,7 +7030,7 @@ destructible{
   name = "Herbe_73",
   layer = 0,
   x = 296,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7584,7 +7548,7 @@ destructible{
   name = "Herbe_60",
   layer = 0,
   x = 216,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7598,7 +7562,7 @@ destructible{
   name = "Herbe_63",
   layer = 0,
   x = 232,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7612,7 +7576,7 @@ destructible{
   name = "Herbe_67",
   layer = 0,
   x = 264,
-  y = 461,
+  y = 493,
   treasure_name = "random",
   sprite = "entities/grass_dark",
   destruction_sound = "bush",
@@ -7914,7 +7878,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 64,
-  y = -24,
+  y = 0,
   width = 32,
   height = 16,
   destination_map = "villages/nielint_village/nielint_outdoor",
@@ -7924,7 +7888,7 @@ destination{
   name = "destination_2",
   layer = 0,
   x = 80,
-  y = -3,
+  y = 21,
   direction = 1,
 }
 
@@ -7940,5 +7904,201 @@ destructible{
   x = 376,
   y = 61,
   sprite = "entities/arbuste",
+}
+
+destructible{
+  name = "Herbe_71",
+  layer = 0,
+  x = 296,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_85",
+  layer = 0,
+  x = 296,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_86",
+  layer = 0,
+  x = 200,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_89",
+  layer = 0,
+  x = 200,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass_dark",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_148",
+  layer = 0,
+  x = 216,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_149",
+  layer = 0,
+  x = 232,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_150",
+  layer = 0,
+  x = 248,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_151",
+  layer = 0,
+  x = 280,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_152",
+  layer = 0,
+  x = 264,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_153",
+  layer = 0,
+  x = 280,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_154",
+  layer = 0,
+  x = 264,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_155",
+  layer = 0,
+  x = 248,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_156",
+  layer = 0,
+  x = 232,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  name = "Herbe_157",
+  layer = 0,
+  x = 216,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
