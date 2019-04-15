@@ -25,6 +25,7 @@ tileset{ id = "House", description = "House" }
 tileset{ id = "Tileset1", description = "First Tileset" }
 tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
+tileset{ id = "caves/Cave_side", description = "cave_sides" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
