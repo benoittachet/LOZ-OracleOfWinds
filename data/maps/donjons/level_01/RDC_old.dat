@@ -6472,8 +6472,8 @@ separator{
 
 separator{
   layer = 0,
-  x = 240,
-  y = 1056,
+  x = 248,
+  y = 1048,
   width = 720,
   height = 16,
 }
@@ -6492,5 +6492,99 @@ separator{
   y = 1048,
   width = 16,
   height = 192,
+}
+
+teletransporter{
+  name = "in_a_2",
+  layer = 0,
+  x = 976,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC_old",
+  destination = "in_a",
+}
+
+teletransporter{
+  name = "out_a",
+  layer = 0,
+  x = 1168,
+  y = 704,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC_old",
+  destination = "out_a_2",
+}
+
+teletransporter{
+  name = "out_b",
+  layer = 0,
+  x = 752,
+  y = 704,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC_old",
+  destination = "out_b_2",
+}
+
+teletransporter{
+  name = "in_b_2",
+  layer = 0,
+  x = 592,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC_old",
+  destination = "in_b",
+}
+
+destination{
+  name = "out_b_2",
+  layer = 0,
+  x = 600,
+  y = 437,
+  direction = 1,
+}
+
+destination{
+  name = "out_a_2",
+  layer = 0,
+  x = 992,
+  y = 445,
+  direction = 1,
+}
+
+destination{
+  name = "in_a",
+  layer = 0,
+  x = 1176,
+  y = 725,
+  direction = 1,
+}
+
+destination{
+  name = "in_b",
+  layer = 0,
+  x = 760,
+  y = 725,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 1392,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "keep1",
+}
+
+destination{
+  name = "to_keep_1",
+  layer = 0,
+  x = 600,
+  y = 1397,
+  direction = 1,
 }
 

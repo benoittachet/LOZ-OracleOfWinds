@@ -471,7 +471,7 @@ tile_pattern{
 
 tile_pattern{
   id = "7",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 8,
   y = 32,
