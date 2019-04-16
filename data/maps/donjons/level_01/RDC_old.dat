@@ -6588,3 +6588,147 @@ destination{
   direction = 1,
 }
 
+enemy{
+  layer = 0,
+  x = 344,
+  y = 1117,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 1181,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 328,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 280,
+  y = 1149,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 808,
+  y = 1133,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 824,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 840,
+  y = 1117,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 880,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 856,
+  y = 1133,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 1101,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 957,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 957,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 792,
+  y = 605,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 824,
+  y = 637,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 840,
+  y = 605,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 872,
+  y = 589,
+  direction = 0,
+  breed = "octorok",
+}
+

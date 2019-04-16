@@ -5907,7 +5907,7 @@ tile{
 tile{
   layer = 0,
   x = 448,
-  y = 312,
+  y = 304,
   width = 16,
   height = 16,
   pattern = "76",
@@ -6188,6 +6188,35 @@ tile{
   x = 336,
   y = 624,
   width = 128,
+  height = 8,
+  pattern = "1",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 336,
+  width = 64,
+  height = 8,
+  pattern = "1",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 424,
+  width = 80,
+  height = 32,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 456,
+  width = 80,
   height = 8,
   pattern = "1",
   tileset = "overworld/mountain_sea",

@@ -1,3 +1,4 @@
+map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "Trident Dungeon" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
