@@ -1,3 +1,4 @@
+map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "Trident Dungeon" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
@@ -18,13 +19,14 @@ map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Vil
 map{ id = "villages/nielint_village/nielint_mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "villages/nielint_village/nielint_mairie_rdc", description = "Nielint Village Mairie RDC" }
 map{ id = "villages/nielint_village/nielint_outdoor", description = "Village Nielint Outdoors" }
-map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Outdoors" }
+map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Shop" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
 tileset{ id = "Tileset1", description = "First Tileset" }
 tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
+tileset{ id = "caves/Cave_side", description = "cave_sides" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
