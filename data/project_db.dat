@@ -55,12 +55,14 @@ sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/goomba", description = "enemies/crab" }
+sprite{ id = "enemies/mini_boss/mr_pers", description = "Miniboss 1" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/pool", description = "Flaque" }
 sprite{ id = "enemies/pool_dasher", description = "aka Wavedasher" }
+sprite{ id = "enemies/skeleton_1", description = "Squelette 1" }
 sprite{ id = "enemies/skeleton_2", description = "Squelette Jaune" }
 sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
@@ -283,6 +285,7 @@ item{ id = "sword", description = "sword" }
 enemy{ id = "bat", description = "bat" }
 enemy{ id = "blue_slime", description = "Blue Slime" }
 enemy{ id = "crab", description = "crab" }
+enemy{ id = "mini_boss/mr_pers", description = "Miniboss 1" }
 enemy{ id = "moblin_bow", description = "Moblin Archer" }
 enemy{ id = "moblin_sword", description = "Moblin Epeiste" }
 enemy{ id = "octorok", description = "Octorok" }

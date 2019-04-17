@@ -136,13 +136,11 @@ custom_entity{
   model = "platform",
 }
 
-npc{
+enemy{
   layer = 1,
   x = 208,
-  y = 205,
-  direction = 3,
-  subtype = 1,
-  sprite = "test/snas",
-  behavior = "dialog#pnj.test.snas",
+  y = 197,
+  direction = 0,
+  breed = "mini_boss/mr_pers",
 }
 
