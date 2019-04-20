@@ -32,13 +32,6 @@ tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
 
-sprite{ id = "animals/bird_red", description = "Red Bird" }
-sprite{ id = "animals/cat_green", description = "Green Cat" }
-sprite{ id = "animals/cat_red", description = "Red Cat" }
-sprite{ id = "animals/cat_yellow", description = "Yellow Cat" }
-sprite{ id = "animals/chameleon", description = "Chameleon" }
-sprite{ id = "animals/mouse", description = "Mouse" }
-sprite{ id = "animals/phoenix", description = "Phoenix" }
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }
 sprite{ id = "citizens/vieux01", description = "citizens/vieux01" }
@@ -57,7 +50,8 @@ sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/goomba", description = "enemies/crab" }
-sprite{ id = "enemies/mini_boss/mr_pers", description = "Miniboss 1" }
+sprite{ id = "enemies/mini_boss/1/mr_pers", description = "enemies/mini_boss/1/mr_pers" }
+sprite{ id = "enemies/mini_boss/1/sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
@@ -70,19 +64,13 @@ sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "Green Slime" }
 sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
-sprite{ id = "entities/arrow1", description = "Arrow" }
-sprite{ id = "entities/big_chest", description = "Big chest" }
 sprite{ id = "entities/block", description = "Block" }
-sprite{ id = "entities/bomb", description = "Bomb" }
-sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bone", description = "entities/bone" }
-sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
 sprite{ id = "entities/door", description = "Portes" }
-sprite{ id = "entities/door_key", description = "Porte fermée à clé." }
 sprite{ id = "entities/dungeon_statue_eye", description = "Oeil statues donjons" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/flowers", description = "buissons de fleurs" }
@@ -103,19 +91,12 @@ sprite{ id = "entities/switch", description = "Interrupteur donjon" }
 sprite{ id = "entities/waterfall", description = "cascade" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
-sprite{ id = "hero/sword", description = "hero/sword" }
-sprite{ id = "hero/sword1", description = "Hero sword 1" }
+sprite{ id = "hero/sword1", description = "hero/sword" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/trail", description = "Hero trail" }
-sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
+sprite{ id = "hero/tunic1", description = "hero/Link" }
 sprite{ id = "hud/gameover_fade", description = "hud/gameover_fade" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
-sprite{ id = "main_heroes/Link", description = "main_heroes/Link" }
-sprite{ id = "main_heroes/eldran", description = "Eldran" }
-sprite{ id = "main_heroes/robyne", description = "Robyne" }
-sprite{ id = "main_heroes/sword", description = "sword" }
-sprite{ id = "main_heroes/sword_electricity", description = "sword electricity" }
-sprite{ id = "main_heroes/trail", description = "trail" }
 sprite{ id = "menus/dialog_end", description = "Dialog Icons" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "shadows/shadow_big", description = "shadow big" }

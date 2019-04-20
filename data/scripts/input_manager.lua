@@ -25,14 +25,6 @@ function input_manager:on_key_pressed(key, modifiers)
     sol.main.game:get_hero():teleport("Map1")
   elseif key == "f2" then
     sol.main.game:get_hero():teleport("donjon_rc")
-  elseif key == "e" and modifiers.control then
-    local hero = sol.main.game:get_hero()
-    hero:set_tunic_sprite_id("main_heroes/eldran")
-    hero:set_sword_sprite_id("hero/sword1")
-  elseif key == "l" and modifiers.control then
-    local hero = sol.main.game:get_hero()
-    hero:set_tunic_sprite_id("main_heroes/Link")
-    hero:set_sword_sprite_id("hero/sword")
   elseif key == "f3" then
     sol.main.game:set_life(12)  
   elseif key == "f7" then
