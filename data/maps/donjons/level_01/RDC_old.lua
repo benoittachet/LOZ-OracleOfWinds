@@ -1,4 +1,4 @@
--- Lua script of map Donjon1/RDC.
+-- Lua script of map donjons/level_01/RDC.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -10,9 +10,18 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
+-- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-
+  gen.import(map, mpg, 
+    "init_enemies_event_triggers", 
+    "init_activate_triggers",
+    "init_activatables",
+    "init_detect_open"
+  )
+  map:init_enemies_event_triggers()
+  map:init_activatables()
+  map:init_activate_triggers()
+  map:init_detect_open()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end

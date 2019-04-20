@@ -1,6 +1,6 @@
 map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
-map{ id = "donjons/level_01/RDC" }
-map{ id = "donjons/level_01/RDC_old", description = "Trident Dungeon" }
+map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
+map{ id = "donjons/level_01/RDC_old" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
 map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
@@ -71,12 +71,11 @@ sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
 sprite{ id = "entities/deep_water", description = "eau profonde" }
 sprite{ id = "entities/door", description = "Portes" }
+sprite{ id = "entities/door_key" }
 sprite{ id = "entities/dungeon_statue_eye", description = "Oeil statues donjons" }
-sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/flowers", description = "buissons de fleurs" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
-sprite{ id = "entities/grass_darker", description = "entities/grass_darker" }
 sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
@@ -84,18 +83,13 @@ sprite{ id = "entities/platform", description = "Moving PLatform" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }
-sprite{ id = "entities/sign", description = "Sign" }
-sprite{ id = "entities/stone_small_black", description = "Stone (black)" }
-sprite{ id = "entities/stone_small_white", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Interrupteur donjon" }
-sprite{ id = "entities/waterfall", description = "cascade" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/sword1", description = "hero/sword" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "hero/Link" }
-sprite{ id = "hud/gameover_fade", description = "hud/gameover_fade" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "Dialog Icons" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -327,9 +321,9 @@ file{ path = "items/rupee.lua", author = "Christopho", }
 file{ path = "items/small_key.lua", author = "TwilCynder", }
 file{ path = "languages/en", author = "Zunashy, TwilCynder", }
 file{ path = "main.lua", author = "TwilCynder, Christopho", }
-file{ path = "maps/donjons/level_01/RDC.dat", author = "ElCondor", }
-file{ path = "maps/donjons/level_01/RDC.lua", author = "TwilCynder", }
-file{ path = "maps/donjons/level_01/RDC_old.dat", author = "Benoit", }
+file{ path = "maps/donjons/level_01/RDC.dat", author = "Benoit", }
+file{ path = "maps/donjons/level_01/RDC_old.dat", author = "ElCondor", }
+file{ path = "maps/donjons/level_01/RDC_old.lua", author = "TwilCynder", }
 file{ path = "maps/overworld/north_beach/north_beach_cave_01.dat", author = "Zunashy", }
 file{ path = "maps/overworld/north_beach/north_beach_cave_02_rdc.dat", author = "Zunashy", }
 file{ path = "maps/overworld/north_beach/north_beach_cave_02_ss1.dat", author = "Zunashy", }

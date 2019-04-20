@@ -1,8 +1,8 @@
 properties{
   x = 0,
   y = 0,
-  width = 1600,
-  height = 2304,
+  width = 1200,
+  height = 1408,
   min_layer = 0,
   max_layer = 2,
   tileset = "Tileset_Donjon_1",
@@ -10,2099 +10,185 @@ properties{
 
 tile{
   layer = 0,
-  x = 688,
-  y = 2288,
-  width = 224,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 2080,
-  width = 16,
-  height = 208,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 2064,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 2064,
-  width = 240,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 2288,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 2064,
+  x = 704,
+  y = 1232,
   width = 16,
   height = 16,
   pattern = "13",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 904,
-  y = 2288,
+  x = 704,
+  y = 1248,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1392,
   width = 16,
   height = 16,
   pattern = "11",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 680,
-  y = 2064,
+  x = 496,
+  y = 1392,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1248,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1232,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1232,
   width = 16,
   height = 16,
   pattern = "14",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 696,
-  y = 2080,
+  x = 640,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1248,
   width = 208,
-  height = 208,
-  pattern = "1",
+  height = 144,
+  pattern = "5",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 776,
-  y = 2280,
-  width = 16,
-  height = 24,
-  pattern = "21",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 2280,
-  width = 16,
-  height = 24,
-  pattern = "22",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 2280,
+  x = 592,
+  y = 1384,
   width = 16,
   height = 24,
   pattern = "23",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 776,
-  y = 2256,
+  x = 576,
+  y = 1384,
+  width = 16,
+  height = 24,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1384,
+  width = 16,
+  height = 24,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1360,
   width = 48,
   height = 24,
   pattern = "24",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 1264,
-  y = 1824,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 1824,
+  x = 560,
+  y = 1376,
   width = 16,
   height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 2048,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 1824,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 2048,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 1824,
-  width = 928,
-  height = 240,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 2048,
-  width = 928,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 1824,
-  width = 928,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1808,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1584,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1584,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1584,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1584,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1584,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1600,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1568,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1344,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1360,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 1568,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "20",
+  pattern = "30",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
   x = 624,
-  y = 1344,
+  y = 1376,
   width = 16,
-  height = 224,
-  pattern = "19",
+  height = 16,
+  pattern = "30",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 336,
-  y = 1344,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 1568,
+  x = 592,
+  y = 1264,
   width = 16,
-  height = 16,
-  pattern = "12",
+  height = 96,
+  pattern = "4",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
   x = 624,
-  y = 1344,
+  y = 1264,
   width = 16,
-  height = 16,
-  pattern = "13",
+  height = 48,
+  pattern = "4",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 624,
-  y = 1568,
+  x = 560,
+  y = 1264,
   width = 16,
-  height = 16,
-  pattern = "11",
+  height = 48,
+  pattern = "4",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 320,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 1360,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1568,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1344,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1360,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 1568,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 976,
-  y = 1344,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 976,
-  y = 1360,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1568,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1344,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 1344,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 1360,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1328,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1104,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1120,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1088,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 864,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 880,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 848,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 624,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 624,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 624,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 848,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 848,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 640,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1328,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1104,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1120,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1088,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 864,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 880,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1328,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1104,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 1104,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 1120,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1088,
-  width = 320,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "20",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 864,
-  width = 16,
-  height = 224,
-  pattern = "19",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 864,
-  width = 288,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1584,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 880,
-  width = 288,
-  height = 208,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 2048,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 2048,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 2048,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 1808,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 1568,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1568,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1584,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1584,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 1328,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 1328,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 1088,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 1088,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 848,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 848,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 848,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1424,
-  y = 1088,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1448,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1416,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1416,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1448,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1424,
-  y = 1328,
-  width = 32,
-  height = 32,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1448,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1416,
-  y = 1328,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1416,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1448,
-  y = 1344,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 1456,
-  width = 32,
-  height = 16,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 1456,
-  width = 32,
-  height = 16,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 1456,
-  width = 32,
-  height = 16,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1456,
-  width = 32,
-  height = 16,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 2208,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 2208,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 2176,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2176,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "28",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1232,
-  y = 1872,
-  width = 32,
-  height = 16,
-  pattern = "27",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 1856,
-  width = 16,
-  height = 32,
-  pattern = "35",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "29",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "37",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "37",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 1744,
-  width = 16,
-  height = 16,
-  pattern = "33",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 1648,
-  width = 16,
-  height = 16,
-  pattern = "33",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 1712,
-  width = 16,
-  height = 16,
-  pattern = "33",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 1680,
-  width = 16,
-  height = 16,
-  pattern = "33",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 1112,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 1112,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 2240,
+  x = 576,
+  y = 1296,
   width = 16,
   height = 16,
   pattern = "4",
@@ -2111,1165 +197,6538 @@ tile{
 
 tile{
   layer = 0,
-  x = 760,
-  y = 2144,
+  x = 608,
+  y = 1296,
   width = 16,
   height = 16,
-  pattern = "34",
+  pattern = "4",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 824,
-  y = 2144,
+  x = 576,
+  y = 1248,
   width = 16,
   height = 16,
-  pattern = "34",
+  pattern = "30",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 792,
-  y = 2160,
+  x = 608,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1232,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1280,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1296,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1312,
+  width = 16,
+  height = 32,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1360,
+  width = 32,
+  height = 16,
+  pattern = "25",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 1280,
   width = 16,
   height = 80,
-  pattern = "4",
+  pattern = "25",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 808,
-  y = 2192,
-  width = 32,
-  height = 16,
-  pattern = "4",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 2192,
-  width = 32,
-  height = 16,
-  pattern = "4",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 2160,
-  width = 16,
-  height = 32,
-  pattern = "4",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 2160,
-  width = 16,
-  height = 32,
-  pattern = "4",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 2144,
-  width = 16,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 2144,
-  width = 16,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 2144,
+  x = 544,
+  y = 1264,
   width = 16,
   height = 16,
-  pattern = "5",
+  pattern = "25",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 776,
-  y = 2208,
+  x = 496,
+  y = 1376,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1376,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1248,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1248,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1264,
+  width = 16,
+  height = 112,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1264,
+  width = 16,
+  height = 112,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1280,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1280,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1280,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1280,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1248,
+  width = 32,
+  height = 16,
+  pattern = "151",
+  tileset = "Tileset1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1232,
+  width = 32,
+  height = 16,
+  pattern = "150",
+  tileset = "Tileset1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1248,
+  width = 32,
+  height = 16,
+  pattern = "151",
+  tileset = "Tileset1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1232,
+  width = 32,
+  height = 16,
+  pattern = "150",
+  tileset = "Tileset1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1056,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1152,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1152,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1072,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1072,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1056,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1056,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1216,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1216,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1056,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1152,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1072,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1072,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1056,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1216,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1056,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1072,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1152,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1072,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1056,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1216,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 1056,
+  width = 16,
+  height = 192,
+  pattern = "2",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1120,
+  width = 48,
+  height = 48,
+  pattern = "2",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 880,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 896,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 896,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 880,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 880,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 704,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 720,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 720,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 704,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 864,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 704,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 864,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1040,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1040,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 976,
   width = 16,
   height = 48,
   pattern = "5",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 808,
-  y = 2208,
-  width = 16,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 2224,
+  x = 576,
+  y = 992,
   width = 16,
   height = 16,
   pattern = "5",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 824,
-  y = 2224,
-  width = 32,
-  height = 32,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2192,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2128,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 2224,
-  width = 32,
-  height = 32,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2192,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2176,
+  x = 560,
+  y = 976,
   width = 16,
   height = 16,
   pattern = "5",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 728,
-  y = 2128,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 2176,
-  width = 16,
-  height = 16,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 2112,
-  width = 112,
-  height = 32,
-  pattern = "5",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 2096,
+  x = 544,
+  y = 960,
   width = 48,
   height = 16,
   pattern = "5",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 776,
-  y = 2080,
+  x = 560,
+  y = 944,
   width = 16,
   height = 16,
-  pattern = "30",
-  tileset = "Tileset_Donjon_1",
+  pattern = "5",
 }
 
 tile{
   layer = 0,
-  x = 808,
-  y = 2080,
+  x = 576,
+  y = 928,
   width = 16,
   height = 16,
-  pattern = "30",
-  tileset = "Tileset_Donjon_1",
+  pattern = "5",
 }
 
 tile{
   layer = 0,
-  x = 824,
-  y = 2272,
+  x = 608,
+  y = 928,
   width = 16,
   height = 16,
-  pattern = "30",
-  tileset = "Tileset_Donjon_1",
+  pattern = "5",
 }
 
 tile{
   layer = 0,
-  x = 760,
-  y = 2272,
+  x = 624,
+  y = 944,
   width = 16,
   height = 16,
-  pattern = "30",
-  tileset = "Tileset_Donjon_1",
+  pattern = "5",
 }
 
 tile{
   layer = 0,
-  x = 840,
-  y = 2288,
+  x = 624,
+  y = 976,
   width = 16,
   height = 16,
-  pattern = "39",
-  tileset = "Tileset_Donjon_1",
+  pattern = "5",
 }
 
 tile{
   layer = 0,
-  x = 744,
-  y = 2288,
+  x = 608,
+  y = 992,
   width = 16,
   height = 16,
-  pattern = "39",
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 960,
+  width = 48,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 912,
+  width = 16,
+  height = 48,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1000,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1016,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1008,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 1024,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1024,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1016,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1000,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 1000,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "8",
   tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 696,
-  y = 2256,
+  x = 664,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 912,
+  width = 8,
+  height = 16,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 928,
+  width = 24,
+  height = 8,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 928,
+  width = 24,
+  height = 8,
+  pattern = "8",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 688,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 688,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 528,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 544,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 688,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 528,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 688,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 544,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 688,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 352,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 176,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 176,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 176,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 352,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 352,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 176,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 0,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 0,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 688,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 624,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 432,
   width = 16,
   height = 16,
   pattern = "42",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
   layer = 0,
-  x = 696,
-  y = 2272,
+  x = 1008,
+  y = 368,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 496,
   width = 32,
   height = 16,
   pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 384,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 488,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 456,
+  width = 8,
+  height = 40,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 384,
+  width = 8,
+  height = 40,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 368,
+  width = 8,
+  height = 56,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 456,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 456,
+  width = 8,
+  height = 56,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 424,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 448,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 16,
+  width = 80,
+  height = 48,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 16,
+  width = 8,
+  height = 48,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 16,
+  width = 8,
+  height = 48,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 56,
+  width = 64,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 64,
+  width = 48,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 16,
+  width = 48,
+  height = 48,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 16,
+  width = 48,
+  height = 48,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 64,
+  width = 48,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 192,
+  width = 208,
+  height = 144,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 80,
+  width = 16,
+  height = 96,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 112,
+  width = 80,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 192,
+  width = 80,
+  height = 64,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 544,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 592,
+  width = 88,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 632,
+  width = 88,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 640,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 592,
+  width = 88,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 632,
+  width = 88,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 640,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 640,
+  width = 80,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 544,
+  width = 80,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 544,
+  width = 80,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 640,
+  width = 80,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 544,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 624,
+  width = 208,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 600,
+  width = 208,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 544,
+  width = 8,
+  height = 144,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 544,
+  width = 8,
+  height = 144,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 528,
+  width = 16,
+  height = 352,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 608,
+  width = 240,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
   tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 1120,
+  width = 48,
+  height = 48,
+  pattern = "4",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 1136,
+  width = 464,
+  height = 16,
+  pattern = "2",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1088,
+  width = 16,
+  height = 48,
+  pattern = "3",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1200,
+  width = 176,
+  height = 16,
+  pattern = "3",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1088,
+  width = 16,
+  height = 112,
+  pattern = "3",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1072,
+  width = 176,
+  height = 16,
+  pattern = "3",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1152,
+  width = 16,
+  height = 48,
+  pattern = "3",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 784,
+  width = 80,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 784,
+  width = 80,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 480,
+  width = 208,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 448,
+  width = 208,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 464,
+  width = 208,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 416,
+  width = 208,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 384,
+  width = 208,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 400,
+  width = 208,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 544,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 544,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 544,
+  width = 16,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 544,
+  width = 16,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 592,
+  width = 80,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 480,
+  width = 208,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 448,
+  width = 208,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 464,
+  width = 208,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 544,
+  width = 176,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 672,
+  width = 176,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 656,
+  width = 176,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 560,
+  width = 176,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 528,
+  width = 16,
+  height = 96,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 608,
+  width = 352,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 640,
+  width = 48,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 640,
+  width = 16,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 640,
+  width = 16,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 624,
+  width = 80,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 352,
+  width = 16,
+  height = 176,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 416,
+  width = 48,
+  height = 48,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "46",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 424,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 424,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 448,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 448,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 408,
+  width = 8,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 408,
+  width = 8,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 400,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 472,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 400,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 472,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 368,
+  width = 16,
+  height = 144,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 608,
+  width = 368,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 352,
+  width = 16,
+  height = 256,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 192,
+  width = 48,
+  height = 48,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 448,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 424,
+  width = 8,
+  height = 32,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 320,
+  width = 80,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 320,
+  width = 80,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 192,
+  width = 80,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 192,
+  width = 80,
+  height = 16,
+  pattern = "42",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 304,
+  width = 176,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 208,
+  width = 176,
+  height = 16,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 224,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 224,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 224,
+  width = 16,
+  height = 80,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 224,
+  width = 16,
+  height = 80,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 224,
+  width = 112,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 288,
+  width = 112,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 704,
+  width = 480,
+  height = 176,
+  pattern = "10",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 720,
+  width = 16,
+  height = 80,
+  pattern = "18",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 800,
+  width = 64,
+  height = 16,
+  pattern = "29",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "28",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 816,
+  width = 80,
+  height = 32,
+  pattern = "22",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 816,
+  width = 96,
+  height = 16,
+  pattern = "29",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 704,
+  width = 16,
+  height = 96,
+  pattern = "4",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 832,
+  width = 160,
+  height = 48,
+  pattern = "22",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 816,
+  width = 16,
+  height = 32,
+  pattern = "22",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 704,
+  width = 16,
+  height = 128,
+  pattern = "4",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
   x = 880,
-  y = 2272,
+  y = 800,
   width = 16,
   height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
+  pattern = "2",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 872,
-  y = 2272,
-  width = 32,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2080,
-  width = 32,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 2080,
-  width = 32,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2240,
-  width = 16,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 2240,
-  width = 16,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 2256,
-  width = 48,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2256,
-  width = 48,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2112,
-  width = 16,
-  height = 144,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2096,
-  width = 16,
+  x = 1104,
+  y = 848,
+  width = 96,
   height = 32,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
+  pattern = "34",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 744,
-  y = 2096,
-  width = 32,
+  x = 1104,
+  y = 848,
+  width = 96,
   height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
+  pattern = "26",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 760,
-  y = 2080,
+  x = 1104,
+  y = 864,
   width = 16,
   height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
+  pattern = "33",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 824,
-  y = 2080,
+  x = 1136,
+  y = 864,
   width = 16,
   height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
+  pattern = "33",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 824,
-  y = 2096,
-  width = 32,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2096,
-  width = 32,
-  height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 2112,
+  x = 1120,
+  y = 864,
   width = 16,
   height = 16,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
+  pattern = "32",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 872,
-  y = 2112,
-  width = 16,
-  height = 144,
-  pattern = "25",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2256,
+  x = 1184,
+  y = 864,
   width = 16,
   height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
+  pattern = "32",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 696,
-  y = 2080,
+  x = 1152,
+  y = 864,
   width = 16,
   height = 16,
-  pattern = "151",
-  tileset = "Tileset1",
+  pattern = "33",
+  tileset = "caves/Cave_side",
 }
 
 tile{
   layer = 0,
-  x = 696,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "150",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "151",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "150",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "151",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "150",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "151",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2064,
-  width = 16,
-  height = 16,
-  pattern = "150",
-  tileset = "Tileset1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 2112,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2112,
-  width = 16,
-  height = 16,
-  pattern = "42",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2256,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 2240,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2272,
-  width = 32,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2256,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2240,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2272,
-  width = 32,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 2128,
-  width = 16,
-  height = 112,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 2128,
-  width = 16,
-  height = 112,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 2080,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 2112,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 2096,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 2112,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1208,
-  width = 288,
-  height = 16,
-  pattern = "28",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 1224,
-  width = 288,
+  x = 944,
+  y = 816,
+  width = 64,
   height = 16,
   pattern = "29",
-  tileset = "Tileset_Donjon_1",
+  tileset = "caves/Cave_side",
 }
 
-enemy{
+tile{
   layer = 0,
-  x = 712,
-  y = 1757,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
-  breed = "bat",
-  treasure_name = "random",
+  x = 928,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "23",
+  tileset = "caves/Cave_side",
 }
 
-enemy{
+tile{
   layer = 0,
-  x = 872,
-  y = 1661,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
-  breed = "bat",
-  treasure_name = "random",
+  x = 912,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "23",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "23",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 816,
+  width = 48,
+  height = 16,
+  pattern = "29",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 848,
+  width = 208,
+  height = 16,
+  pattern = "31",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 704,
+  width = 16,
+  height = 176,
+  pattern = "19",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 864,
+  width = 208,
+  height = 16,
+  pattern = "34",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 832,
+  width = 16,
+  height = 48,
+  pattern = "18",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "26",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "caves/Cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "caves/Cave_side",
+}
+
+block{
+  layer = 0,
+  x = 552,
+  y = 1133,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
 }
 
 chest{
   layer = 0,
-  x = 1256,
-  y = 1853,
-  treasure_name = "rupee",
-  treasure_variant = 4,
+  x = 840,
+  y = 1133,
   sprite = "entities/chest",
-}
-
-chest{
-  layer = 0,
-  x = 360,
-  y = 1853,
-  treasure_name = "rock_feather",
-  sprite = "entities/chest",
-}
-
-block{
-  layer = 0,
-  x = 344,
-  y = 1885,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 360,
-  y = 1885,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 376,
-  y = 1885,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 392,
-  y = 1885,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 392,
-  y = 1869,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 392,
-  y = 1853,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 767,
-  y = 2151,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-custom_entity{
-  layer = 0,
-  x = 751,
-  y = 2183,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-custom_entity{
-  layer = 0,
-  x = 767,
-  y = 2215,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-custom_entity{
-  layer = 0,
-  x = 831,
-  y = 2151,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-custom_entity{
-  layer = 0,
-  x = 847,
-  y = 2183,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-custom_entity{
-  layer = 0,
-  x = 831,
-  y = 2215,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-  model = "dungeon_statue_eye",
-}
-
-door{
-  name = "door_1_a",
-  layer = 0,
-  x = 792,
-  y = 1584,
-  direction = 3,
-  sprite = "entities/door",
-  opening_method = "interaction_if_item",
-  opening_condition = "bomb",
-}
-
-door{
-  name = "door_1_b",
-  layer = 0,
-  x = 792,
-  y = 1568,
-  direction = 1,
-  sprite = "entities/door",
-}
-
-pickable{
-  name = "treasure_1",
-  layer = 0,
-  x = 1072,
-  y = 1933,
-  enabled_at_start = false,
-  treasure_name = "small_key",
-}
-
-block{
-  name = "boneless",
-  layer = 0,
-  x = 1032,
-  y = 1973,
-  properties = {
-    {
-      key = "activate_when_moved",
-      value = "1",
-    },
-    {
-      key = "activate_trigger",
-      value = "treasure_1",
-    },
-  },
-  direction = 0,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 1032,
-  y = 1893,
-  sprite = "entities/block",
-  pushable = false,
-  pullable = false,
-}
-
-block{
-  layer = 0,
-  x = 1112,
-  y = 1973,
-  sprite = "entities/block",
-  pushable = false,
-  pullable = false,
-}
-
-custom_entity{
-  layer = 0,
-  x = 751,
-  y = 1119,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
-}
-
-custom_entity{
-  layer = 0,
-  x = 847,
-  y = 1119,
-  width = 16,
-  height = 16,
-  origin_x = 7,
-  origin_y = 7,
-  direction = 0,
 }
 
 switch{
   layer = 0,
-  x = 80,
-  y = 1272,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "spawn_platform_1",
-    },
-  },
+  x = 352,
+  y = 1136,
   subtype = "walkable",
   sprite = "entities/switch",
-  needs_block = true,
+  needs_block = false,
   inactivate_when_leaving = false,
+}
+
+switch{
+  layer = 0,
+  x = 640,
+  y = 496,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+chest{
+  layer = 0,
+  x = 120,
+  y = 221,
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 360,
+  y = 557,
+  sprite = "entities/chest",
+}
+
+separator{
+  layer = 0,
+  x = 480,
+  y = 1048,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 480,
+  y = 872,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 696,
+  width = 1200,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 480,
+  y = 520,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 480,
+  y = 344,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 480,
+  y = 168,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 520,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 240,
+  y = 520,
+  width = 960,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 960,
+  y = 344,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 952,
+  y = 528,
+  width = 16,
+  height = 176,
+}
+
+separator{
+  layer = 0,
+  x = 712,
+  y = 528,
+  width = 16,
+  height = 176,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 528,
+  width = 16,
+  height = 176,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = -8,
+  width = 16,
+  height = 1424,
+}
+
+separator{
+  layer = 0,
+  x = 712,
+  y = 0,
+  width = 16,
+  height = 1408,
 }
 
 block{
   layer = 0,
-  x = 104,
-  y = 1285,
+  x = 920,
+  y = 621,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
 }
 
-custom_entity{
-  name = "platform_1",
+chest{
   layer = 0,
-  x = 168,
-  y = 1237,
-  enabled_at_start = false,
-  properties = {
-    {
-      key = "speed",
-      value = "0",
-    },
-    {
-      key = "direction",
-      value = "0",
-    },
-  },
+  x = 1080,
+  y = 205,
+  sprite = "entities/chest",
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 176,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 952,
+  y = 168,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 240,
+  y = 1224,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 248,
+  y = 1048,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 952,
+  y = 1056,
+  width = 16,
+  height = 192,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 1048,
+  width = 16,
+  height = 192,
+}
+
+teletransporter{
+  name = "in_a_2",
+  layer = 0,
+  x = 976,
+  y = 432,
   width = 16,
   height = 16,
-  direction = 0,
-  sprite = "entities/platform",
-  model = "platform",
+  destination_map = "donjons/level_01/RDC",
+  destination = "in_a",
+}
+
+teletransporter{
+  name = "out_a",
+  layer = 0,
+  x = 1168,
+  y = 704,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "out_a_2",
+}
+
+teletransporter{
+  name = "out_b",
+  layer = 0,
+  x = 752,
+  y = 704,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "out_b_2",
+}
+
+teletransporter{
+  name = "in_b_2",
+  layer = 0,
+  x = 592,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "in_b",
 }
 
 destination{
-  name = "destination",
+  name = "out_b_2",
   layer = 0,
-  x = 800,
-  y = 2293,
+  x = 600,
+  y = 437,
   direction = 1,
 }
 
-door{
-  name = "door_2_a",
+destination{
+  name = "out_a_2",
   layer = 0,
-  x = 792,
-  y = 1824,
-  properties = {
-    {
-      key = "detect_open",
-      value = "1",
-    },
-  },
-  direction = 3,
-  sprite = "entities/door_key",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
+  x = 992,
+  y = 445,
+  direction = 1,
 }
 
-door{
-  name = "door_2_b",
+destination{
+  name = "in_a",
+  layer = 0,
+  x = 1176,
+  y = 725,
+  direction = 1,
+}
+
+destination{
+  name = "in_b",
+  layer = 0,
+  x = 760,
+  y = 725,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 1392,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "keep1",
+}
+
+destination{
+  name = "to_keep_1",
+  layer = 0,
+  x = 600,
+  y = 1397,
+  direction = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 344,
+  y = 1117,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 1181,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 328,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 280,
+  y = 1149,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 808,
+  y = 1133,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 824,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 840,
+  y = 1117,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 880,
+  y = 1165,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 856,
+  y = 1133,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 1101,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 957,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 957,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
   layer = 0,
   x = 792,
-  y = 1808,
-  direction = 1,
-  sprite = "entities/door_key",
-  opening_condition = "bomb",
+  y = 605,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 824,
+  y = 637,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 840,
+  y = 605,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 872,
+  y = 589,
+  direction = 0,
+  breed = "octorok",
 }
 
