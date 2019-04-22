@@ -2328,42 +2328,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 48,
-  width = 48,
-  height = 16,
-  pattern = "140",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 56,
-  width = 48,
-  height = 16,
-  pattern = "140",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "140",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "140",
-}
-
-tile{
-  layer = 0,
   x = 384,
   y = 64,
   width = 16,
@@ -3013,7 +2977,7 @@ tile{
 tile{
   layer = 0,
   x = 384,
-  y = 64,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "233",
@@ -6222,6 +6186,36 @@ tile{
   tileset = "overworld/mountain_sea",
 }
 
+tile{
+  layer = 0,
+  x = 368,
+  y = 48,
+  width = 48,
+  height = 32,
+  pattern = "114",
+  tileset = "overworld/structure",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "111",
+  tileset = "overworld/structure",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "112",
+  tileset = "overworld/structure",
+}
+
 separator{
   layer = 0,
   x = 472,
@@ -6478,14 +6472,14 @@ destination{
   name = "house_01_to_beach",
   layer = 0,
   x = 392,
-  y = 85,
+  y = 101,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 384,
-  y = 64,
+  y = 80,
   width = 16,
   height = 16,
   destination_map = "overworld/north_beach/north_beach_outdoors",
@@ -6504,5 +6498,15 @@ destructible{
   x = 600,
   y = 365,
   sprite = "entities/grass",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "115",
+  tileset = "overworld/structure",
 }
 
