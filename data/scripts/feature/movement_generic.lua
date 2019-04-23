@@ -3,7 +3,7 @@ mg = {}
 local direction_name = {"droite", "haut", "gauche", "bas"}
 
 function mg.dir_from_angle(angle)
-  return math.floor(math.fmod(angle, 2*math.pi) / (math.pi / 2) + 0.5) % 4
+  return math.floor(angle / (math.pi / 2) + 0.5) % 4
 end
 
 -- Fonction utilitaire
