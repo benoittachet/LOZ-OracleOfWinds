@@ -6260,6 +6260,42 @@ tile{
   tileset = "caves/Cave_side",
 }
 
+tile{
+  layer = 0,
+  x = 568,
+  y = 768,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 816,
+  width = 48,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 768,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 760,
+  width = 48,
+  height = 8,
+  pattern = "8",
+}
+
 block{
   layer = 0,
   x = 552,
