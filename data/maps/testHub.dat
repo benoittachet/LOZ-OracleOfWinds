@@ -125,6 +125,15 @@ tile{
   pattern = "60",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "60",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -149,7 +158,7 @@ destination{
   name = "spawn",
   layer = 0,
   x = 80,
-  y = 85,
+  y = 125,
   direction = 1,
   default = true,
 }
@@ -170,6 +179,16 @@ teletransporter{
   y = 112,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_01/RDC",
+  destination_map = "donjons/level_01/RDC_old",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "test_eau",
 }
 

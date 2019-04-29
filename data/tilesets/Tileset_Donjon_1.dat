@@ -310,6 +310,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "36",
+  ground = "wall",
+  default_layer = 0,
+  x = { 48, 64, 80, 96 },
+  y = { 112, 112, 112, 112 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
   id = "37",
   ground = "wall",
   default_layer = 0,
@@ -396,6 +407,48 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "43",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 112, 128, 144, 160 },
+  y = { 80, 80, 80, 80 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "44",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 112, 128, 144, 160 },
+  y = { 96, 96, 96, 96 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "45",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "46",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "5",
   ground = "traversable",
   default_layer = 0,
@@ -418,7 +471,7 @@ tile_pattern{
 
 tile_pattern{
   id = "7",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 8,
   y = 32,
@@ -445,5 +498,17 @@ tile_pattern{
   width = 16,
   height = 16,
   repeat_mode = "horizontal",
+}
+
+border_set{
+  id = "classic",
+  pattern_0 = "19",
+  pattern_1 = "10",
+  pattern_2 = "20",
+  pattern_3 = "9",
+  pattern_4 = "13",
+  pattern_5 = "14",
+  pattern_6 = "12",
+  pattern_7 = "11",
 }
 

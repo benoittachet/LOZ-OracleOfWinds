@@ -4,7 +4,7 @@ dialog{
 Vous avez trouvé la plume de roc.
 
 BAH VAS Y SAUTE
-]]
+]],
 }
 
 dialog{
@@ -13,7 +13,7 @@ dialog{
 Tu as trouvé 1 rubis !
 C'est le début
 de la fortune !
-]]
+]],
 }
 
 dialog{
@@ -21,7 +21,7 @@ dialog{
   text = [[
 Tu as trouvé un rubis bleu !
 Il vaut 5 rubis !
-]]
+]],
 }
 
 dialog{
@@ -29,7 +29,7 @@ dialog{
   text = [[
 Tu as trouvé un rubis rouge !
 Il vaut 20 rubis !
-]]
+]],
 }
 
 dialog{
@@ -37,16 +37,22 @@ dialog{
   text = [[
 Tu as trouvé 50 rubis !
 Merveilleux !
-]]
+]],
 }
 
 dialog{
   id = "_treasure.small_key.1",
+  oui = "yeet",
   text = [[
-Vous avez trouvé une petite clé !
+haha oui les mots oui ahahahah
+]],
+}
 
-Utilisez-la pour ouvrir une porte
-]]
+dialog{
+  id = "pnj.test.snas",
+  text = [[
+ur gonna have bad tiem
+]],
 }
 
 dialog{
@@ -54,6 +60,6 @@ dialog{
   text = [[
 Bonjour, je suis
 une sorcière inutile !
-]]
+]],
 }
 

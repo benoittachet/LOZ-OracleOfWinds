@@ -110,8 +110,8 @@ tile{
 destination{
   name = "spawn",
   layer = 1,
-  x = 80,
-  y = 229,
+  x = 208,
+  y = 237,
   direction = 1,
   default = true,
 }
@@ -138,17 +138,9 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 48,
-  y = 237,
+  x = 208,
+  y = 197,
   direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 1,
-  x = 184,
-  y = 237,
-  direction = 0,
-  breed = "skeleton_3",
+  breed = "mini_boss/mr_pers",
 }
 

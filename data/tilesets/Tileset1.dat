@@ -294,20 +294,24 @@ tile_pattern{
   id = "124",
   ground = "shallow_water",
   default_layer = 0,
-  x = { 112, 120, 128, 120 },
-  y = { 160, 160, 160, 160 },
+  x = { 112, 120, 128 },
+  y = { 160, 160, 160 },
   width = 8,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
   id = "125",
   ground = "deep_water",
   default_layer = 0,
-  x = { 112, 120, 128, 120 },
-  y = { 168, 168, 168, 168 },
+  x = { 112, 120, 128 },
+  y = { 168, 168, 168 },
   width = 8,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -605,6 +609,7 @@ tile_pattern{
   y = { 168, 168, 168 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -615,6 +620,7 @@ tile_pattern{
   y = { 184, 184, 184 },
   width = 16,
   height = 16,
+  frame_delay = 250,
   repeat_mode = "horizontal",
 }
 
@@ -1179,11 +1185,12 @@ tile_pattern{
   id = "20",
   ground = "wall",
   default_layer = 0,
-  x = { 0, 32, 64, 32 },
-  y = { 32, 32, 32, 32 },
+  x = { 0, 32, 64 },
+  y = { 32, 32, 32 },
   width = 32,
   height = 32,
-  repeat_mode = "horizontal",
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -1243,10 +1250,12 @@ tile_pattern{
   id = "205",
   ground = "traversable",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 304, 304, 304, 304 },
+  x = { 0, 16, 32 },
+  y = { 304, 304, 304 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -1361,20 +1370,24 @@ tile_pattern{
   id = "215",
   ground = "deep_water",
   default_layer = 0,
-  x = { 144, 160, 176, 160 },
-  y = { 160, 160, 160, 160 },
+  x = { 144, 160, 176 },
+  y = { 160, 160, 160 },
   width = 16,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
   id = "216",
   ground = "wall",
   default_layer = 0,
-  x = { 144, 160, 176, 160 },
-  y = { 272, 272, 272, 272 },
+  x = { 144, 160, 176 },
+  y = { 272, 272, 272 },
   width = 16,
   height = 32,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -1929,10 +1942,12 @@ tile_pattern{
   id = "3",
   ground = "wall",
   default_layer = 0,
-  x = { 64, 80, 96, 80 },
-  y = { 0, 0, 0, 0 },
+  x = { 64, 80, 96 },
+  y = { 0, 0, 0 },
   width = 16,
   height = 32,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 

@@ -2,16 +2,17 @@ properties{
   x = 0,
   y = 0,
   width = 320,
-  height = 144,
+  height = 128,
   min_layer = 0,
   max_layer = 2,
   tileset = "forest_cave",
+  music = "Zelda Original/Caves",
 }
 
 tile{
   layer = 0,
   x = 80,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "2",
@@ -20,7 +21,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "3",
@@ -29,7 +30,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "1",
@@ -38,7 +39,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "9",
@@ -47,7 +48,7 @@ tile{
 tile{
   layer = 0,
   x = 304,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "12",
@@ -56,7 +57,7 @@ tile{
 tile{
   layer = 0,
   x = 304,
-  y = 16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "10",
@@ -65,7 +66,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "11",
@@ -74,7 +75,7 @@ tile{
 tile{
   layer = 0,
   x = 304,
-  y = 32,
+  y = 16,
   width = 16,
   height = 96,
   pattern = "8",
@@ -83,7 +84,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 16,
+  y = 0,
   width = 288,
   height = 16,
   pattern = "6",
@@ -92,7 +93,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 32,
+  y = 16,
   width = 16,
   height = 96,
   pattern = "5",
@@ -101,7 +102,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 128,
+  y = 112,
   width = 48,
   height = 16,
   pattern = "7",
@@ -110,7 +111,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 128,
+  y = 112,
   width = 192,
   height = 16,
   pattern = "7",
@@ -119,7 +120,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 32,
+  y = 16,
   width = 288,
   height = 96,
   pattern = "20",
@@ -128,7 +129,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "17",
@@ -137,7 +138,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 64,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "17",
@@ -146,7 +147,7 @@ tile{
 tile{
   layer = 0,
   x = 288,
-  y = 32,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "17",
@@ -155,7 +156,7 @@ tile{
 tile{
   layer = 0,
   x = 272,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "17",
@@ -164,7 +165,7 @@ tile{
 tile{
   layer = 0,
   x = 240,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "17",
@@ -173,7 +174,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "17",
@@ -182,7 +183,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 32,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "17",
@@ -191,7 +192,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 32,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "19",
@@ -200,7 +201,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 64,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "19",
@@ -209,7 +210,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "19",
@@ -218,7 +219,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "19",
@@ -227,7 +228,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "19",
@@ -236,7 +237,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "19",
@@ -245,7 +246,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "19",
@@ -254,7 +255,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "21",
@@ -263,7 +264,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 96,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "21",
@@ -272,7 +273,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 80,
+  y = 64,
   width = 16,
   height = 16,
   pattern = "21",
@@ -281,7 +282,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 48,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "21",
@@ -290,7 +291,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 32,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "21",
@@ -299,7 +300,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 48,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "21",
@@ -308,51 +309,6 @@ tile{
 tile{
   layer = 0,
   x = 240,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 272,
   y = 96,
   width = 16,
   height = 16,
@@ -361,8 +317,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 288,
-  y = 48,
+  x = 144,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "21",
@@ -370,17 +326,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 80,
+  x = 160,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "19",
@@ -389,19 +336,19 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 80,
+  y = 16,
   width = 16,
   height = 16,
-  pattern = "17",
+  pattern = "19",
 }
 
 tile{
   layer = 0,
-  x = 80,
-  y = 64,
+  x = 48,
+  y = 16,
   width = 16,
   height = 16,
-  pattern = "19",
+  pattern = "21",
 }
 
 tile{
@@ -410,13 +357,67 @@ tile{
   y = 80,
   width = 16,
   height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 64,
+  width = 16,
+  height = 16,
   pattern = "19",
 }
 
 tile{
   layer = 0,
   x = 112,
-  y = 80,
+  y = 64,
   width = 16,
   height = 16,
   pattern = "19",
@@ -425,7 +426,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 64,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "21",
@@ -434,7 +435,7 @@ tile{
 chest{
   layer = 0,
   x = 280,
-  y = 45,
+  y = 29,
   treasure_name = "rock_feather",
   sprite = "entities/chest",
 }
@@ -442,126 +443,112 @@ chest{
 destructible{
   layer = 0,
   x = 264,
-  y = 45,
+  y = 29,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 280,
-  y = 61,
+  y = 45,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 264,
-  y = 125,
+  y = 109,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 296,
-  y = 125,
+  y = 109,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 184,
-  y = 109,
+  y = 93,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 56,
-  y = 61,
+  y = 45,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 104,
-  y = 125,
+  y = 109,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 24,
-  y = 93,
+  y = 77,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 168,
-  y = 93,
+  y = 77,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 216,
-  y = 125,
+  y = 109,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 200,
-  y = 93,
+  y = 77,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 168,
-  y = 45,
+  y = 29,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 120,
-  y = 45,
+  y = 29,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 136,
-  y = 125,
+  y = 109,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 120,
-  y = 61,
+  y = 45,
   sprite = "entities/grass",
 }
 
 destructible{
   layer = 0,
   x = 152,
-  y = 109,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 109,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 61,
+  y = 93,
   sprite = "entities/grass",
 }
 
@@ -572,10 +559,24 @@ destructible{
   sprite = "entities/grass",
 }
 
+destructible{
+  layer = 0,
+  x = 232,
+  y = 45,
+  sprite = "entities/grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 77,
+  sprite = "entities/grass",
+}
+
 teletransporter{
   layer = 0,
   x = 80,
-  y = 136,
+  y = 112,
   width = 16,
   height = 16,
   destination_map = "overworld/wind_wood/forest_outdoor",
@@ -586,7 +587,7 @@ destination{
   name = "forest_to_forest_cave_01",
   layer = 0,
   x = 88,
-  y = 141,
+  y = 117,
   direction = 1,
 }
 

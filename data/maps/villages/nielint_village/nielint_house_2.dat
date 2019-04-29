@@ -2,16 +2,17 @@ properties{
   x = 0,
   y = 0,
   width = 160,
-  height = 144,
+  height = 128,
   min_layer = 0,
   max_layer = 2,
   tileset = "House",
+  music = "Zelda Original/Houses",
 }
 
 tile{
   layer = 0,
   x = 16,
-  y = 32,
+  y = 16,
   width = 128,
   height = 96,
   pattern = "1",
@@ -20,7 +21,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "2",
@@ -29,7 +30,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 16,
+  y = 0,
   width = 128,
   height = 16,
   pattern = "3",
@@ -38,7 +39,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "4",
@@ -47,7 +48,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "7",
@@ -56,7 +57,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 128,
+  y = 112,
   width = 128,
   height = 16,
   pattern = "8",
@@ -65,7 +66,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "9",
@@ -74,7 +75,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "36",
@@ -83,7 +84,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 128,
+  y = 112,
   width = 8,
   height = 16,
   pattern = "35",
@@ -92,7 +93,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 128,
+  y = 112,
   width = 8,
   height = 16,
   pattern = "34",
@@ -101,7 +102,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 24,
+  y = 8,
   width = 16,
   height = 16,
   pattern = "49",
@@ -110,7 +111,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 16,
+  y = 0,
   width = 16,
   height = 8,
   pattern = "33",
@@ -119,7 +120,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 24,
+  y = 8,
   width = 16,
   height = 8,
   pattern = "32",
@@ -128,7 +129,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 32,
+  y = 16,
   width = 16,
   height = 8,
   pattern = "31",
@@ -137,7 +138,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 16,
+  y = 0,
   width = 16,
   height = 8,
   pattern = "33",
@@ -146,7 +147,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 16,
+  y = 0,
   width = 16,
   height = 8,
   pattern = "32",
@@ -155,7 +156,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 32,
+  y = 16,
   width = 16,
   height = 8,
   pattern = "31",
@@ -164,7 +165,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 32,
+  y = 16,
   width = 16,
   height = 32,
   pattern = "53",
@@ -173,7 +174,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 32,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "50",
@@ -182,7 +183,7 @@ tile{
 tile{
   layer = 0,
   x = 24,
-  y = 16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "48",
@@ -191,7 +192,7 @@ tile{
 tile{
   layer = 0,
   x = 56,
-  y = 112,
+  y = 96,
   width = 48,
   height = 16,
   pattern = "60",
@@ -200,7 +201,7 @@ tile{
 tile{
   layer = 0,
   x = 40,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "37",
@@ -209,7 +210,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 112,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "37",
@@ -218,7 +219,7 @@ tile{
 tile{
   layer = 0,
   x = 40,
-  y = 56,
+  y = 40,
   width = 16,
   height = 16,
   pattern = "41",
@@ -227,7 +228,7 @@ tile{
 tile{
   layer = 0,
   x = 24,
-  y = 56,
+  y = 40,
   width = 16,
   height = 16,
   pattern = "47",
@@ -236,7 +237,7 @@ tile{
 tile{
   layer = 0,
   x = 56,
-  y = 56,
+  y = 40,
   width = 16,
   height = 16,
   pattern = "47",
@@ -245,7 +246,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 64,
+  y = 48,
   width = 16,
   height = 32,
   pattern = "73",
@@ -254,7 +255,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 32,
+  y = 16,
   width = 16,
   height = 96,
   pattern = "5",
@@ -263,7 +264,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 32,
+  y = 16,
   width = 16,
   height = 96,
   pattern = "6",
@@ -273,24 +274,16 @@ destination{
   name = "destination",
   layer = 0,
   x = 80,
-  y = 141,
+  y = 117,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 72,
-  y = 128,
+  y = 112,
   width = 16,
   height = 16,
   destination_map = "village_debut/house-2",
-}
-
-separator{
-  layer = 0,
-  x = 0,
-  y = 8,
-  width = 160,
-  height = 16,
 }
 

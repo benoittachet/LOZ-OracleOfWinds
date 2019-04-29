@@ -13,9 +13,12 @@ require("scripts/feature/generic")
 require("scripts/feature/movement_generic")
 require("scripts/feature/entity_generic")
 require("scripts/feature/map_generic")
+require("scripts/feature/char_surface")
 require("scripts/meta/primary")
 require("scripts/meta/hero")
 require("scripts/meta/entities")
+require("scripts/meta/game")
 require("scripts/feature/video")
+require("scripts/menus/dialog_box")
 
 return true

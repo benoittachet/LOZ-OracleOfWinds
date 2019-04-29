@@ -31,4 +31,42 @@ function gen.import(dest, src, ...)
 
 end
 
+--Crée une nouvelle classe, avec sa métatable, et une méthode new() pour créer une instance.
+--Si bClass est spécifié, cette classe héritera de bClass
+
+function gen.class(bClass)
+  local newclass = {}
+  newclass.mt = {__index = newclass}
+
+  function newclass:new(...)
+    local inst
+    if type(self.build) == "function" then
+      inst = self:build(...) or {}
+    else 
+      inst = {}
+    end
+    setmetatable(inst, self.mt)
+    if type(inst.constructor) == "function" then
+      inst:constructor(...)
+    end 
+    return inst
+  end
+      
+  if bClass then
+    if type(bClass) == "table" and ClassbClass.__index then
+      setmetatable(newclass, bClass)
+    else
+      setmetatable(newclass, {__index = bClass})
+    end
+  end
+
+  return newclass
+end
+
+function gen.new(class)
+  if type(class.new) == "function" then
+    return class:new()
+  end
+end
+
 return gen

@@ -7,8 +7,6 @@ local hero_meta = sol.main.get_metatable("hero")
 local function initialize_hero_features(game)
 
   local hero = game:get_hero()
-  hero:set_tunic_sprite_id("main_heroes/Link")
-  hero:set_sword_sprite_id("hero/sword")
   
   local hero_sprite = hero:get_sprite("tunic")
 
