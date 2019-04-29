@@ -47,7 +47,9 @@ function gen.class(bClass)
     end
     setmetatable(inst, self.mt)
     if type(inst.constructor) == "function" then
-      inst:constructor(...)
+      if inst:constructor(...) then
+        return false
+      end
     end 
     return inst
   end
@@ -63,9 +65,9 @@ function gen.class(bClass)
   return newclass
 end
 
-function gen.new(class)
+function gen.new(class, ...)
   if type(class.new) == "function" then
-    return class:new()
+    return class:new(...)
   end
 end
 

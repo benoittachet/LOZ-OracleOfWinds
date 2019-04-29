@@ -132,13 +132,31 @@ function mpg.init_detect_open(map)
   end
 end
 
-function mpg.init_map_features(map, ...)
+function mpg.init_dungeon_features(map, ...)
   
   map:init_enemies_event_triggers()
   map:init_activate_triggers()
   map:init_activatables()
   map:init_detect_open()  
 
+end
+
+local side_view = require("scripts/feature/map_side_view")
+
+function mpg.init_side_view(map)
+  local hero = map:get_hero()
+  side_view.init_physics(hero)
+
+  map.physics_timer = sol.timer.start(map, 10, function() 
+    hero.pObject:apply_physics()
+    return true
+  end)
+
+  function map:on_command_pressed(com)
+    if com == "up" or com == "down" then
+      return true
+    end
+  end
 end
 
 return mpg

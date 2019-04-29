@@ -1,6 +1,6 @@
 local initial_menus = {
   "scripts/menus/initial/solarus_logo",
-  "scripts/menus/initial/zunashy",
+--  "scripts/menus/initial/zunashy",
 }
 
 local function start_initial_menus(callback)

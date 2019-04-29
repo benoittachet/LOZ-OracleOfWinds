@@ -6,7 +6,6 @@ require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")
 --require("scripts/sinking_override")
-local input_manager = require("scripts/input_manager")
 
 local default_save_file = "save1.dat"
 
@@ -32,6 +31,3 @@ end
 function sol.main:on_finished()
   sol.main.save_settings()
 end
-
--- Event called when the player pressed a keyboard key.
-gen.import(sol.main, input_manager, "on_key_pressed")

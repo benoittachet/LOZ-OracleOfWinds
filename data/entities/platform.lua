@@ -45,9 +45,6 @@ function entity:collision_callback(other)
   if other:get_type() == "hero" then
     hero.is_on_nonsolid_ground = true
   end
-
-  --print("oui")
-
 end
 
 local function hero_can_be_moved()
