@@ -300,16 +300,17 @@ destination{
   name = "destination",
   layer = 0,
   x = 80,
-  y = 117,
+  y = 109,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 72,
-  y = 112,
+  y = 104,
   width = 16,
   height = 16,
-  destination_map = "village_debut/house-1",
+  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination = "house_01_to_village",
 }
 

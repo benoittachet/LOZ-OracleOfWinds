@@ -7466,6 +7466,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "villages/nielint_village/nielint_mairie_rdc",
+  destination = "destination",
 }
 
 teletransporter{

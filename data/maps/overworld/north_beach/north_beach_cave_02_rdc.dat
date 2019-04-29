@@ -849,8 +849,8 @@ teletransporter{
 destination{
   name = "ss1_to_rdc",
   layer = 0,
-  x = 48,
-  y = 45,
+  x = 40,
+  y = 53,
   direction = 1,
 }
 

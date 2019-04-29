@@ -463,33 +463,34 @@ destination{
   name = "destination",
   layer = 0,
   x = 64,
-  y = 117,
+  y = 109,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 56,
-  y = 112,
+  y = 104,
   width = 16,
   height = 16,
-  destination_map = "village_debut/mairierdc",
+  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination = "mayor_to_village",
 }
 
 teletransporter{
   layer = 0,
   x = 120,
-  y = 0,
+  y = 8,
   width = 16,
   height = 16,
-  destination_map = "village_debut/mairie_rdc",
+  destination_map = "villages/nielint_village/nielint_mairie_etage",
 }
 
 destination{
   name = "destination_2",
   layer = 0,
   x = 128,
-  y = 21,
+  y = 29,
   direction = 1,
 }
 
