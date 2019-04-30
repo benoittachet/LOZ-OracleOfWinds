@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/mini_boss/1//mr_pers.png",
+  src_image = "enemies/mini_boss/1/mr_pers2.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
@@ -47,13 +47,13 @@ animation{
 }
 animation{
   name = "sword",
-  src_image = "enemies/mini_boss/1//mr_pers.png",
-  frame_delay = 1000,
+  src_image = "enemies/mini_boss/1/mr_pers2.png",
+  frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 112, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 112, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
   },
 }
