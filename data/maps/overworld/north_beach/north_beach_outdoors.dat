@@ -1788,15 +1788,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
   x = 624,
   y = 384,
   width = 16,
@@ -6216,6 +6207,24 @@ tile{
   tileset = "overworld/structure",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
 separator{
   layer = 0,
   x = 472,
@@ -6272,20 +6281,6 @@ separator{
   height = 688,
 }
 
-destructible{
-  name = "Herbe_30",
-  layer = 0,
-  x = 600,
-  y = 493,
-  treasure_name = "random",
-  sprite = "entities/grass_dark",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
 destination{
   name = "keep1",
   layer = 0,
@@ -6316,6 +6311,7 @@ destructible{
   layer = 0,
   x = 616,
   y = 301,
+  treasure_name = "random",
   sprite = "entities/grass",
   can_be_cut = true,
 }
@@ -6324,6 +6320,7 @@ destructible{
   layer = 0,
   x = 600,
   y = 301,
+  treasure_name = "random",
   sprite = "entities/grass",
   can_be_cut = true,
 }
@@ -6497,7 +6494,9 @@ destructible{
   layer = 0,
   x = 600,
   y = 365,
+  treasure_name = "random",
   sprite = "entities/grass",
+  can_be_cut = true,
 }
 
 tile{
