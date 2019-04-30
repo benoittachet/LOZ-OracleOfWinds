@@ -152,11 +152,6 @@ function mpg.init_side_view(map)
     return true
   end)
 
-  function map:on_command_pressed(com)
-    if com == "up" or com == "down" then
-      return true
-    end
-  end
 end
 
 return mpg
