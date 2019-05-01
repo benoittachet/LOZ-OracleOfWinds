@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/mini_boss/1/mr_pers2.png",
+  src_image = "enemies/mini_boss/1/mr_pers.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
@@ -47,7 +47,7 @@ animation{
 }
 animation{
   name = "sword",
-  src_image = "enemies/mini_boss/1/mr_pers2.png",
+  src_image = "enemies/mini_boss/1/mr_pers.png",
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
