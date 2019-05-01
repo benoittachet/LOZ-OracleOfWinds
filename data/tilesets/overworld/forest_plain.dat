@@ -22,6 +22,27 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "100",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 304,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "101",
+  ground = "wall",
+  default_layer = 0,
+  x = 56,
+  y = 304,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "11",
   ground = "traversable",
   default_layer = 0,
@@ -941,5 +962,48 @@ tile_pattern{
   y = 0,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "96",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 288,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "97",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 288,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "98",
+  ground = "wall",
+  default_layer = 0,
+  x = 56,
+  y = 288,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "99",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 304,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
 }
 
