@@ -134,6 +134,15 @@ tile{
   pattern = "60",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -190,5 +199,15 @@ teletransporter{
   height = 16,
   destination_map = "overworld/north_beach/north_beach_outdoors",
   destination = "test_eau",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/2D_Test",
+  destination = "in_a",
 }
 

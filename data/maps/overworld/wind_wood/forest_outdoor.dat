@@ -4425,7 +4425,7 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 336,
+  x = 344,
   y = 349,
   sprite = "entities/grass",
   can_be_cut = true,
