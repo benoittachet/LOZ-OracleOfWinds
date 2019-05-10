@@ -271,9 +271,11 @@ file{ path = "musics/eduardo/title_screen.ogg", author = "Eduardo Dueñas", }
 file{ path = "musics/eduardo/village.ogg", author = "Eduardo Dueñas", }
 file{ path = "musics/eduardo/witch_hut.ogg", author = "Eduardo Dueñas", }
 file{ path = "scripts/debug/utilities.lua", author = "a_tom", }
+file{ path = "scripts/feature/char_surface.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/entity_generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/map_generic.lua", author = "TwilCynder", }
+file{ path = "scripts/feature/map_side_view.lua", author = "TwilCynder, PhoenixII54", }
 file{ path = "scripts/feature/movement_generic.lua", author = "a_tom", }
 file{ path = "scripts/feature/video.lua", author = "TwilCynder", }
 file{ path = "scripts/features.lua", author = "TwilCynder", }

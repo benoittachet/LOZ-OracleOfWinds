@@ -823,8 +823,8 @@ teletransporter{
 destination{
   name = "in_a",
   layer = 0,
-  x = 296,
-  y = 69,
+  x = 416,
+  y = 61,
   direction = 1,
 }
 

@@ -79,7 +79,7 @@ function enemy:dash(x, y)
 end
 
 function enemy:sword()
-  sprite:set_animation("sword")
+  sprite:set_animation("sword", "sword_end")
   sol.audio.play_sound("enemies/mr_pers/sword")
   sword_sprite:set_animation("sword", function() 
     sword_sprite:set_animation("idle")

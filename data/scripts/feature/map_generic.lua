@@ -149,6 +149,7 @@ function mpg.init_side_view(map)
 
   map.physics_timer = sol.timer.start(map, 10, function() 
     hero.pObject:apply_physics()
+    side_view.update_hero(hero)
     return true
   end)
 
