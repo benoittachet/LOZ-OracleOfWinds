@@ -21,25 +21,17 @@ local movement_speed = 48
 local movement_speed_target = 48
 
 local detect_angle = math.pi/2
-local detect_distance = 16
+local detect_distance = 64
 local detect_state
+
+local dirCoef = gen.dirCoef
+local dir_from_angle = mg.dir_from_angle
 
 enemy.choose_random_direction = mg.choose_random_direction
 enemy.test_obstacles_dir = mg.test_obstacles_dir
-enemy.cone_detect = cone_detect
+enemy.cone_detect = eg.cone_detect
 
 -- Event called when the enemy is initialized.
-
-function enemy:movement_cycle()
-  --print("Starting movement cycle")
-
-  sol.timer.start(enemy,1500,function()
-   -- print("Calling the movement process")
-    enemy:move(movement_distance)
-    return false
-  end)
- enemy:set_enabled(true)
-end
 
 function enemy:on_created()
 
@@ -47,7 +39,7 @@ function enemy:on_created()
   -- like the sprite, the life and the damage.
   --sprite = enemy:create_sprite("enemies/moblin")
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:get_sprite():set_direction(math.random(0,3))
+  sprite:set_direction(math.random(0,3))
   enemy:set_life(4)
   enemy:set_damage(2)
   enemy.detect_state = false
@@ -57,36 +49,56 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
-  enemy:get_sprite():set_paused()  
-  if self.detect_state == false then
-    sol.timer.start(enemy,100,function()
+  if self.detect_state then
+    enemy:target_hero()
+  else
+    sol.timer.start(enemy,10,function()
       enemy:check_hero()
       return true
     end)
 
     enemy:movement_cycle()
-  else
-    enemy:target_hero()
   end
 end
 
-function enemy:move(distance)
-  
+function enemy:movement_cycle()
+  sprite:set_animation("idle")
+  sol.timer.start(enemy,1000,function()
+    enemy:move(movement_speed, movement_distance)
+    return false
+  end)
+end
+
+local function movement_pos_change_callback(m)
+  local dir = m:get_direction4()
+  if enemy:test_obstacles(dirCoef[dir + 1].x * 8, dirCoef[dir + 1].y * 8) then
+    print("obstacle detected")
+    m:stop()
+    enemy:movement_cycle()
+  end
+end
+
+local function movement_obstacle_callback(m)
+  print("obstacle reached")
+  m:stop()
+  enemy:movement_cycle()
+end
+
+function enemy:move(speed, distance)
  movement = sol.movement.create("straight")
-  movement:set_speed(48)
+  movement:set_speed(speed)
   local mdir = enemy.choose_random_direction(enemy,
    function(dir, enemy) return not enemy:test_obstacles_dir(dir,8) end)
   enemy:get_sprite():set_direction(mdir)
   movement:set_angle(mdir*math.pi/2)
   movement:set_max_distance(distance)  
-  movement:start(enemy,function()enemy:movement_cycle()end)
+  movement:start(enemy, enemy.movement_cycle)
 
-  movement.on_position_changed = function()
-    local dir = movement:get_direction4()
-    if enemy:test_obstacles(dirCoef[dir + 1].x * 8, dirCoef[dir + 1].y * 8) then
-      movement:set_max_distance(-1)
-    end
-  end
+  sprite:set_animation("walking")
+  sprite:set_direction(mdir)
+
+  movement.on_position_changed = movement_pos_change_callback
+  movement.on_obstacle_reached = movement_obstacle_callback
 
 end
 
@@ -98,33 +110,28 @@ function enemy:check_hero()
   end
 end
 
+local function target_move_pos_callback(m)
+  sprite:set_direction(dir_from_angle(enemy:get_angle(hero)))
+end
+
 function enemy:target_hero()
   enemy:stop_movement()
   self.detect_state = true   
+  
   local m = sol.movement.create("target")
   sol.timer.stop_all(enemy)
   m:set_target(hero)
   m:set_speed(movement_speed_target)
 
-  m.on_position_changed = function()
-   sprite:set_direction(dir_from_angle(enemy:get_angle(hero)))
-  end
+  m.on_position_changed = target_move_pos_callback
+
+  sprite:set_animation("walking")
 
   m:start(enemy)
 end
 
 function enemy:on_hurt(atk)
   if atk == "sword" then
-    sol.timer.start(enemy,200,function()  
-      enemy:target_hero()
-    end)
+    detect_state = true
   end
-end
-
-function enemy:on_movement_started()
- sprite:set_paused(false)  
-end
-
-function enemy:on_movement_finished()
- sprite:set_paused()
 end

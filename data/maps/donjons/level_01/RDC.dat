@@ -6768,3 +6768,11 @@ enemy{
   breed = "octorok",
 }
 
+enemy{
+  layer = 0,
+  x = 512,
+  y = 389,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
