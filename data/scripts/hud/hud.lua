@@ -3,7 +3,6 @@
 -- Usage:
 -- require("scripts/hud/hud")
 
-require("scripts/multi_events")
 local hud_config = require("scripts/hud/hud_config")
 
 -- Creates and runs a HUD for the specified game.

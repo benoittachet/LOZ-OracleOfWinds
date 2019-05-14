@@ -271,11 +271,9 @@ file{ path = "musics/eduardo/title_screen.ogg", author = "Eduardo Dueñas", }
 file{ path = "musics/eduardo/village.ogg", author = "Eduardo Dueñas", }
 file{ path = "musics/eduardo/witch_hut.ogg", author = "Eduardo Dueñas", }
 file{ path = "scripts/debug/utilities.lua", author = "a_tom", }
-file{ path = "scripts/feature/char_surface.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/entity_generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/map_generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/map_side_view.lua", author = "TwilCynder, PhoenixII54", }
 file{ path = "scripts/feature/movement_generic.lua", author = "a_tom", }
 file{ path = "scripts/feature/video.lua", author = "TwilCynder", }
 file{ path = "scripts/features.lua", author = "TwilCynder", }
@@ -287,8 +285,6 @@ file{ path = "scripts/hud/hud_config.lua", author = "Christopho", }
 file{ path = "scripts/hud/item.lua", author = "Christopho", }
 file{ path = "scripts/hud/rupees.lua", author = "Christopho", }
 file{ path = "scripts/initial_game.lua", author = "Christopho", }
-file{ path = "scripts/input_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/menus.lua", author = "TwilCynder", }
 file{ path = "scripts/menus/dialog_box.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/menus/initial/solarus_logo.lua", author = "Christopho", }
 file{ path = "scripts/menus/initial/zunashy.lua", author = "TwilCynder", }
@@ -298,7 +294,6 @@ file{ path = "scripts/meta/game.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/hero.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/meta/primary.lua", author = "TwilCynder", }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", }
-file{ path = "scripts/sinking_override.lua", author = "a_tom", }
 file{ path = "shaders/2x.glsl", author = "TwilCynder", }
 file{ path = "sounds/diarandor", author = "Diarandor", }
 file{ path = "sounds/diarandor/solarus_logo.ogg", author = "Diarandor", }

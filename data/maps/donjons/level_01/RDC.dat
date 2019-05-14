@@ -6636,6 +6636,12 @@ enemy{
   layer = 0,
   x = 376,
   y = 1181,
+  properties = {
+    {
+      key = "oui",
+      value = "yeet",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -6644,6 +6650,12 @@ enemy{
   layer = 0,
   x = 328,
   y = 1165,
+  properties = {
+    {
+      key = "oui",
+      value = "non",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -6652,6 +6664,12 @@ enemy{
   layer = 0,
   x = 280,
   y = 1149,
+  properties = {
+    {
+      key = "oui",
+      value = "yeet",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -6770,9 +6788,25 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 512,
-  y = 389,
+  x = 1072,
+  y = 621,
   direction = 0,
-  breed = "moblin_sword",
+  breed = "blue_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 1080,
+  y = 589,
+  direction = 0,
+  breed = "blue_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 1112,
+  y = 565,
+  direction = 0,
+  breed = "blue_slime",
 }
 

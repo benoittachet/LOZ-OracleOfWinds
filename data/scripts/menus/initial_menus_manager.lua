@@ -12,8 +12,12 @@ local function start_initial_menus(callback)
   for i, menu_script in ipairs(initial_menus) do
     initial_menus[i] = require(menu_script)
   end
-  if type(callback == "function") then  
-    initial_menus[#initial_menus + 1] = {on_started = function() callback() end}
+  if type(callback) == "function" then  
+    initial_menus[#initial_menus + 1] = {
+      on_started = function(menu) 
+        sol.menu.stop(menu)
+        callback() 
+      end}
   end
 
   local on_top = false  -- To keep the debug menu on top.
