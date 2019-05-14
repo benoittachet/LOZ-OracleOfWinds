@@ -6,6 +6,7 @@ map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beac
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
 map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
 map{ id = "overworld/north_beach/north_beach_outdoors", description = "North Beach Outdoors" }
+map{ id = "overworld/plain/outdoors" }
 map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
 map{ id = "overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "overworld/wind_wood/house_forest", description = "Wind Wood House" }
@@ -30,6 +31,7 @@ tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
 tileset{ id = "caves/Cave_side", description = "cave_sides" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
+tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
 
@@ -275,7 +277,6 @@ file{ path = "scripts/feature/char_surface.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/entity_generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/generic.lua", author = "TwilCynder", }
 file{ path = "scripts/feature/map_generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/map_side_view.lua", author = "TwilCynder, PhoenixII54", }
 file{ path = "scripts/feature/movement_generic.lua", author = "a_tom", }
 file{ path = "scripts/feature/video.lua", author = "TwilCynder", }
 file{ path = "scripts/features.lua", author = "TwilCynder", }

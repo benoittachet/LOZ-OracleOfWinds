@@ -6021,7 +6021,7 @@ separator{
 
 separator{
   layer = 0,
-  x = -8,
+  x = 0,
   y = 376,
   width = 640,
   height = 16,
@@ -7434,7 +7434,7 @@ destination{
 }
 
 destination{
-  name = "destination_9",
+  name = "plain_to_nielint",
   layer = 0,
   x = 624,
   y = 333,
@@ -7502,7 +7502,8 @@ teletransporter{
   y = 320,
   width = 16,
   height = 16,
-  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination_map = "overworld/plain/outdoors",
+  destination = "nielint_to_plain",
 }
 
 teletransporter{
