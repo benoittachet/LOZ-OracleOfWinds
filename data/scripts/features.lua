@@ -2,23 +2,25 @@
 
 -- Usage: require("scripts/features")
 
--- Features can be enabled to disabled independently by commenting
--- or uncommenting lines below.
-
 sol.features = {}
 
 require("scripts/multi_events")
+
 require("scripts/hud/hud")
+
 require("scripts/feature/generic")
 require("scripts/feature/movement_generic")
 require("scripts/feature/entity_generic")
 require("scripts/feature/map_generic")
-require("scripts/feature/char_surface")
+require("scripts/feature/video")
+
+require("scripts/meta/char_surface")
 require("scripts/meta/primary")
 require("scripts/meta/hero")
 require("scripts/meta/entities")
 require("scripts/meta/game")
-require("scripts/feature/video")
+require("scripts/meta/map")
+
 require("scripts/menus/dialog_box")
 
 return true

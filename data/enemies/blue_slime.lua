@@ -30,6 +30,7 @@ local detect_angle = math.pi/2
 local detect_distance = 64
 local dash = sol.movement.create("straight")
 local back_movement = sol.movement.create("target")
+local dash_speed = 96
 
 -- Dash and back movement methods
 
@@ -175,7 +176,7 @@ function enemy:dash(d)
       enemy:set_attacks_state("protected")
       dash.xs, dash.ys = enemy:get_position()
       dash.enemy = enemy      
-      dash:set_speed(64)
+      dash:set_speed(dash_speed)
       dash:set_angle(d * (math.pi / 2))
 
       enemy.on_attacking_hero = dash_hit_callback

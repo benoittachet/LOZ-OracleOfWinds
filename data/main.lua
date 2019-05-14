@@ -3,6 +3,7 @@
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
 require("scripts/features")
+
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")
 --require("scripts/sinking_override")
@@ -18,6 +19,7 @@ function sol.main:start_game(file)
 end
 
 -- This function is called when Solarus starts.
+-- It is the real entry point of the game.
 function sol.main:on_started()
   sol.video.set_scale(2)
   sol.audio.preload_sounds()

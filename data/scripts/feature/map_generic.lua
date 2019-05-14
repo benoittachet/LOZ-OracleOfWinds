@@ -141,7 +141,7 @@ function mpg.init_dungeon_features(map, ...)
 
 end
 
-local side_view = require("scripts/feature/map_side_view")
+local side_view = require("scripts/managers/map_side_view")
 
 function mpg.init_side_view(map)
   local hero = map:get_hero()

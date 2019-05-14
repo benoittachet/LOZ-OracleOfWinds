@@ -5,7 +5,6 @@
 -- local game = game_manager:create("savegame_file_name")
 -- game:start()
 
-require("scripts/multi_events")
 local initial_game = require("scripts/initial_game")
 
 local game_manager = {}
