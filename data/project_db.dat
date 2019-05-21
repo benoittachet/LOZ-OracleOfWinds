@@ -6,7 +6,8 @@ map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beac
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
 map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
 map{ id = "overworld/north_beach/north_beach_outdoors", description = "North Beach Outdoors" }
-map{ id = "overworld/plain/outdoors" }
+map{ id = "overworld/plain/outdoors_1" }
+map{ id = "overworld/plain/outdoors_2", description = "outdoors" }
 map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
 map{ id = "overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "overworld/wind_wood/house_forest", description = "Wind Wood House" }

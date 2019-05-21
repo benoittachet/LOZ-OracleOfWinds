@@ -7502,7 +7502,7 @@ teletransporter{
   y = 320,
   width = 16,
   height = 16,
-  destination_map = "overworld/plain/outdoors",
+  destination_map = "overworld/plain/outdoors_1",
   destination = "nielint_to_plain",
 }
 
