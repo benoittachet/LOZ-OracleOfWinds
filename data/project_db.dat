@@ -193,6 +193,7 @@ entity{ id = "dungeon_statue_eye" }
 entity{ id = "grass", description = "grass" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
+entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
@@ -295,7 +296,6 @@ file{ path = "scripts/menus/initial_menus_manager.lua", author = "TwilCynder, Ch
 file{ path = "scripts/meta/entities.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/game.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/hero.lua", author = "TwilCynder, Christopho", }
-file{ path = "scripts/meta/primary.lua", author = "TwilCynder", }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", }
 file{ path = "shaders/2x.glsl", author = "TwilCynder", }
 file{ path = "sounds/diarandor", author = "Diarandor", }

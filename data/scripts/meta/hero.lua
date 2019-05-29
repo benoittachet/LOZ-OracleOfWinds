@@ -7,7 +7,7 @@ local function initialize_hero_features(game)
   local hero = game:get_hero()
   
   local hero_sprite = hero:get_sprite("tunic")
-
+  
   hero.get_corner_position = eg.get_corner_position
   
   --Méthodes / Callbacks
@@ -46,16 +46,25 @@ local function initialize_hero_features(game)
   hero.is_on_nonsolid_ground = false
   
   function hero:on_position_changed()   
-    local ground = hero:get_ground_below();
-    if (ground ~= "deep_water"
-      and ground ~= "hole"
-      and ground ~= "lava"
-      and ground ~= "prickles"
-      and ground ~= "empty"
-      and hero.is_on_nonsolid_ground == false)
-      then hero:save_solid_ground()
-    end
     hero.is_on_nonsolid_ground = false
+  end
+
+
+  function hero:start_jumping_oow(dir, dist)
+    dir = dir % 8
+    if not hero:get_map().is_side_view then
+      hero:start_jumping(dir, dist)
+      return true
+    end
+
+    if dir == 2 or dir == 6 then
+     -- return false
+    end
+
+    if not self.pObject or not self.pObject.on_ground then return false end
+
+    self.pObject.speed = -4
+    print(self.pObject.on_ground)
   end
 
   function hero:on_state_changed(s)
@@ -68,6 +77,16 @@ local function initialize_hero_features(game)
         e["on_hero_state_" .. s](e, hero)
       end
     end  
+
+    if s == "plunging" then
+      if self.pObject then self.pObject:freeze() end
+      hero_sprite:set_animation("plunging_water", function()
+        hero:set_position(hero:get_solid_ground_position())
+        hero:start_hurt(1)
+        if hero.pObject then hero.pObject:unfreeze() end
+      end)
+    end
+
   end
 
 end

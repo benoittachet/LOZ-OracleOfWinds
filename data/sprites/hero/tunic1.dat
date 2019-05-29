@@ -145,6 +145,7 @@ animation{
 animation{
   name = "plunging_water",
   src_image = "hero/Link_plunging_water.png",
+  frame_delay = 500,
   directions = {
     { x = 33, y = 6, frame_width = 17, frame_height = 15, origin_x = 8, origin_y = 8 },
     { x = 33, y = 6, frame_width = 17, frame_height = 15, origin_x = 8, origin_y = 8 },

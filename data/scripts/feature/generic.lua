@@ -75,4 +75,16 @@ function gen.xor(a, b)
   return a and (not b) or (not a) and b
 end
 
+function math.sign(x)
+  if x<0 then
+    return -1
+  elseif x>0 then
+    return 1
+  else
+    return 0
+  end
+end
+
+
+
 return gen

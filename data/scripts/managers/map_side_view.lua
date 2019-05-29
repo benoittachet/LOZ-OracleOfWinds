@@ -6,7 +6,7 @@ sv = {}
 
 sv.pObject = gen.class()
 
-sv.gravity = 0.2
+sv.gravity = 0.25
 
 function sv.pObject:constructor(entity)
   self.entity = entity
@@ -22,33 +22,13 @@ function sv.pObject:set_pos(x, y)
   self.entity:set_position(x, y)
 end
 
-function sv.pObject:apply_physics()
-  
-  if self.entity:test_obstacles(0, 1) then return end
+function sv.pObject:freeze()
+  self.frozen = true
+end  
 
-  local x, y = self:get_pos()
-
-  self.speed = self.speed + self.acc
-  
-  local dy = self.speed
-  if self.entity:test_obstacles(0, self.speed) then
-    dy = 1  
-    while self.entity:test_obstacles(0, dy) do
-      dy = dy + 1
-    end
-    dy = dy - 1
-    self.speed = 0
-  end
-  y = y + dy  
-
-  self:set_pos(x, y)
-end
-
-function sv.init_physics(entity)
-  entity.pObject = gen.new(sv.pObject, entity)
-  entity.pObject.acc = sv.gravity
-end
-
+function sv.pObject:unfreeze()
+  self.frozen = false
+end  
 
 --CODE DE PHOENIXII54
 
@@ -70,6 +50,43 @@ local function is_on_ground(entity, dy)
   return entity:test_obstacles(0, 1) or not test_ladder(entity) and is_ladder(entity:get_map(), x, y+3)
 end
 
+----
+
+function sv.pObject:apply_physics()
+  if (is_on_ground(self.entity) and self.on_ground or 
+    test_ladder(self.entity)) and 
+    not (self.speed < 0) or
+    self.frozen
+  then return end
+
+  local x, y, layer = self:get_pos()
+
+  self.speed = self.speed + self.acc
+
+  local dy = self.speed
+  local map = self.entity:get_map()
+  if self.entity:test_obstacles(0, dy) or is_ladder(map, x, y + dy+2, layer) then
+    local sign = math.sign(self.speed)
+    dy = sign
+    while not (self.entity:test_obstacles(0, self.speed) or is_ladder(map, x, y + dy+2, layer)) do
+      dy = dy + sign
+    end
+    dy = dy - sign
+    self.speed = 0   
+  end
+  y = y + dy  
+
+  self.on_ground = is_on_ground(self.entity)
+
+  self:set_pos(x, y)
+end
+
+function sv.init_physics(entity)
+  entity.pObject = gen.new(sv.pObject, entity)
+  entity.pObject.acc = sv.gravity
+end
+
+
 local function update_animation(hero, direction)
  
   local state, cstate = hero:get_state()
@@ -82,25 +99,25 @@ local function update_animation(hero, direction)
  
   if state == "swimming" or (state=="custom" and cstate:get_description()=="sideview_swim") then
     if movement and movement:get_speed() ~= 0 then
-      new_animation = "swimming_scroll"
+      --new_animation = "swimming_scroll"
     else
-      new_animation = "stopped_swimming_scroll"
+     -- new_animation = "stopped_swimming_scroll"
     end
   end
   if state == "sword loading" then
     if hero:get_ground_below() == "deep_water" then
-      new_animation = "swimming_scroll_loading"
+      --new_animation = "swimming_scroll_loading"
       hero:get_sprite("sword"):set_animation("sword_loading_swimming_scroll")  
     end
   end
  
   if state=="free" and not (hero.frozen) then
-    if movement and movement:get_speed() ~= 0 then
+    if (movement and movement:get_speed() ~= 0) then
       if hero.on_ladder and test_ladder(hero) then
-        new_animation = "climbing_walking"
-      elseif not is_on_ground(hero) then
+        --new_animation = "walking"
+      elseif not is_on_ground(hero) and not test_ladder(hero) then
         if map:get_ground(x,y+4,layer)=="deep_water" then
-          new_animation ="swimming_scroll"
+          --new_animation ="swimming_scroll"
         else
           new_animation = "jumping"
         end
@@ -109,10 +126,10 @@ local function update_animation(hero, direction)
       end
     else
       if hero.on_ladder and test_ladder(hero) then
-        new_animation = "climbing_stopped"
-      elseif not is_on_ground(hero) then
+        --new_animation = "walking"
+      elseif not is_on_ground(hero) and not test_ladder(hero) then
         if map:get_ground(x,y+4,layer)=="deep_water" then
-          new_animation ="stopped_swimming_scroll"
+          --new_animation ="stopped_swimming_scroll"
         else
           new_animation = "jumping"
         end
@@ -194,16 +211,16 @@ function sv.update_hero(hero)
   end
  
   if can_move_vertically==false then
-    print "Trying to override the vertical movement"
+    --print "Trying to override the vertical movement"
     local m=hero:get_movement()
     if m then
       local a=m:get_angle()
-      print (a)
+      --print (a)
       if _up==true then
-        print "UP"
-        print(m:get_speed(), hero:get_walking_speed())
+        --print "UP"
+        --print(m:get_speed(), hero:get_walking_speed())
         if _left==true or _right==true then
-          print "UP-DIAGONAL"
+          --print "UP-DIAGONAL"
           if hangle ~=a then
             m:set_angle(hangle)
           end
@@ -211,10 +228,10 @@ function sv.update_hero(hero)
           speed = 0
         end
       elseif _down==true then
-        print "DOWN"
-        print (m:get_speed(), hero:get_walking_speed())
+        --print "DOWN"
+        --print (m:get_speed(), hero:get_walking_speed())
         if _left==true or _right==true then
-          print "DOWN-DIAGONAL"
+          --print "DOWN-DIAGONAL"
           m:set_angle(hangle)
           if hangle ~=a then
             m:set_angle(hangle)
@@ -231,6 +248,26 @@ function sv.update_hero(hero)
   end
 
   update_animation(hero)
+end
+
+local function leave_map_callback(map)
+  local hero = map:get_hero()
+  hero.pObject = nil
+end
+
+function sv:init(map)
+  local hero = map:get_hero()
+  self.init_physics(hero)
+
+  map.physics_timer = sol.timer.start(map, 10, function() 
+    hero.pObject:apply_physics()
+    self.update_hero(hero)
+    return true
+  end)
+
+  map.is_side_view = true
+  map:register_event("on_finished", leave_map_callback)
+
 end
 
 return sv

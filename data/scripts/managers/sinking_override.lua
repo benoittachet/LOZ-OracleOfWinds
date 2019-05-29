@@ -1,6 +1,3 @@
-require("scripts/multi_events")
-
-
 -- Fonction appelée à l'évènement on_position_changed du héros
 function detect_safe_spot(hero, x, y, layer)
   -- On est en contact d'eau profonde ?

@@ -15,7 +15,7 @@ require("scripts/feature/map_generic")
 require("scripts/feature/video")
 
 require("scripts/meta/char_surface")
-require("scripts/meta/primary")
+require("scripts/meta/string")
 require("scripts/meta/hero")
 require("scripts/meta/entities")
 require("scripts/meta/game")

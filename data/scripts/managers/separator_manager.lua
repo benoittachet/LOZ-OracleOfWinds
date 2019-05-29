@@ -30,7 +30,7 @@ function separator_manager:manage_map(map)
       end
 
       -- Re-create enemies in the new active region.
-      if enemy:is_in_same_region(hero) then
+      if enemy:is_in_same_region(hero) and not enemy.dead then
         local old_enemy = enemy_place.enemy
         local enemy = map:create_enemy({
           x = enemy_place.x,
@@ -39,6 +39,7 @@ function separator_manager:manage_map(map)
           breed = enemy_place.breed,
           direction = enemy_place.direction,
           name = enemy_place.name,
+          properties = enemy_place.properties
         })
         enemy:set_treasure(unpack(enemy_place.treasure))
         enemy.on_dead = old_enemy.on_dead  -- For door_manager.
@@ -47,15 +48,12 @@ function separator_manager:manage_map(map)
     end
 
     -- Blocks.
-    for block in map:get_entities("auto_block") do
+    for block in map:get_entities_property("no_reset", "1", "block", true) do
       -- Reset blocks in regions no longer visible.
       if not block:is_in_same_region(hero) then
         block:reset()
       end
     end
-
-    -- Destroy bombs.
-    game:get_item("bombs_counter"):remove_bombs_on_map()
   end
 
   -- Function called when a separator is being taken.
@@ -96,8 +94,12 @@ function separator_manager:manage_map(map)
     separator:register_event("on_activated", separator_on_activated)
   end
 
+  local function death_callback(enemy)
+    enemy.dead = true
+  end   
+
   -- Store the position and properties of enemies.
-  for enemy in map:get_entities("auto_enemy") do
+  for enemy in map:get_entities_property("no_reset", "1", "enemy", true) do
     local x, y, layer = enemy:get_position()
     enemy_places[#enemy_places + 1] = {
       x = x,
@@ -108,7 +110,10 @@ function separator_manager:manage_map(map)
       name = enemy:get_name(),
       treasure = { enemy:get_treasure() },
       enemy = enemy,
+      properties = enemy:get_properties()
     }
+
+    enemy:register_event("on_dead", death_callback)
 
     local hero = map:get_hero()
     if not enemy:is_in_same_region(hero) then

@@ -20,7 +20,7 @@ end
 -- Event called when the hero is using this item.
 function item:on_using()
   local hero = item:get_map():get_entity("hero")
-  hero:start_jumping(hero:get_direction()*2,32)
+  hero:start_jumping_oow(hero:get_direction()*2,32)
   item:set_finished()
 end
 

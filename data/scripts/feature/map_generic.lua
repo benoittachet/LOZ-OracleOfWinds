@@ -132,27 +132,25 @@ function mpg.init_detect_open(map)
   end
 end
 
-function mpg.init_dungeon_features(map, ...)
-  
-  map:init_enemies_event_triggers()
-  map:init_activate_triggers()
-  map:init_activatables()
-  map:init_detect_open()  
-
-end
-
 local side_view = require("scripts/managers/map_side_view")
 
 function mpg.init_side_view(map)
-  local hero = map:get_hero()
-  side_view.init_physics(hero)
+  side_view:init(map)
+end
 
-  map.physics_timer = sol.timer.start(map, 10, function() 
-    hero.pObject:apply_physics()
-    side_view.update_hero(hero)
-    return true
-  end)
+local separator_manager = require("scripts/managers/separator_manager")
 
+function mpg.init_reset_separators(map)
+  separator_manager:manage_map(map)
+end
+
+function mpg.init_dungeon_features(map, ...)
+
+  mpg.init_enemies_event_triggers(map)
+  mpg.init_activate_triggers(map)
+  mpg.init_activatables(map)
+  mpg.init_detect_open(map)  
+  mpg.init_reset_separators(map)
 end
 
 return mpg
