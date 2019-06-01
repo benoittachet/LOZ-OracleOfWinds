@@ -6551,8 +6551,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_01/RDC",
-  destination = "in_a",
+  destination_map = "donjons/level_01/2D_Test",
 }
 
 teletransporter{
@@ -6804,5 +6803,12 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "platform_controller",
+}
+
+pickable{
+  layer = 0,
+  x = 1080,
+  y = 453,
+  treasure_name = "rock_feather",
 }
 

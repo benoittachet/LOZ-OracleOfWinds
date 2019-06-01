@@ -44,3 +44,14 @@ animation{
     { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 0, origin_y = 14, num_frames = 2 },
   },
 }
+animation{
+  name = "sword_tapping",
+  src_image = "hero/linksword.png",
+  frame_delay = 100,
+  directions = {
+    { x = 152, y = 0, frame_width = 32, frame_height = 8, origin_x = 8, origin_y = 6 },
+    { x = 152, y = 16, frame_width = 8, frame_height = 32, origin_x = 8, origin_y = 28 },
+    { x = 136, y = 0, frame_width = 32, frame_height = 8, origin_x = 20, origin_y = 6 },
+    { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 0, origin_y = 14 },
+  },
+}

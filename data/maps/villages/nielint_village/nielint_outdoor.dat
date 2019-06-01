@@ -7751,6 +7751,14 @@ destructible{
   ground = "grass",
 }
 
+destination{
+  name = "test",
+  layer = 0,
+  x = 272,
+  y = 333,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 512,

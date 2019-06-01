@@ -46,10 +46,6 @@ sprite{ id = "citizens/vieux05", description = "citizens/vieux05" }
 sprite{ id = "citizens/vieux06", description = "citizens/vieux06" }
 sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "witch" }
-sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
-sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
-sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
-sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
@@ -97,17 +93,33 @@ sprite{ id = "hero/tunic1", description = "hero/Link" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "Dialog Icons" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "pnj/nielint/1" }
+sprite{ id = "pnj/nielint/10" }
+sprite{ id = "pnj/nielint/11" }
+sprite{ id = "pnj/nielint/12" }
+sprite{ id = "pnj/nielint/13" }
+sprite{ id = "pnj/nielint/14" }
+sprite{ id = "pnj/nielint/15" }
+sprite{ id = "pnj/nielint/16" }
+sprite{ id = "pnj/nielint/17" }
+sprite{ id = "pnj/nielint/18" }
+sprite{ id = "pnj/nielint/19" }
+sprite{ id = "pnj/nielint/2" }
+sprite{ id = "pnj/nielint/3" }
+sprite{ id = "pnj/nielint/4" }
+sprite{ id = "pnj/nielint/5" }
+sprite{ id = "pnj/nielint/6" }
+sprite{ id = "pnj/nielint/7" }
+sprite{ id = "pnj/nielint/8" }
+sprite{ id = "pnj/nielint/9" }
 sprite{ id = "shadows/shadow_big", description = "shadow big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadow big dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadow small" }
 sprite{ id = "test/snas", description = "snas undertale" }
-sprite{ id = "things/broom", description = "broom witch" }
 sprite{ id = "things/fall_on_hole_effect", description = "fall on hole" }
 sprite{ id = "things/grass_effect", description = "grass effect" }
 sprite{ id = "things/lava_splash_effect", description = "lava splash" }
 sprite{ id = "things/long_chair", description = "long chair witch" }
-sprite{ id = "things/marmite_witch", description = "marmite witch" }
-sprite{ id = "things/steam", description = "steam" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
 
@@ -134,6 +146,9 @@ music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
 
+sound{ id = "chest_appears", description = "chest_appears" }
+sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "danger", description = "danger" }
 sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
@@ -146,6 +161,7 @@ sound{ id = "jump", description = "jump" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_money", description = "picked_money" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "splash", description = "splash" }
 sound{ id = "swim", description = "swim" }
 sound{ id = "switch", description = "switch" }
 sound{ id = "sword1", description = "sword1" }
@@ -197,6 +213,7 @@ entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
+language{ id = "fr", description = "Francé" }
 
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "8_bit OOS", description = "8_bit OOS" }
@@ -289,6 +306,8 @@ file{ path = "scripts/hud/hud_config.lua", author = "Christopho", }
 file{ path = "scripts/hud/item.lua", author = "Christopho", }
 file{ path = "scripts/hud/rupees.lua", author = "Christopho", }
 file{ path = "scripts/initial_game.lua", author = "Christopho", }
+file{ path = "scripts/managers/input_manager.lua", author = "TwilCynder", }
+file{ path = "scripts/managers/map_side_view.lua", author = "TwilCynder", }
 file{ path = "scripts/menus/dialog_box.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/menus/initial/solarus_logo.lua", author = "Christopho", }
 file{ path = "scripts/menus/initial/zunashy.lua", author = "TwilCynder", }
@@ -296,10 +315,21 @@ file{ path = "scripts/menus/initial_menus_manager.lua", author = "TwilCynder, Ch
 file{ path = "scripts/meta/entities.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/game.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/hero.lua", author = "TwilCynder, Christopho", }
+file{ path = "scripts/meta/map.lua", author = "TwilCynder", }
+file{ path = "scripts/meta/primary.lua", author = "TwilCynder", }
+file{ path = "scripts/meta/string.lua", author = "TwilCynder", }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", }
 file{ path = "shaders/2x.glsl", author = "TwilCynder", }
 file{ path = "sounds/diarandor", author = "Diarandor", }
 file{ path = "sounds/diarandor/solarus_logo.ogg", author = "Diarandor", }
+file{ path = "sprites/pnj/nielint/1.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/2.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/3.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/4.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/5.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/6.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/7.dat", author = "Phoenix", }
+file{ path = "sprites/pnj/nielint/citizens.png", author = "Phoenix", }
 file{ path = "tilesets/Grotte.dat", author = "Zunashy", }
 file{ path = "tilesets/Grotte.entities.png", author = "Zunashy", }
 file{ path = "tilesets/Grotte.tiles.png", author = "Zunashy", }

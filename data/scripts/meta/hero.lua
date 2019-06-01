@@ -77,7 +77,6 @@ local function initialize_hero_features(game)
         e["on_hero_state_" .. s](e, hero)
       end
     end  
-
     if s == "plunging" then
       if self.pObject then self.pObject:freeze() end
       hero_sprite:set_animation("plunging_water", function()
@@ -85,6 +84,13 @@ local function initialize_hero_features(game)
         hero:start_hurt(1)
         if hero.pObject then hero.pObject:unfreeze() end
       end)
+    elseif s == "sword_tapping" then
+     local m = sol.movement.create("straight")
+     m:set_speed(100)
+     m:set_angle(hero_sprite:get_direction() * (math.pi / 2))
+     m:set_max_distance(2)
+     m:start(self)
+     --sol.audio.play_sound("sword_tapping")
     end
 
   end
