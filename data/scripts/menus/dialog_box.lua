@@ -89,7 +89,7 @@ function dialog_box:on_started()
   --debug
   --print(dialog_box.dialog.text)
   self.char_delay = char_delays["fast"] -- à remplacer par une vraie sélection de la vitesse (settings ?)
-  self.box_position:set(8, 96) --à remplacer par un vrai calcul de la position de la box en fonction de celle du joeur
+  self.box_position:set(8, 96)
 
   local map = game:get_map()
   local _, camera_y, _, camera_height = map:get_camera():get_bounding_box()
@@ -100,8 +100,6 @@ function dialog_box:on_started()
       self.box_position:set(8, 24)
     end
   end
-
-  
 
   self:show_dialog()
 end
