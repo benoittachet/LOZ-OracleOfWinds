@@ -8001,6 +8001,15 @@ tile{
   tileset = "House",
 }
 
+tile{
+  layer = 0,
+  x = 816,
+  y = 1120,
+  width = 48,
+  height = 48,
+  pattern = "3",
+}
+
 block{
   layer = 0,
   x = 792,
