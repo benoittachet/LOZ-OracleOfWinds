@@ -8,6 +8,7 @@ local function input_manager(meta)
       handled = true
     elseif key == "f6" then
       sol.video.switch_scale()
+      handled = true
     elseif key == "f11" or
       (key == "return" and (modifiers.alt or modifiers.control)) then
       -- F11 or Ctrl + return or Alt + Return: switch fullscreen.
@@ -43,13 +44,13 @@ local function input_manager(meta)
   end
 
   function meta:on_command_pressed(command)
-    if type(self.custom_command[command]) == "function" then
-      return self.custom_command[command](game)
+    if type(self.command_effect[command]) == "function" then
+      return self.command_effect[command](game)
     end
   end
 
   local function start_callback(game)
-    game.custom_command = {
+    game.command_effect = {
       action = nil,
       attack = nil,
       pause = nil,
