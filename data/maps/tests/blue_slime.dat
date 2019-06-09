@@ -110,8 +110,8 @@ tile{
 destination{
   name = "spawn",
   layer = 1,
-  x = 208,
-  y = 237,
+  x = 88,
+  y = 229,
   direction = 1,
   default = true,
 }

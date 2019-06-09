@@ -25,5 +25,5 @@ function item:on_using()
 end
 
 function item:on_obtained()
-  game:set_item_assigned(1, item)
+  self:set_variant(1)
 end

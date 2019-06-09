@@ -15,14 +15,17 @@ game_menu.transition_surface = sol.surface.create(sol.video.get_quest_size())
 game_menu.cursor_surface = sol.surface.create(game_menu.cursor_sprite)
 
 for k, v in ipairs(game_menu.pages) do
-    print(k, "scripts/menus/game_menu_pages/"..v)
     game_menu.pages[k] = require("scripts/menus/game_menu_pages/"..v)
 end
 
 --====== MENU CALLBACKS ======
 function game_menu:on_started()
     self.current_page = self.pages[self.current_page_index]
-    self.current_page:init()
+
+    for i, v in ipairs(self.pages) do
+        if v.init then v:init() end
+    end
+    self.current_page:on_page_selected()
 end
 
 function game_menu:on_draw(dst_surface)  

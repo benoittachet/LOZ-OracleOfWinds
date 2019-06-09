@@ -36,11 +36,11 @@ local function input_manager(meta)
   end
 
   function meta:set_custom_command_effect(command, fun)
-    self.custom_command[command] = fun
+    self.command_effect[command] = fun
   end
 
   function meta:get_custom_command_effect(command)
-    return self.custom_command[command]
+    return self.command_effect[command]
   end
 
   function meta:on_command_pressed(command)

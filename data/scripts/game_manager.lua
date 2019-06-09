@@ -20,6 +20,8 @@ function game_manager:create(file)
     initial_game:initialize_new_savegame(game)
   end
 
+  print(game:get_item("rock_feather"):get_variant())
+
   return game
 end
 
