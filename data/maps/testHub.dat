@@ -5,6 +5,7 @@ properties{
   height = 144,
   min_layer = 0,
   max_layer = 2,
+  world = "Test_Building",
   tileset = "House",
 }
 
@@ -143,6 +144,15 @@ tile{
   pattern = "10",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -210,5 +220,16 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_01/2D_Test",
   destination = "in_a",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 16,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "tests/dungeon",
+  destination = "_side",
 }
 

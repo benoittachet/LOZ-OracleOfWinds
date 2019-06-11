@@ -1,0 +1,2 @@
+text{ key = "items.rock_feather.description", value = "Permet de sauter" }
+text{ key = "items.rock_feather.name", value = "Plume de Roc" }

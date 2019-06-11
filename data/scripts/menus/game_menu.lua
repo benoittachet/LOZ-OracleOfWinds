@@ -23,9 +23,9 @@ function game_menu:on_started()
     self.current_page = self.pages[self.current_page_index]
 
     for i, v in ipairs(self.pages) do
-        if v.init then v:init() end
+        if v.init then v:init(self) end
     end
-    self.current_page:on_page_selected()
+    self.current_page:on_page_selected(self)
 end
 
 function game_menu:on_draw(dst_surface)  
@@ -33,6 +33,12 @@ function game_menu:on_draw(dst_surface)
     surf:clear()
     self.current_page:draw(surf, self)
     surf:draw(dst_surface, 0, 16)
+end
+
+function game_menu:on_command_pressed(...)
+    if self.current_page.on_command_pressed then
+        self.current_page:on_command_pressed(...)
+    end
 end
 
 --====== BINDING THE MENU TO THE GAME ======

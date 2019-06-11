@@ -1,0 +1,2 @@
+text{ key = "items.rock_feather.description", value = "Allows you to jump" }
+text{ key = "items.rock_feather.name", value = "Rock Feather" }

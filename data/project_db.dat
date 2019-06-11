@@ -15,6 +15,7 @@ map{ id = "overworld/wind_wood/sword_cave", description = "sword_cave" }
 map{ id = "testHub", description = "Lobby des maps test" }
 map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
+map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
 map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Village House 01" }
 map{ id = "villages/nielint_village/nielint_house_2", description = "Nielint Village House 02" }
@@ -219,6 +220,8 @@ font{ id = "8_bit", description = "8 bit" }
 font{ id = "8_bit OOS", description = "8_bit OOS" }
 font{ id = "minecraftia", description = "Minecraftia" }
 font{ id = "oracle", description = "Zelda Oracles" }
+font{ id = "oracle_black", description = "oracle_black" }
+font{ id = "oracle_blue", description = "oracle_blue" }
 font{ id = "oracle_like", description = "oracle_like" }
 
 
