@@ -7,13 +7,7 @@ local inventory_menu = {
         "rock_feather"
     },
     items_sprites = {},
-    item_info_surface = nil,
-    item_info_pre_surface = nil,
-    item_info_surface_pos = {
-        x = 0,
-        y = 0,
-    },
-    item_info_surface_movement = nil,
+    enable_info_text = true
 }
 
 local horizontal_offset = 32
@@ -41,18 +35,6 @@ local items_pos = {
     }
 }
 
-local item_name_text_surface = sol.text_surface.create({
-    horizontal_alignment = "center",
-    vertical_alignment = "middle",
-    font = "oracle_black"
-})
-local item_desc_text_surface = sol.text_surface.create({
-    horizontal_alignment = "left",
-    vertical_alignment = "middle",
-    font = "oracle_black"
-})
-inventory_menu.item_info_surface = sol.surface.create(144, 19)
-
 inventory_menu.bg_surface = sol.surface.create("menus/inventory.png")
 
 --local functions and generic methods
@@ -68,68 +50,18 @@ local function slot_index_to_coords(i)
     return (i - 1) % 4, math.floor((i - 1) / 4)
 end
 
-function inventory_menu:init_item_info_surface()
-    self.item_info_pre_surface = nil
-
+function inventory_menu:on_selection_changed(game_menu)
     local item = self:get_selected_item()
-    if not (item and item:get_variant() ~= 0) then return false end
-    item_name_text_surface:set_text_key("items."..item:get_name()..".name")
-    item_desc_text_surface:set_text_key("items."..item:get_name()..".description")
-
-    local desc_size, _ = item_desc_text_surface:get_size()
-    self.item_info_pre_surface = sol.surface.create(152 + desc_size, 19)
-
-    local surf = self.item_info_pre_surface
-    item_name_text_surface:draw(surf, 72, 9)
-    item_desc_text_surface:draw(surf, 152, 9)
-    self:start_item_info_cycle()
-end
-
-function inventory_menu:start_item_info_cycle()
-    if self.item_info_surface_movement then 
-        self.item_info_surface_movement:stop()
-        self.item_info_surface_movement = nil
+    if not (item and item:get_variant() ~= 0) then
+        self.game_menu:init_info_surface(nil, nil)
+    else
+        local item_name = item:get_name()
+        self.game_menu:init_info_surface("items."..item_name..".name", "items."..item_name..".description")
     end
-
-    self.item_info_surface_pos.x = 0
-    sol.timer.start(self.game_menu, 1000, function()
-        inventory_menu:start_item_info_movement_1()
-    end)
-end
-
-function inventory_menu:start_item_info_movement_1()
-    self.item_info_surface_movement = sol.movement.create("straight")
-    local m = self.item_info_surface_movement
-    m:set_angle(math.pi)
-    m:set_speed(32)
-    local surf_w, _ = self.item_info_pre_surface:get_size()
-    m:set_max_distance(surf_w)
-    function m:on_finished()
-        inventory_menu:start_item_info_movement_2()
-    end     
-    m:start(self.item_info_surface_pos)
-end
-
-function inventory_menu:start_item_info_movement_2()
-    self.item_info_surface_pos.x = 144
-    self.item_info_surface_movement = sol.movement.create("straight")
-    local m = self.item_info_surface_movement
-    m:set_angle(math.pi)
-    m:set_speed(32)
-    m:set_max_distance(144)
-    function m:on_finished()
-        inventory_menu:start_item_info_cycle()
-    end
-    m:start(self.item_info_surface_pos)
-end
-
-function inventory_menu:on_selection_changed()
-    self:init_item_info_surface()
 end
 
 --SUBMENU METHODS : will be called by the game_menu methods
 function inventory_menu:init(game_menu)
-    self.game_menu = game_menu
     for i, item in ipairs(self.items) do 
         if item:get_variant() ~= 0 and not (self.items_sprites[item] and 
           self.items_sprites[item]:get_direction() == item:get_variant() - 1) then 
@@ -142,7 +74,7 @@ end
 
 function inventory_menu:on_page_selected()  --appelée quand cette page est sélectionnée
     self.cursor = 1
-    self:init_item_info_surface()
+    self:on_selection_changed()
 end
 
 function inventory_menu:draw(dst_surface, game_menu)
@@ -157,12 +89,6 @@ function inventory_menu:draw(dst_surface, game_menu)
             x, y = items_pos.tl_offset.x + (cx * items_pos.h_offset), items_pos.tl_offset.y + (cy * items_pos.v_offset)
             self.items_sprites[item]:draw(dst_surface, x, y)
         end
-    end
-    local info_x, info_y = self.item_info_surface_pos.x, self.item_info_surface_pos.y
-    if self.item_info_pre_surface then
-        self.item_info_surface:clear()
-        self.item_info_pre_surface:draw(self.item_info_surface, info_x, info_y)
-        self.item_info_surface:draw(dst_surface, 8, 104)
     end
 end
 
@@ -209,5 +135,10 @@ end
 
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", load_items)
+
+--binding to the game menu
+function inventory_menu:bind_to_menu(game_menu)
+    self.game_menu = game_menu
+end
 
 return inventory_menu
