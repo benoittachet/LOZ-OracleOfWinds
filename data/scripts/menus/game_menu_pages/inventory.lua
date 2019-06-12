@@ -81,7 +81,7 @@ function inventory_menu:draw(dst_surface, game_menu)
     self.bg_surface:draw(dst_surface)
     local cx, cy = slot_index_to_coords(self.cursor)
     local x, y = cursor_pos.tl_offset.x + (cx * cursor_pos.h_offset), cursor_pos.tl_offset.y + (cy * cursor_pos.v_offset)
-    game_menu.cursor_surface:draw(dst_surface, x, y)
+    self.game_menu.cursor_surface:draw(dst_surface, x, y)
 
     for i, item in ipairs(self.items) do
         if item:get_variant() ~= 0 then
@@ -136,9 +136,5 @@ end
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", load_items)
 
---binding to the game menu
-function inventory_menu:bind_to_menu(game_menu)
-    self.game_menu = game_menu
-end
 
 return inventory_menu

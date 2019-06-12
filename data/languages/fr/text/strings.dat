@@ -1,2 +1,6 @@
 text{ key = "items.rock_feather.description", value = "Permet de sauter" }
 text{ key = "items.rock_feather.name", value = "Plume de Roc" }
+text{ key = "menus.quest.qheart.description", value = "Collect 4 to get an additional heart !" }
+text{ key = "menus.quest.qheart.name", value = "Heart quarter" }
+text{ key = "menus.quest.save.description", value = "Save the game" }
+text{ key = "menus.quest.save.name", value = "Save" }

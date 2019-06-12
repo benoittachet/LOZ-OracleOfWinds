@@ -319,7 +319,6 @@ file{ path = "scripts/meta/entities.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/game.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/hero.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/meta/map.lua", author = "TwilCynder", }
-file{ path = "scripts/meta/primary.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/string.lua", author = "TwilCynder", }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", }
 file{ path = "shaders/2x.glsl", author = "TwilCynder", }
