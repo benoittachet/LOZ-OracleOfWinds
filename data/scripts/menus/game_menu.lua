@@ -41,6 +41,9 @@ for k, v in ipairs(game_menu.pages) do
     game_menu.pages[k].game_menu = game_menu
 end
 
+--LOADING EXTERNAL MODULES
+game_menu.lang = require("scripts/managers/language_manager")
+
 --MENU METHODS AND UTILITY FUNCTIONS
 function game_menu:init_info_surface(name, desc)
     self.info_pre_surface = nil
@@ -115,8 +118,8 @@ function game_menu:page_transition(new_page)
     function m:on_finished()
         game_menu:end_transition()
     end
-    m:set_max_distance(144)
-    self.transition_movement_pos = {x = 144, y = 16}
+    m:set_max_distance(160)
+    self.transition_movement_pos = {x = 160, y = 16}
     m:start(self.transition_movement_pos)
 end
 
@@ -153,7 +156,7 @@ end
 function game_menu:on_draw(dst_surface)  
     if self.transition_movement then
         local x, y = self.transition_movement_pos.x, self.transition_movement_pos.y
-        self.transition_surface:draw(dst_surface, x - 144, y)
+        self.transition_surface:draw(dst_surface, x - 160, y)
         
         self:draw(dst_surface, x, 16)
     else
@@ -197,9 +200,9 @@ local function get_game_menu(game)
     return game_menu
 end
 
-local function bind_to_game(game)
-    game.get_game_menu = get_game_menu
-    game_menu.game = game
+function game_menu:bind_to_game(game)
+    game.get_game_menu = self
+    self.game = game
 end
 
 local function enter_menu(game)
@@ -214,8 +217,16 @@ local function unpause_callback()
     sol.menu.stop(game_menu)
 end    
 
+local function start_callback(game)
+    game_menu:bind_to_game(game)
+
+    for i, v in ipairs(game_menu.pages) do
+        if v.on_started then v:on_started(game) end
+    end            
+end
+
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", bind_to_game)
+game_meta:register_event("on_started", start_callback)
 game_meta:register_event("on_paused", pause_callback)
 game_meta:register_event("on_unpaused", unpause_callback)

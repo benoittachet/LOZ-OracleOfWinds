@@ -50,7 +50,6 @@ function meta:on_command_pressed(command)
 end
 
 local function fire_command_event(game, command)
-  print(command)
   if game.on_command_pressed then
     if game:on_command_pressed(command) then
       return true

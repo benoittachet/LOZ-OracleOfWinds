@@ -127,14 +127,10 @@ function inventory_menu:on_command_pressed(command)
 end
 
 --Replacing the items names by the items objects when the game starts
-local function load_items(game)
+function inventory_menu:on_started(game)
     for k, v in ipairs(inventory_menu.items) do
         inventory_menu.items[k] = game:get_item(v)
     end
 end
-
-local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", load_items)
-
 
 return inventory_menu

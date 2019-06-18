@@ -215,11 +215,31 @@ block{
   pullable = true,
 }
 
-door{
+pickable{
   layer = 0,
-  x = 144,
-  y = 64,
-  direction = 3,
-  sprite = "",
+  x = 64,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 80,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 96,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 112,
+  y = 69,
+  treasure_name = "heart_quarter",
 }
 
