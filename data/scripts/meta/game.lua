@@ -10,7 +10,7 @@ local function map_callback(game, map)
 end  
 game_meta:register_event("on_map_changed", map_callback)
 
-require("scripts/managers/input_manager")(game_meta)
+require("scripts/managers/input_manager")
 
 --The following scripts also modify the game metatable :
 -- - menus/dialog_box

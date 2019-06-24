@@ -196,24 +196,6 @@ destination{
   direction = 1,
 }
 
-door{
-  name = "1a",
-  layer = 0,
-  x = 144,
-  y = 64,
-  direction = 2,
-  sprite = "entities/door",
-}
-
-door{
-  name = "1b",
-  layer = 0,
-  x = 160,
-  y = 64,
-  direction = 0,
-  sprite = "entities/door",
-}
-
 block{
   layer = 0,
   x = 88,
@@ -231,5 +213,33 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 80,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 96,
+  y = 69,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 0,
+  x = 112,
+  y = 69,
+  treasure_name = "heart_quarter",
 }
 

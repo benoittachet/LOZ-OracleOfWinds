@@ -181,6 +181,7 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "bomb" }
 item{ id = "heart", description = "heart" }
+item{ id = "heart_quarter", description = "Quart de Coeur" }
 item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "map", description = "carte du donjon" }
 item{ id = "random", description = "Loot" }
@@ -320,7 +321,6 @@ file{ path = "scripts/meta/entities.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/game.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/hero.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/meta/map.lua", author = "TwilCynder", }
-file{ path = "scripts/meta/primary.lua", author = "TwilCynder", }
 file{ path = "scripts/meta/string.lua", author = "TwilCynder", }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", }
 file{ path = "shaders/2x.glsl", author = "TwilCynder", }
