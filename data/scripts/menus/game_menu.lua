@@ -1,10 +1,15 @@
 local game_menu = {
     surface = nil,      --main surface (will be be draw directly into the screen)
     transition_surface, --will be used to keep the last frame of the closing menu page during the transition 
-    pages = {           --submenus
+    main_pages = {           --submenus
         "inventory",
         "quest_menu"
     },
+    side_pages = {
+        "settings",
+        "save_menu"
+    },
+    pages = {},
     cursor_sprite = "menus/cursor.png",     --image used as the default cursor
     cursor_surface = nil,                   --surface for the cursor
     current_page_index = 1,
@@ -36,9 +41,19 @@ local info_desc_text_surface = sol.text_surface.create({
 })
 game_menu.info_surface = sol.surface.create(144, 19)
 
-for k, v in ipairs(game_menu.pages) do
-    game_menu.pages[k] = require("scripts/menus/game_menu_pages/"..v)
-    game_menu.pages[k].game_menu = game_menu
+local page
+for k, v in ipairs(game_menu.main_pages) do
+    page = require("scripts/menus/game_menu_pages/"..v)
+    game_menu.main_pages[k] = page
+    game_menu.pages[v] = page
+    page.game_menu = game_menu
+    page.is_main_page = true
+end
+
+for k, v in ipairs(game_menu.side_pages) do
+    page = require("scripts/menus/game_menu_pages/"..v)
+    game_menu.pages[v] = page
+    page.game_menu = game_menu
 end
 
 --LOADING EXTERNAL MODULES
@@ -113,13 +128,13 @@ function game_menu:page_transition(new_page)
 
     self.transition_movement = sol.movement.create("straight")
     local m = self.transition_movement
-    m:set_speed(128)
+    m:set_speed(196)
     m:set_angle(math.pi)
     function m:on_finished()
         game_menu:end_transition()
     end
     m:set_max_distance(160)
-    self.transition_movement_pos = {x = 160, y = 16}
+    self.transition_movement_pos = {x = 160, y = 0}
     m:start(self.transition_movement_pos)
 end
 
@@ -130,9 +145,9 @@ end
 
 --====== MENU CALLBACKS ======
 function game_menu:on_started()
-    self.current_page = self.pages[self.current_page_index]
+    self.current_page = self.main_pages[self.current_page_index]
 
-    for i, v in ipairs(self.pages) do
+    for k, v in pairs(self.pages) do
         if v.init then v:init(self) end
     end
     self.current_page:on_page_selected(self)
@@ -154,13 +169,14 @@ function game_menu:draw(dst_surface, x, y)
 end
 
 function game_menu:on_draw(dst_surface)  
+    local offset = self.current_page.full_screen and 0 or 16
     if self.transition_movement then
         local x, y = self.transition_movement_pos.x, self.transition_movement_pos.y
-        self.transition_surface:draw(dst_surface, x - 160, y)
+        self.transition_surface:draw(dst_surface, x - 160, y + offset)
         
-        self:draw(dst_surface, x, 16)
+        self:draw(dst_surface, x, offset)
     else
-        self:draw(dst_surface, 0, 16)
+        self:draw(dst_surface, 0, offset)
     end
 end
 
@@ -181,12 +197,12 @@ function game_menu:on_command_pressed(command)
         return true 
     end
 
-    if command == "select" then
+    if command == "select" and self.current_page.is_main_page then
         self.current_page_index = self.current_page_index + 1
-        if self.current_page_index > table.getn(self.pages) then
+        if self.current_page_index > table.getn(self.main_pages) then
             self.current_page_index = 1
         end
-        self:page_transition(self.pages[self.current_page_index])
+        self:page_transition(self.main_pages[self.current_page_index])
     end
 
     if self.current_page.on_command_pressed then
@@ -205,12 +221,8 @@ function game_menu:bind_to_game(game)
     self.game = game
 end
 
-local function enter_menu(game)
-    sol.menu.start(game, game_menu)
-end
-
 local function pause_callback(game)
-    enter_menu(game)
+    sol.menu.start(game, game_menu)
 end
 
 local function unpause_callback()
@@ -220,7 +232,7 @@ end
 local function start_callback(game)
     game_menu:bind_to_game(game)
 
-    for i, v in ipairs(game_menu.pages) do
+    for k, v in pairs(game_menu.pages) do
         if v.on_started then v:on_started(game) end
     end            
 end

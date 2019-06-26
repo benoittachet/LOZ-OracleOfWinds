@@ -13,7 +13,6 @@ end
 
 function language_manager:load_image(path)
     local path = self:file_path(path, ".png")
-    print(path)
     return sol.surface.create(path)
 end
 

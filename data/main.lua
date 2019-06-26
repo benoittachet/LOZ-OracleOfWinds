@@ -21,7 +21,7 @@ end
 -- This function is called when Solarus starts.
 -- It is the real entry point of the game.
 function sol.main:on_started()
-  sol.video.set_scale(2)
+  sol.video.set_scale(1)
   sol.audio.preload_sounds()
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("fr")
