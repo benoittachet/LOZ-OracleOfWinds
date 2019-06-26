@@ -18,6 +18,7 @@ local slot_cursors = {
 }
 local slot_effects = {
     nil,
+    "settings",
     "save",
 }
 local slot_help = {
@@ -37,6 +38,9 @@ local settings_position = {
     x = 112,
     y = 62
 }
+
+local settings_menu = require("scripts/menus/game_menu_pages/settings")
+local save_menu = require("scripts/menus/game_menu_pages/save_menu")
 
 --UTILITY METHODS AND FUNCTIONS
 function quest_menu:get_cursor_info(slot)
@@ -66,7 +70,13 @@ end
 
 --slot effects
 function quest_menu:save()
-    self.game_menu:get_game():save()
+    self.game_menu.current_page = save_menu
+    save_menu.origin_page = self
+end
+
+function quest_menu:settings()
+    self.game_menu.current_page = settings_menu
+    settings_menu.origin_page = self
 end
 
 --SUBMENU METHODS : will be called by the game_menu methods--
