@@ -704,6 +704,39 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "162",
+  ground = "traversable",
+  default_layer = 0,
+  x = { 0, 16, 32, 48 },
+  y = { 272, 272, 272, 272 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "163",
+  ground = "traversable",
+  default_layer = 0,
+  x = { 0, 16, 32, 48 },
+  y = { 288, 288, 288, 288 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "164",
+  ground = "traversable",
+  default_layer = 0,
+  x = { 0, 16, 32, 48 },
+  y = { 304, 304, 304, 304 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
   id = "17",
   ground = "traversable",
   default_layer = 0,
