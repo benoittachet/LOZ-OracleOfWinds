@@ -8014,6 +8014,12 @@ block{
   layer = 0,
   x = 792,
   y = 1133,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -8886,5 +8892,20 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+}
+
+door{
+  name = "door_<lapuerta>_a",
+  layer = 0,
+  x = 832,
+  y = 1056,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
 }
 
