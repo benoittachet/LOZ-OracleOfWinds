@@ -43,9 +43,14 @@ function meta:get_custom_command_effect(command)
   return self.command_effect[command]
 end
 
+local start_map_menu = require("scripts/menus/map")
 function meta:on_command_pressed(command)
   if type(self.command_effect[command]) == "function" then
     return self.command_effect[command](game)
+  end
+
+  if command == "select" and not self:is_suspended() then
+    start_map_menu(self)
   end
 end
 

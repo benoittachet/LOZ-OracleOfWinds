@@ -217,7 +217,7 @@ local function get_game_menu(game)
 end
 
 function game_menu:bind_to_game(game)
-    game.get_game_menu = self
+    game.game_menu = self
     self.game = game
 end
 
