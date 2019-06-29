@@ -380,11 +380,81 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "135",
+  ground = "ladder",
+  default_layer = 0,
+  x = 192,
+  y = 56,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "136",
+  ground = "ladder",
+  default_layer = 0,
+  x = 192,
+  y = 32,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "137",
+  ground = "ladder",
+  default_layer = 0,
+  x = 192,
+  y = 40,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "138",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 32,
+  width = 48,
+  height = 32,
+}
+
+tile_pattern{
+  id = "139",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "14",
   ground = "wall",
   default_layer = 0,
   x = 192,
   y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "140",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "141",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 64,
   width = 16,
   height = 16,
 }

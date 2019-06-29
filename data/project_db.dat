@@ -2,6 +2,7 @@ map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "2D" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
+map{ id = "overworld/deku_tree", description = "arbre mojo" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
 map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
@@ -18,6 +19,7 @@ map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
 map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
+map{ id = "villages/nielint_village/bar", description = "bar" }
 map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Village House 01" }
 map{ id = "villages/nielint_village/nielint_house_2", description = "Nielint Village House 02" }
 map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Village House 03" }
