@@ -153,4 +153,16 @@ function mpg.init_dungeon_features(map, ...)
   mpg.init_reset_separators(map)
 end
 
+--Map Manager
+local map_manager = require("scripts/managers/map_manager")
+
+function mpg.discover(map, cases)
+  local x, y
+  for i, v in ipairs(cases) do
+    x, y = v[1], v[2]
+    map_manager.map[y][x] = 1
+  end
+  map_manager:save_discovered(map:get_game())
+end
+
 return mpg

@@ -58,6 +58,10 @@ end
 
 --SUBMENU METHODS
 
+function save_menu:init()
+    self.view_cursor = true
+end
+
 function save_menu:draw(dst_surface)
     self.bg_surface:draw(dst_surface)
     if self.view_cursor then

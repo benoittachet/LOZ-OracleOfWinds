@@ -6,6 +6,8 @@ local map_menu = {
 map_menu.bg_surface = sol.surface.create(sol.video.get_quest_size())
 map_menu.bg_surface:fill_color({0, 0, 0})
 map_menu.cursor_surface = sol.surface.create("menus/map_cursor.png")
+map_menu.map_surface = sol.surface.create("menus/map_menu.png")
+map_menu.mask_surface = sol.surface.create("menus/map_mask.png")
 
 local cursor_pos = {
     offset = 8,
@@ -14,6 +16,14 @@ local cursor_pos = {
         y = 8
     }
 }
+
+local map_pos = {
+    x = 20,
+    y = 12,
+}
+
+--Map manager
+local map_manager = require("scripts/managers/map_manager")
 
 --Methods
 
@@ -54,7 +64,24 @@ end
 --MENU METHODS
 function map_menu:on_started()
     self.game:set_suspended(true)
+
+    local x, y = map_pos.x, map_pos.y
+    self.map_surface:draw(self.bg_surface, 20, 12)
+    for i = 1, 15 do
+        x = map_pos.x
+        for j = 1, 15 do
+            if not (map_manager.map[i][j] == 1) then
+                self.mask_surface:draw(self.bg_surface, x, y)
+            end
+            x = x + 8
+        end
+        y = y + 8
+    end
     self.cx, self.cy = 0, 0
+end
+
+function map_menu:on_finished()
+    self.game:set_suspended(false)
 end
 
 function map_menu:on_draw(dst_surface)
@@ -73,12 +100,14 @@ function map_menu:on_command_pressed(command)
         self:cursor_left()
     elseif command == "down" then
         self:cursor_down()
-    else 
+    else
+        if command == "select" then
+            sol.menu.stop(self) 
+        end
         return
     end
 
     self:start_cursor_timer(command)
-
 end
 
 function map_menu:on_command_released(command)

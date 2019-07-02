@@ -51,6 +51,7 @@ function meta:on_command_pressed(command)
 
   if command == "select" and not self:is_suspended() then
     start_map_menu(self)
+    return true
   end
 end
 

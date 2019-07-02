@@ -20,3 +20,7 @@ end
 function string.chars(s)
   return s:gmatch"."
 end
+
+function string.fields(s, sep)
+  return s:gmatch("[^"..sep.."]+")
+end

@@ -85,6 +85,4 @@ function math.sign(x)
   end
 end
 
-
-
 return gen
