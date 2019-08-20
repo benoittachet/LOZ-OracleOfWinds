@@ -8062,6 +8062,7 @@ chest{
   layer = 0,
   x = 1320,
   y = 205,
+  treasure_name = "rock_feather",
   sprite = "entities/chest",
 }
 
@@ -8899,6 +8900,185 @@ door{
   layer = 0,
   x = 832,
   y = 1056,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 872,
+  width = 496,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 1048,
+  width = 496,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 1224,
+  width = 496,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 344,
+  width = 496,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 168,
+  width = 496,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 1200,
+  y = 344,
+  width = 240,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 1432,
+  y = 168,
+  width = 16,
+  height = 544,
+}
+
+separator{
+  layer = 0,
+  x = 1192,
+  y = 168,
+  width = 16,
+  height = 544,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 168,
+  width = 16,
+  height = 544,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 168,
+  width = 16,
+  height = 544,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 168,
+  width = 256,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 1192,
+  y = 168,
+  width = 256,
+  height = 16,
+}
+
+door{
+  name = "door_<lapuerta>_a_2",
+  layer = 0,
+  x = 592,
+  y = 1056,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
+}
+
+door{
+  name = "door_<lapuerta>_a_3",
+  layer = 0,
+  x = 592,
+  y = 352,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
+}
+
+door{
+  name = "door_<lapuerta>_a_4",
+  layer = 0,
+  x = 1312,
+  y = 528,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
+}
+
+door{
+  name = "door_<lapuerta>_a_5",
+  layer = 0,
+  x = 112,
+  y = 528,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door",
+}
+
+door{
+  name = "door_<lapuerta>_a_6",
+  layer = 0,
+  x = 592,
+  y = 176,
   properties = {
     {
       key = "activate_when_moved",
