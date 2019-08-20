@@ -105,6 +105,7 @@ function dialog_box:on_started()
 end
 
 function dialog_box:on_finished()
+  self.arrow_timer = nil
   game:set_custom_command_effect("action", nil)
   game:stop_dialog()
 end
@@ -202,7 +203,6 @@ function dialog_box:parse_text()
   local i = 1
   local text = self.dialog.text
   local strlen = text:len()
-  
 
   while i <= strlen do
     c = text:sub(i, i)
@@ -212,6 +212,9 @@ function dialog_box:parse_text()
       special = true
     elseif special then
       special = false
+    elseif c == "\n" then
+      whitespace = true
+      chars_on_line = 0
     elseif code and code > 31 then
       chars_on_line = chars_on_line + 1
 
@@ -224,13 +227,13 @@ function dialog_box:parse_text()
 
       if chars_on_line > max_line then
         text = text:insert("\n", word_start)
+        chars_on_line = i - word_start
         word_start = i
         strlen = strlen + 1
         i = i + 1
-        chars_on_line = 1
       end
     end
-    if code >= 192 and code < 224 then
+    if (code >= 192 and code < 224) then
       i = i + 1
     end
     i = i + 1
@@ -243,8 +246,6 @@ function dialog_box:show_dialog()
   local dialog = self.dialog
   self:parse_text()
   local text = dialog.text
-
-  print(dialog.oui)
 
   if dialog_box.info ~= nil then
     -- There is a "$v" sequence to substitute.
@@ -260,6 +261,8 @@ function dialog_box:show_dialog()
   for i = 1, nb_visible_lines do
     self.line_surfaces[i]:clear()
   end
+  
+  self.surface:clear()
   
   self.need_letter_sound = true
 

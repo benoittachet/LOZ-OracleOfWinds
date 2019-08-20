@@ -212,6 +212,7 @@ entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "dungeon_statue_eye" }
 entity{ id = "grass", description = "grass" }
+entity{ id = "interaction_box", description = "Additional interaction hitbox" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }

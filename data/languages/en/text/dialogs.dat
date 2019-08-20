@@ -49,9 +49,45 @@ haha oui les mots oui ahahahah
 }
 
 dialog{
+  id = "_treasure.sword.1",
+  text = [[
+ya got the sword
+]],
+}
+
+dialog{
   id = "pnj.test.snas",
   text = [[
 ur gonna have bad tiem
+]],
+}
+
+dialog{
+  id = "pnj.tree.message.1",
+  text = [[
+sample text
+]],
+}
+
+dialog{
+  id = "pnj.tree.message.2",
+  text = [[
+darude sandstorm
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.awake1",
+  text = [[
+yo viens me parler (flemme d'écrire un dialogue)
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.awake2",
+  text = [[
+Toujours la flemme d'écrire un dialogue 
+va chercher l'épée
 ]],
 }
 

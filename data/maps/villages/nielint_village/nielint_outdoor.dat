@@ -6,7 +6,6 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "Tileset1",
-  music = "Zelda Original/Horon Village",
 }
 
 tile{
@@ -7756,6 +7755,23 @@ destination{
   layer = 0,
   x = 272,
   y = 333,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 528,
+  y = 208,
+  width = 16,
+  height = 16,
+  destination_map = "villages/nielint_village/bar",
+}
+
+destination{
+  name = "bar_to_village",
+  layer = 0,
+  x = 536,
+  y = 229,
   direction = 1,
 }
 
