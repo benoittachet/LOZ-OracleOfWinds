@@ -29,6 +29,7 @@ local dialog_box = {
   full = false,                -- Whether the 3 visible lines have shown all content.
   need_letter_sound = false,   -- Whether a sound should be played with the next character.
   gradual = true,              -- Whether text is displayed gradually.
+  text_speed = 3, 
 
   -- Graphics.
   surface = nil,
@@ -51,9 +52,9 @@ local dialog_box = {
 -- Constants.
 local nb_visible_lines = 2     -- Maximum number of lines in the dialog box.
 local char_delays = {          -- Delay before displaying the next character.
-  slow = 60,
-  medium = 40,
-  fast = 20  -- Default.
+  60,
+  40,
+  20
 }
 local letter_sound_delay = 50
 local box_size = {w = 144, h = 40}
@@ -88,7 +89,7 @@ dialog_box.end_arrow = sol.surface.create("menus/dialog.png")
 function dialog_box:on_started()
   --debug
   --print(dialog_box.dialog.text)
-  self.char_delay = char_delays["fast"] -- à remplacer par une vraie sélection de la vitesse (settings ?)
+  self.char_delay = char_delays[self.text_speed] -- à remplacer par une vraie sélection de la vitesse (settings ?)
   self.box_position:set(8, 96)
 
   local map = game:get_map()
@@ -428,6 +429,14 @@ function dialog_box:skip()
   self.char_timer:stop()
   self:show_next_char()
 end
+
+function dialog_box:get_text_speed()
+  return self.text_speed
+end
+
+function dialog_box:set_text_speed(speed)
+  self.text_speed = speed
+end
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
@@ -450,3 +459,5 @@ end
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", bind_to_game)
+
+return dialog_box

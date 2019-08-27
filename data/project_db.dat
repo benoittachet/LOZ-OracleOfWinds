@@ -70,6 +70,7 @@ sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bone", description = "entities/bone" }
+sprite{ id = "entities/bush", description = "Buisson (tileset)" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }

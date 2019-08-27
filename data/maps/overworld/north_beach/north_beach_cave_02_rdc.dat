@@ -854,3 +854,11 @@ destination{
   direction = 1,
 }
 
+destructible{
+  layer = 0,
+  x = 272,
+  y = 93,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+

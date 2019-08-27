@@ -11,7 +11,7 @@ end
 game_meta:register_event("on_map_changed", map_callback)
 
 function game_meta:get_story_state()
-  return self:get_value("story_state")
+  return self:get_value("story_state") or 0
 end
 
 function game_meta:set_story_state(state)

@@ -1,3 +1,5 @@
+local settings = require("scripts/managers/settings")
+
 local settings_menu = {
     bg_surface = nil,
     surface = nil,
@@ -27,15 +29,37 @@ local button_pos = {
 }
 
 settings_menu.buttons = {
-    "controls",
-    "text_speed",
-    "view",
-    "jsp",
+    {
+        name = "controls",
+        effect = function() end,
+    },
+    {
+        name = "text_speed",
+        effect = function() end,
+        languages_pos = {
+            fr = 80,
+            en = 83
+        },
+        surface_builder = function(button, settings_menu) 
+            local speed = settings:get("text_speed")
+            local pos = button.languages_pos[settings:get("language")] or 0
+            settings_menu.assets:draw_region(10 * (speed - 1), 0, 10, 13, button.surface, pos, 0)
+        end
+    },
+    {
+        name = "view",
+        effect = function() end,
+    },
+    {
+        name = "jsp",
+        effect = function() end,
+    }
 }
 
 settings_menu.bg_surface = sol.surface.create("menus/settings_menu.png")
 settings_menu.cursor_surface = sol.surface.create("menus/save_cursor.png")
 settings_menu.surface = sol.surface.create(sol.video.get_quest_size())
+settings_menu.assets = sol.surface.create("menus/settings_assets.png")
 
 --methods
 function settings_menu:rebuild_surface()
@@ -45,6 +69,9 @@ function settings_menu:rebuild_surface()
     for i = 1, 3 do 
         x = button_pos.x
         y = button_pos.y + button_pos.offset * (i - 1)
+        if self.buttons[i + self.scrolling].surface_builder then
+            self:rebuild_button_surface(self.buttons[i + self.scrolling])
+        end
         self.buttons[i + self.scrolling].surface:draw(self.surface, x, y)
     end
 
@@ -56,16 +83,9 @@ function settings_menu:rebuild_surface()
 end
 
 function settings_menu:rebuild_button_surface(button)
-    button.bg_surface:draw(button.suface)
+    button.bg_surface:draw(button.surface)
     button:surface_builder(self)
 end
-
---button effects
-function settings_menu.button_effects:controls(command)
-    print(command)
-end
-
---button surface builders
 
 --SUBMENU METHODS
 
@@ -122,16 +142,10 @@ function settings_menu:on_started(game)
     title_surface:draw(self.bg_surface, x, y)
 
     for i, v in ipairs(settings_menu.buttons) do
-        self.buttons[i] = {
-            name = v, 
-            effect = self.button_effects[v],
-            surface = settings_menu.game_menu.lang:load_image("menus/settings_"..v),
-            surface_builder = self.button_surface_builders[v]
-        }
-        if self.buttons[i].surface_builder then 
-            self.buttons[i].bg_surface = sol.surface.create(96, 13)
-            self.buttons[i].surface:draw(self.buttons[i].bg_surface)
-            self.buttons[i]:surface_builder(self)
+        v.surface = settings_menu.game_menu.lang:load_image("menus/settings_"..v.name)
+        if v.surface_builder then 
+            v.bg_surface = sol.surface.create(96, 13)
+            v.surface:draw(self.buttons[i].bg_surface)
         end
     end
     self.nButtons = table.getn(self.buttons)

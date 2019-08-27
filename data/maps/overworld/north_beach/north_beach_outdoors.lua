@@ -2,6 +2,7 @@ local map = ...
 local game = map:get_game()
 
 map.discover = mpg.discover
+map.init_reset_separators = mpg.init_reset_separators
 
 local cases = {
   {3, 4},
@@ -18,11 +19,8 @@ local cases = {
   {5, 7}
 }
 
-function map:on_started()
-
-end
-
 
 function map:on_opening_transition_finished()
   self:discover(cases)
+  self:init_reset_separators(true)
 end
